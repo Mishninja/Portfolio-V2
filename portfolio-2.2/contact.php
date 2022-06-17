@@ -1,9 +1,9 @@
 <?php
+require 'includes/PHPMailer.php';
+require 'includes/Exception.php';
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
-require '/includes/PHPMailer.php';
-require '/includes/Exception.php';
 
 if (array_key_exists('email', $_POST)) {
     $err = false;
@@ -73,6 +73,7 @@ if (array_key_exists('email', $_POST)) {
 }
 ?>
 
+
 <h2 class="section-heading">Connect</h2>
 <div class="connect-container">
     <div class="col content">
@@ -88,56 +89,29 @@ if (array_key_exists('email', $_POST)) {
     <?php if (empty($msg)) { ?>
         <form class="form" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
 
-            <input type="text" name="name" placeholder="First and Last Name" id="name" required>
+            <input type="text" name="name" placeholder="First and Last Name" id="name" required/>
             <input type="email" name="email" placeholder="Email" id="email" required>
             <input type="subject" name="subject" placeholder="Subject" id="subject">
             <textarea id="message" class="textarea" placeholder="Your Message" name="message" rows="8"></textarea>
-            <div class="submit">
-                <input type="submit" value="Send" id="submit" disabled>
-            </div>
-
+            <!-- <div class="submit"> -->
+            <input type="submit" value="Send" id="submit">
+            <!-- </div> -->
         </form>
     <?php } else {
         echo "<h2 class='msg'>" . $msg . "</h2>";
         echo "<div class='send'>
-                            <a href='https://contact.michellecheung.net/index.php'> Back to form </a>
-                        </div>";
+                <a href='https://contact.michellecheung.net/index.php'> Back to form </a>
+            </div>";
     } ?>
 </div>
 
-
-<main class="contact-main">
-    <div class="container">
-        <div class="profile-pic">
-            <img src="images/contact.jpg" alt="Headshot">
-        </div>
-        <div class="form">
-            <?php if (empty($msg)) { ?>
-                <h1>Let's Chat!</h1>
-                <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
-                    <input type="text" name="name" placeholder="Full Name" id="name" required>
-                    <input type="email" name="email" placeholder="Email" id="email" required>
-                    <input type="subject" name="subject" placeholder="Subject" id="subject">
-                    <textarea id="message" class="textarea" placeholder="Your Message" name="message" rows="8"></textarea>
-                    <div class="g-recaptcha" data-callback="captchaVerified" data-sitekey="6LcRjyAgAAAAAPAc2316Smtrf5sh-4yjGF8CaKUL"></div>
-                    <input class="send" type="submit" value="Send" id="submit" disabled>
-                </form>
-            <?php } else {
-                echo "<h2 class='msg'>" . $msg . "</h2>";
-                echo "<div class='send'>
-                            <a href='https://contact.michellecheung.net/index.php'> Back to form </a>
-                        </div>";
-            } ?>
-        </div>
-    </div>
-</main>
-
-<script>
+<!-- <script>
     function captchaVerified() {
         var submitBtn = document.getElementById("submit");
         submitBtn.removeAttribute("disabled");
     }
-</script>
+    
+</script> -->
 </body>
 
 </html>
