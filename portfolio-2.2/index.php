@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-50W90RK4EE"></script>
@@ -22,7 +23,6 @@
         gtag('config', 'UA-222416771-1');
         gtag('config', 'G-50W90RK4EE');
     </script>
-
 </head>
 
 <body>
@@ -136,7 +136,7 @@
             <div class="socials">
                 <a href="https://www.linkedin.com/in/michelle-cheung-vancouver" title="link to my Linkedin profile">
                     <i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/Mishninja" title="link to my Github">
+                <a href="https://github.com/Mishninja" target="_blank" title="link to my Github">
                     <i class="fa-brands fa-github"></i></i></a>
             </div>
         </div>

@@ -36,7 +36,7 @@ if (array_key_exists('email', $_POST)) {
         $err = true;
     }
 
-    $to = 'mcheung1998@@gmail.com';
+    $to = 'mcheung1998@gmail.com';
     $email_body = "";
     $email_body .= "Name: " . $name . "\n";
     $email_body .= "E-mail: " . $email . "\n";
@@ -85,33 +85,33 @@ if (array_key_exists('email', $_POST)) {
     </div>
     <div class="triangle bg-repeat"></div>
 </div>
-<div class="form-container">
+<div class="form-container" id = 'form-container'>
     <?php if (empty($msg)) { ?>
         <form class="form" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
-
-            <input type="text" name="name" placeholder="First and Last Name" id="name" required/>
+            <input type="text" name="name" placeholder="First and Last Name" id="name" required />
             <input type="email" name="email" placeholder="Email" id="email" required>
             <input type="subject" name="subject" placeholder="Subject" id="subject">
             <textarea id="message" class="textarea" placeholder="Your Message" name="message" rows="8"></textarea>
-            <!-- <div class="submit"> -->
-            <input type="submit" value="Send" id="submit">
-            <!-- </div> -->
+            <div class="g-recaptcha" data-callback="captchaVerified" data-sitekey="6Lcb9nsgAAAAAImVLS72C-fFIENAuAlGbWHbhlKS"></div>
+            <input type="submit" value="Send" id="submit" disabled>
         </form>
     <?php } else {
-        echo "<h2 class='msg'>" . $msg . "</h2>";
-        echo "<div class='send'>
-                <a href='https://contact.michellecheung.net/index.php'> Back to form </a>
+        echo "<h2 class='error-msg'>" . $msg . "</h2>";
+        echo "<div class='btn'>
+                <a href=index.php>Send another message.</a>
             </div>";
     } ?>
+
+
 </div>
 
-<!-- <script>
+<script>
     function captchaVerified() {
         var submitBtn = document.getElementById("submit");
         submitBtn.removeAttribute("disabled");
     }
     
-</script> -->
+</script>
 </body>
 
 </html>

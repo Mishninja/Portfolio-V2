@@ -436,6 +436,10 @@ header.header-up {
   padding-top: 20rem;
   padding-bottom: 6rem;
 }
+.form-container .error-msg {
+  color: #E8E7E2;
+  text-align: center;
+}
 .form-container .form {
   width: 80%;
   margin: 0 auto;
@@ -465,6 +469,11 @@ header.header-up {
   color: #434343;
   transition: all 0.3s ease-in-out;
 }
+.form-container .form input[type=submit]:disabled {
+  background-color: #ccc;
+  color: #fff;
+  cursor: default;
+}
 .form-container .form textarea {
   width: 80%;
   resize: none;
@@ -474,6 +483,23 @@ header.header-up {
   font-size: 1.2rem;
   font-family: "Oxygen", sans-serif;
   margin: 0.5rem auto;
+}
+.form-container .form .g-recaptcha {
+  margin: 2.5rem auto;
+}
+.form-container .btn {
+  width: 20%;
+  margin: 2rem auto;
+}
+.form-container .btn a {
+  padding: 1rem 2rem;
+  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  border: 2px solid #E8E7E2;
+  background: #E8E7E2;
+  color: #434343;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer {
@@ -654,6 +680,7 @@ header.header-up {
     grid-row: 1 / 4;
   }
   .work .card .accordion-btn {
+    cursor: auto;
     text-align: center;
     background-color: transparent;
     box-shadow: none;
@@ -690,6 +717,21 @@ header.header-up {
   .form-container .form input[type=submit]:hover {
     background-color: transparent;
     color: #E8E7E2;
+    transition: all 0.3s ease-in-out;
+  }
+  .form-container .form input[type=submit]:disabled:hover {
+    background-color: #ccc;
+    color: #fff;
+    cursor: default;
+  }
+  .form-container .btn a {
+    padding: 1rem 2rem;
+    border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+    font-size: 1.4rem;
+    margin: 2rem auto;
+    border: 2px solid #E8E7E2;
+    background: #E8E7E2;
+    color: #434343;
     transition: all 0.3s ease-in-out;
   }
 
