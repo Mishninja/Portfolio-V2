@@ -208,8 +208,11 @@
     .footer {
         .content{
             flex-direction: row;
-            .socials{
+            .socials {
+                width: auto;
+                justify-content: center;
                 margin-top: 0;
+                display: block;
                 .fa-brands {
                     color: $secondary-color;
                     font-size: 2.5rem;

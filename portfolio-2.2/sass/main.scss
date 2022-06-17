@@ -502,13 +502,12 @@ header.header-up {
     color: $secondary-color;
     padding: 2rem;
     margin: 0 auto;
-    .content {
-        width: 20rem;
+    .content {        
         margin: 0 auto;
         @include flex(flex, center, center);
         flex-direction: column;
         .socials{
-            width: 100%;
+            width: 20rem;
             margin-top: 2rem;
             @include flex(flex, space-evenly, center);
             flex-direction: row;
