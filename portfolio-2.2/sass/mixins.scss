@@ -1,3 +1,5 @@
+@import 'variables';
+
 @mixin flex($display, $justify, $align) {
     display: $display;
     justify-content: $justify;
@@ -22,4 +24,13 @@
 @mixin content-grid($col) {
     display: grid;
     grid-template-columns: [first] $col [line2] auto [line3] $col [end];
+}
+
+.form-style{
+    background-color: $secondary-color;
+    border-radius: 2rem;
+    border: none;
+    padding: 1rem 2rem;
+    color: $text-color-dk;
+    font-family: $body-font;
 }
