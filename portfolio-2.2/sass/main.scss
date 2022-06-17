@@ -377,10 +377,11 @@ header.header-up {
         padding: 3rem;
         background-color: $primary-color;
         color: $secondary-color;
+        text-align: center;
         h3 {
             font-size: 2.4rem;
             margin-bottom: 2.5rem;
-            text-align: center;
+            
         }
         .terms {
             width: 50%;
@@ -406,12 +407,23 @@ header.header-up {
 /*===== Connect =====*/
 
 .connect-container {
-    max-width: 80%;
+    max-width: 60%;
     margin: 0 auto;
-    padding: 6rem 3rem;
+    padding: 2rem 3rem 12rem;
     @include flex(flex, center, center);
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: relative;
+    text-align: center;
+    .content {
+        .sec-header {
+            font-size: 3.6rem;
+            margin-bottom: 2.5rem;
+        }
+        p {
+            font-size: 2rem;
+        }
+    }
+    
     .image::after,.image::before {
         position: absolute;
         left: 0;
@@ -419,13 +431,12 @@ header.header-up {
         width: 100%;
         height: 100%;
         border: 2px $primary-color solid;
-        
         border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
     }
     .image {
         width: 100%;
         position: relative;
-        margin: 6rem 0;
+        margin: 3rem 0;
     }
     .image::before {
         bottom: -1rem;
@@ -469,15 +480,31 @@ header.header-up {
         input[type = subject] {
             width: 80%;            
             margin: 0.5rem auto;
+            border-radius: 2rem;
             @extend .form-style;
         }
         input[type = submit] {
             width: 20%;
-            margin: 2.5rem auto 5rem;
-            border-radius: 2rem;
+            border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
             font-size: 1.4rem;
             @extend .form-style;
             min-width: 7.5rem;
+        }
+        .submit {
+            position: relative;
+            margin: 2.5rem auto 5rem;
+        }
+        .submit::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 7rem;
+            height: 4rem;
+            top: 0.3rem;
+            right: -0.5rem;
+            border: 2px solid $secondary-color;
+            border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+            transition: all 0.3s ease-in-out;
         }
         textarea {
             width: 80%;

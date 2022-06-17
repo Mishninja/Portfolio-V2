@@ -4,7 +4,6 @@
 .form-container .form input[type=email],
 .form-container .form input[type=subject], .form-container .form input[type=submit] {
   background-color: #E8E7E2;
-  border-radius: 2rem;
   border: none;
   padding: 1rem 2rem;
   color: #434343;
@@ -368,11 +367,11 @@ header.header-up {
   padding: 3rem;
   background-color: #566A68;
   color: #E8E7E2;
+  text-align: center;
 }
 .about .get-to-know h3 {
   font-size: 2.4rem;
   margin-bottom: 2.5rem;
-  text-align: center;
 }
 .about .get-to-know .terms {
   width: 50%;
@@ -391,14 +390,22 @@ header.header-up {
 
 /*===== Connect =====*/
 .connect-container {
-  max-width: 80%;
+  max-width: 60%;
   margin: 0 auto;
-  padding: 6rem 3rem;
+  padding: 2rem 3rem 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   position: relative;
+  text-align: center;
+}
+.connect-container .content .sec-header {
+  font-size: 3.6rem;
+  margin-bottom: 2.5rem;
+}
+.connect-container .content p {
+  font-size: 2rem;
 }
 .connect-container .image::after, .connect-container .image::before {
   position: absolute;
@@ -412,7 +419,7 @@ header.header-up {
 .connect-container .image {
   width: 100%;
   position: relative;
-  margin: 6rem 0;
+  margin: 3rem 0;
 }
 .connect-container .image::before {
   bottom: -1rem;
@@ -454,13 +461,29 @@ header.header-up {
 .form-container .form input[type=subject] {
   width: 80%;
   margin: 0.5rem auto;
+  border-radius: 2rem;
 }
 .form-container .form input[type=submit] {
   width: 20%;
-  margin: 2.5rem auto 5rem;
-  border-radius: 2rem;
+  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
   font-size: 1.4rem;
   min-width: 7.5rem;
+}
+.form-container .form .submit {
+  position: relative;
+  margin: 2.5rem auto 5rem;
+}
+.form-container .form .submit::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 7rem;
+  height: 4rem;
+  top: 0.3rem;
+  right: -0.5rem;
+  border: 2px solid #E8E7E2;
+  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  transition: all 0.3s ease-in-out;
 }
 .form-container .form textarea {
   width: 80%;
