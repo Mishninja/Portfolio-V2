@@ -2,8 +2,7 @@
 @import url("https://use.typekit.net/mus6lse.css");
 .form-style, .form-container .form input[type=text],
 .form-container .form input[type=email],
-.form-container .form input[type=subject], .form-container .form input[type=submit] {
-  background-color: #E8E7E2;
+.form-container .form input[type=subject] {
   border: none;
   padding: 1rem 2rem;
   color: #434343;
@@ -215,22 +214,11 @@ header.header-up {
 }
 .bnr .right .cta a {
   color: #E8E7E2;
+  border: 2px solid #566A68;
   background-color: #566A68;
   position: absolute;
   padding: 1.5rem 2.5rem;
   border-radius: 79% 21% 73% 27% / 50% 72% 28% 50%;
-  transition: all 0.3s ease-in-out;
-}
-.bnr .right .cta a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 11rem;
-  height: 4.5rem;
-  top: 1rem;
-  right: 1rem;
-  border-radius: 79% 21% 73% 27% / 50% 72% 28% 50%;
-  border: 2px solid #566A68;
   transition: all 0.3s ease-in-out;
 }
 
@@ -448,6 +436,10 @@ header.header-up {
   padding-top: 20rem;
   padding-bottom: 6rem;
 }
+.form-container .error-msg {
+  color: #E8E7E2;
+  text-align: center;
+}
 .form-container .form {
   width: 80%;
   margin: 0 auto;
@@ -462,28 +454,25 @@ header.header-up {
   width: 80%;
   margin: 0.5rem auto;
   border-radius: 2rem;
+  background-color: #E8E7E2;
 }
 .form-container .form input[type=submit] {
+  cursor: pointer;
   width: 20%;
   border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
   font-size: 1.4rem;
   min-width: 7.5rem;
-}
-.form-container .form .submit {
-  position: relative;
-  margin: 2.5rem auto 5rem;
-}
-.form-container .form .submit::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 7rem;
-  height: 4rem;
-  top: 0.3rem;
-  right: -0.5rem;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
   border: 2px solid #E8E7E2;
-  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  background: #E8E7E2;
+  color: #434343;
   transition: all 0.3s ease-in-out;
+}
+.form-container .form input[type=submit]:disabled {
+  background-color: #ccc;
+  color: #fff;
+  cursor: default;
 }
 .form-container .form textarea {
   width: 80%;
@@ -491,8 +480,26 @@ header.header-up {
   background-color: #E8E7E2;
   border-radius: 1.5rem;
   padding: 1rem 2rem;
+  font-size: 1.2rem;
   font-family: "Oxygen", sans-serif;
   margin: 0.5rem auto;
+}
+.form-container .form .g-recaptcha {
+  margin: 2.5rem auto;
+}
+.form-container .btn {
+  width: 20%;
+  margin: 2rem auto;
+}
+.form-container .btn a {
+  padding: 1rem 2rem;
+  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  border: 2px solid #E8E7E2;
+  background: #E8E7E2;
+  color: #434343;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer {
@@ -526,8 +533,7 @@ header.header-up {
 
 .form-style, .form-container .form input[type=text],
 .form-container .form input[type=email],
-.form-container .form input[type=subject], .form-container .form input[type=submit] {
-  background-color: #E8E7E2;
+.form-container .form input[type=subject] {
   border: none;
   padding: 1rem 2rem;
   color: #434343;
@@ -646,10 +652,9 @@ header.header-up {
   .bnr .right {
     padding-top: 20rem;
   }
-  .bnr .right .cta a:hover:before {
-    top: 0;
-    right: 0;
-    transition: all 0.3s ease-in-out;
+  .bnr .right .cta a:hover {
+    color: #566A68;
+    background-color: transparent;
   }
 
   /*===== Works =====*/
@@ -675,6 +680,7 @@ header.header-up {
     grid-row: 1 / 4;
   }
   .work .card .accordion-btn {
+    cursor: auto;
     text-align: center;
     background-color: transparent;
     box-shadow: none;
@@ -708,12 +714,24 @@ header.header-up {
     max-width: 50%;
   }
 
-  .form-container .form .submit:hover::after {
-    cursor: pointer;
-    width: 6.3rem;
-    height: 2.6rem;
-    top: 0.1;
-    right: 0;
+  .form-container .form input[type=submit]:hover {
+    background-color: transparent;
+    color: #E8E7E2;
+    transition: all 0.3s ease-in-out;
+  }
+  .form-container .form input[type=submit]:disabled:hover {
+    background-color: #ccc;
+    color: #fff;
+    cursor: default;
+  }
+  .form-container .btn a {
+    padding: 1rem 2rem;
+    border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+    font-size: 1.4rem;
+    margin: 2rem auto;
+    border: 2px solid #E8E7E2;
+    background: #E8E7E2;
+    color: #434343;
     transition: all 0.3s ease-in-out;
   }
 

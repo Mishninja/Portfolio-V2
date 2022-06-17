@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,14 +14,17 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-50W90RK4EE"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-222416771-1');
-    gtag('config', 'G-50W90RK4EE');
-    </script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-222416771-1');
+        gtag('config', 'G-50W90RK4EE');
+    </script>
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
@@ -72,7 +76,7 @@
                     </div>
                     <div class="content">
                         <div class="description">
-                            <div class="blurb">                                
+                            <div class="blurb">
                                 <p>A simple web app that allows you to make flashcards for studying. This project was a steep learning curve for me; however, after completing it, I am now familiar with concepts such as Object Oriented Programming, JSON objects, and sessions.</p>
                                 <p>I stored each question as a JSON object in local storage using JSON.stringify(). Each object had an id, question, and answer property. Each time a new question is added, a new instantiation of the question object is created and is dynamically added to the page.</p>
                             </div>
@@ -93,9 +97,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
-                </div>                
+                </div>
             </div>
         </section>
         <section id="about" class="about">
@@ -117,33 +121,12 @@
                     <div class="tile rev" data-group="like">Skincare</div>
                     <div class="tile" data-group="dislike">The dentist</div>
                     <div class="tile rev" data-group="dislike">The dairy industry</div>
-                    <div class="tile" data-group="dislike">Orange fruit</div> 
+                    <div class="tile" data-group="dislike">Orange fruit</div>
                 </div>
             </div>
         </section>
         <section class="connect" id="connect">
-            <h2 class="section-heading">Connect</h2>
-            <div class="connect-container">                
-                <div class="col content">
-                    <h3 class="sec-header">Let's chat!</h3>
-                    <p>Get in touch using the form below!</p>
-                </div>
-                <div class="col image">
-                    <img src="images/connect/connect.jpg">
-                </div>
-                <div class="triangle bg-repeat"></div>
-            </div>
-            <div class="form-container">               
-                <form class="form">
-                    <input type="text" name="name" placeholder="First and Last Name" id="name" required>
-                    <input type="email" name="email" placeholder="Email" id="email" required>
-                    <input type="subject" name="subject" placeholder="Subject" id="subject">
-                    <textarea id="message" class="textarea" placeholder="Your Message" name="message" rows="8"></textarea>
-                    <!-- <div class="submit"> -->
-                    <input class="submit" type="submit" value="Send" id="submit" disabled>
-                    <!-- </div> -->
-                </form>
-            </div>
+            <?php include 'contact.php'; ?>
         </section>
     </main>
     <footer class="footer">
@@ -153,7 +136,7 @@
             <div class="socials">
                 <a href="https://www.linkedin.com/in/michelle-cheung-vancouver" title="link to my Linkedin profile">
                     <i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/Mishninja" title="link to my Github">
+                <a href="https://github.com/Mishninja" target="_blank" title="link to my Github">
                     <i class="fa-brands fa-github"></i></i></a>
             </div>
         </div>
@@ -162,6 +145,7 @@
     <script src="https://kit.fontawesome.com/4a13e67f54.js" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/scroll-lock.js"></script>
-    
+
 </body>
+
 </html>
