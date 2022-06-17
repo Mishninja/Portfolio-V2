@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Box | Recipe Card Modals</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/artifacts.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-50W90RK4EE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-222416771-1');
+        gtag('config', 'G-50W90RK4EE');
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/m-pink.svg">
+            </a>
+        </div>
+        <button class="gn-trigger">
+            <div class="burger"></div>
+        </button>
+        <nav class="gn">
+            <ul class="gn-items">
+                <li><a href="about.html" title="About page">About</a></li>
+                <li><a href="index.html#design" title="Design projects">Design</a></li>
+                <li><a href="index.html#dev" title="Development projects">Development</a></li>
+                <li><a href="#contact" title="Contact me">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="artifact-dev artifact-1 artifact">
+        <div class="theme-wrapper">
+            <h1>My Recipe Box Modals</h1>
+            <section class="ln">
+                <ul class="ln-items">
+                    <li><a href="https://www.recipes.michellecheung.net" title="Link to frog charity live site"
+                            target="_blank">Explore</a></li>
+                    <li><a href="#approach">Approach</a></li>
+                    <li><a href="#features">Features</a></li>
+                </ul>
+            </section>
+            <section id="approach" class="introduction">
+                <div class="img">
+                    <img src="images/a5/approach.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>Approach</h2>
+                    <p>This was a small personal project that spawned from the need for a place to keep all my commonly made recipes in
+                        an easily accessible place. I also implemented a mobile first approach to make the recipes easy to view on your
+                        phone and to share with friends and family. I wanted to create an interface that was simple and straightforward
+                        to use, so I decided to create a card layout with a modal that would pop up when a card was clicked on.</p>
+                    <p>I wanted to implement a modal because it would allow users to easily browse the recipes without having to be
+                        redirected to a separate page, then coming back and having to scroll the last recipe they clicked on. The page
+                        and functionality were accomplished using HTML, CSS, Pure framework and JavaScript. Continue scrolling to find
+                        out how I implemented this project.
+                    </p>
+                </div>
+            </section>
+            <section id="features" class="artifact-slider">
+                <div class="wrapper">
+                    <div class="container">
+                        <h2>Features</h2>
+                    </div>
+                    <div class="container">
+                        <div class="panel row-rev">
+                            <div class="img ">
+                                <img src="images/a5/layout.png" alt="Card layout of recipe website">
+                            </div>
+                            <div class="about">
+                                <h3>Layout</h3>
+                                <p>I created simple card layout using HTML and CSS to display the recipes that are available.  The card layout features a photo, the title of the recipe, the time it takes to make the recipe, and how many units the recipe yields.  A card layout made the most sense because it provides the scannable information for users to look at to manage user expectation. The responsive grid layout of the cards was accomplished using the Pure grid framework.  </p>
+                            </div>
+                        </div>
+                        
+                        <div class="panel">
+                            <div class="img ">
+                                <video autoplay muted loop class="vid">
+                                    <source src="media/a5/modal.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="about">
+                                <h3>Modal</h3>
+                                <p>The modal was created using CSS and JavaScript.  All the modals are existing HTML elements that have the CSS attribute “display: none”.  I first mapped out how I wanted the recipe information to be displayed on the modal, then created new elements for each individual recipe.  </p>
+                                <p>In the future, as my recipe collection grows, I would likely generate the modals dynamically and create a database of recipes.  However, for the purposes of this small project, I was able to get away with creating the recipe modals as existing HTML elements.  </p>
+                            </div>
+                        </div>
+                        <div class="panel row-rev">
+                            <div class="img">
+                                <video autoplay muted loop class="vid">
+                                    <source src="media/a5/Javascript-closing.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="about">
+                                <h3>JavaScript</h3>
+                                <p>The recipe cards are linked to a modal using a custom data attribute “data-card” where it contains the recipe modal’s id.  The recipe cards are continuously listening for a click event.  When users click on a specific card, the “data-card” attribute, the modal with the id that matches the attribute will be retrieved and it’s display value will be changed to “block”.  This will allow the modal to be displayed and the recipe to be read.</p>
+                                <p>Users can close the modal by clicking the “X” in the top right corner, or they may click anywhere off the modal.</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="img">
+                                <video autoplay muted loop class="vid">
+                                    <source src="media/a5/mobile-first.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="about">
+                                <h3>Mobile Responsive</h3>
+                                <p>The website was designed using a mobile first approach. As many people access recipes online from their
+                                    phones while they cook or bake, making the page mobile first was a must. All font sizes, and recipe layouts
+                                    were made to be optimized for different device viewport widths.</p>
+                                <p>As mentioned before, the card layout is made responsive using the Pure framework. The modals also vary in
+                                    font size and text layout that are optimal for each device viewport width.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="ftr">
+        <div class="content">
+            <p>Michelle Cheung &copy; 2022</p>
+            <a href="https://www.linkedin.com/in/michelle-cheung-vancouver" title="link to linked in profile">
+                <img src="images/about/in.png"></a>
+            </div>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/scroll-lock.js"></script>
+</body>
+
+</html>

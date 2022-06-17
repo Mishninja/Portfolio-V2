@@ -1,0 +1,25 @@
+@mixin flex($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+@mixin card-grid-lg ($title) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    grid-template-rows: [first] $title [line2] auto [line2] auto [line3] $title [end];
+}
+
+@mixin card-grid-sm($col, $row){
+    display: grid;
+    grid-template-columns: [first] $col [line2] auto [line3] $col [end];
+    grid-template-rows: [first] auto [line2] $row [line3] auto [end];
+}
+
+
+@mixin content-grid($col) {
+    display: grid;
+    grid-template-columns: [first] $col [line2] auto [line3] $col [end];
+}

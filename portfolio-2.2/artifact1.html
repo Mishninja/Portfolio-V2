@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frog Facts | Mobile First Webpage</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- <link rel="stylesheet" href="styles/artifact-dev.css"> -->
+    <link rel="stylesheet" href="styles/artifacts.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-50W90RK4EE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-222416771-1');
+  gtag('config', 'G-50W90RK4EE');
+</script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/m-pink.svg">
+            </a>
+        </div>
+        <button class="gn-trigger">
+            <div class="burger"></div>
+        </button>
+        <nav class="gn">
+            <ul class="gn-items">
+                <li><a href="about.html" title="About page">About</a></li>
+                <li><a href="index.html#design" title="Design projects">Design</a></li>
+                <li><a href="index.html#dev" title="Development projects">Development</a></li>
+                <li><a href="#contact" title="Contact me">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="artifact-dev artifact-1 artifact">
+        <div class="theme-wrapper">
+            <h1>Frog Charity Mobile First Webpage</h1>
+            <section class="ln">
+                <ul class="ln-items">
+                    <li><a href="https://www.frogcharity.michellecheung.net" title="Link to frog charity live site" target="_blank">Explore</a></li>
+                    <li><a href="#approach">Approach</a></li>
+                    <li><a href="#features">Features</a></li>
+                </ul>
+            </section>
+            <section id="approach" class="introduction">
+                <div class="img col">
+                    <img src="images/a1/a1-bnr.png">
+                </div>
+                <div class="content">
+                    <h2>Approach</h2>
+                    <p>This webpage was built using a mobile first approach. I first decided the layouts for a mobile view and then
+                        scaled
+                        everything up. I used media queries for each major breakpoint (320px, 567px, 768px, 992px, 1200px, and 1440px).
+                        At each
+                        break point I set out to use a layout that made the most sense.</p>
+                    <p>
+                        One notable feature is the navigation bar and burger menu. The burger menu was implemented for a mobile view
+                        while the
+                        navigation bar was implemented for a desktop view. Explore the site.
+                    </p>
+                </div>
+            </section>
+            <section id="features" class="artifact-slider">
+                <div class="wrapper">
+                    <div class="container">
+                        <h2>Features</h2>
+                    </div>
+                    <div class="container">
+                        <div class="content panel row-rev">
+                            <div class="img">
+                                <video autoplay muted loop class="vid">
+                                    <source src="media/a1/accordian.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="about">
+                                <h3>Accordion</h3>
+                                <p>This section was meant to emulate a common FAQ layout.  The accordion was implemented using JavaScript and CSS to manipulate divs.  An accordion makes associating question and answers simple and clean.</p>
+                            </div>
+                        </div>
+                        <div class="content panel">
+                            <div class="img">
+                                <video autoplay muted loop class="vid">
+                                    <source src="media/a1/isotope.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="about">
+                                <h3>Isotope/Masonry</h3>
+                                <p>Isotope allows you to sort through different photos using the categories filters at the top of the section. The
+                                responsive layout is built into isotope so the layout of images responds to the width of the screen.</p>
+                            </div>
+                        </div>
+                        <div class="content panel row-rev">
+                            <div class="img">
+                                <video autoplay muted loop class="vid">
+                                    <source src="media/a1/gridder.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="about">
+                                <h3>Gridder</h3>
+                                <p>Gridder was used in this section to display facts about endangered species in a tidy interface.  The images have hover effects on them to let users know that he element is clickable.  All color and styling was customized to fit the theme of this web page. The responsive layout of this section was accomplished using media queries.</p>
+                            </div>
+                        </div>
+                        <div class="content panel">
+                            <div class="img">
+                                <video autoplay muted loop class="vid">
+                                    <source src="media/a1/burger.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="about">
+                                <h3>Responsive Burger Menu</h3>
+                                <p>The responsive burger menu was created so that in a mobile view, the navigation bar is hidden and becomes a drop down menu.  A combination of media queries and JavaScript was used to create this navigation.  In desktop view, the navigation bar appears and sticks to the top of the page.  While scrolling down, the bar will disappear. It will reappear when scrolling back up.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="ftr">
+        <div class="content">
+            <p>Michelle Cheung &copy; 2022</p>
+            <a href="https://www.linkedin.com/in/michelle-cheung-vancouver" title="link to linked in profile">
+                <img src="images/about/in.png"></a>
+            </div>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/scroll-lock.js"></script>
+</body>
+</html>
