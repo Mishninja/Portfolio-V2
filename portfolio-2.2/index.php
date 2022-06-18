@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,22 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-50W90RK4EE"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-222416771-1');
-    gtag('config', 'G-50W90RK4EE');
-    </script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-222416771-1');
+        gtag('config', 'G-50W90RK4EE');
+    </script>
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
@@ -33,8 +38,8 @@
         <nav class="gn">
             <ul class="gn-items">
                 <li><a href="#work" title="work">Work</a></li>
-                <li><a href="about.html" title="About page">About</a></li>
-                <li><a href="#contact" title="Contact me">Connect</a></li>
+                <li><a href="#about" title="About page">About</a></li>
+                <li><a href="#connect" title="Contact me">Connect</a></li>
             </ul>
         </nav>
     </header>
@@ -71,7 +76,7 @@
                     </div>
                     <div class="content">
                         <div class="description">
-                            <div class="blurb">                                
+                            <div class="blurb">
                                 <p>A simple web app that allows you to make flashcards for studying. This project was a steep learning curve for me; however, after completing it, I am now familiar with concepts such as Object Oriented Programming, JSON objects, and sessions.</p>
                                 <p>I stored each question as a JSON object in local storage using JSON.stringify(). Each object had an id, question, and answer property. Each time a new question is added, a new instantiation of the question object is created and is dynamically added to the page.</p>
                             </div>
@@ -92,9 +97,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
-                </div>                
+                </div>
             </div>
         </section>
         <section id="about" class="about">
@@ -109,36 +114,38 @@
             </div>
             <div class="get-to-know">
                 <h3>Get to know me!</h3>
-                <p>Let's play a game! Tap on the terms to get to learn more about me.</p>
+                <p>Let's play a game! Can you guess which statements are true or false?</p>
                 <div class="terms">
                     <div class="tile rev" data-group="like">Ultimate Frisbee</div>
                     <div class="tile" data-group="like">Yoga</div>
                     <div class="tile rev" data-group="like">Skincare</div>
                     <div class="tile" data-group="dislike">The dentist</div>
                     <div class="tile rev" data-group="dislike">The dairy industry</div>
-                    <div class="tile" data-group="dislike">Orange fruit</div> 
+                    <div class="tile" data-group="dislike">Orange fruit</div>
                 </div>
             </div>
         </section>
         <section class="connect" id="connect">
-            <div class="container">
-                <h2 class="section-heading">Connect</h2>
-                <p>If you would like to get in touch, please email me at</p>
-                <h3 class="email"><a href="mailto:mcheung1998@gmail.com">mcheung1998@gmail.com</a></h3>
-            </div>
+            <?php include 'contact.php'; ?>
         </section>
     </main>
-    <footer class="ftr">
+    <footer class="footer">
         <div class="content">
-            <p>Michelle Cheung &copy; 2022</p>
-            <a href="https://www.linkedin.com/in/michelle-cheung-vancouver" title="link to linked in profile">
-                <img src="images/about/in.png"></a>
+            <p class="copyright">Michelle Cheung &copy; 2022</p>
+            <p class="pipe">|</p>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/michelle-cheung-vancouver" title="link to my Linkedin profile">
+                    <i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Mishninja" target="_blank" title="link to my Github">
+                    <i class="fa-brands fa-github"></i></i></a>
             </div>
+        </div>
     </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <script src="https://kit.fontawesome.com/4a13e67f54.js" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/scroll-lock.js"></script>
-    
+
 </body>
+
 </html>

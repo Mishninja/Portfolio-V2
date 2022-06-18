@@ -1,17 +1,12 @@
-@import 'main';
-@import 'mixins';
+@import 'main', 'mixins';
 
 
 @media (min-width: 576px) {
-    .bnr {
-        height: 55vh;
-    }
+    
 }
 
 @media (min-width: 768px) {
-    .bnr {
-        height: 60vh;
-    }
+    
 }
 
 @media (min-width: 800px) {
@@ -49,10 +44,6 @@
             border-bottom: none;
             font-weight: 400;
             padding: 1rem;
-        }
-
-        .gn-items li:last-child {
-            margin-right: 0;
         }
 
         .gn-items li:before,
@@ -139,23 +130,20 @@
         .right {
             padding-top: 20rem;
             .cta {
-                a::before {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    width: 11rem;
-                    height: 4.5rem;
-                    top: 0;
-                    right: 0;
-                    border-radius: 79% 21% 73% 27% / 50% 72% 28% 50%;
-                    border: 2px solid $primary-color;
-                }
-                a:hover:before {
-                    top: 0.6rem;
-                    right: .5rem;
-                    width: 11.5rem;
-                    height: 4.8rem;
-                    border-radius: 79% 21% 73% 27% / 50% 72% 28% 50%;
+                // a::before {
+                //     content: "";
+                //     display: block;
+                //     position: absolute;
+                //     width: 11rem;
+                //     height: 4.5rem;
+                //     top: 0;
+                //     right: 0;
+                //     border-radius: 79% 21% 73% 27% / 50% 72% 28% 50%;
+                //     border: 2px solid $primary-color;
+                // }
+                a:hover{
+                    color: $primary-color;
+                    background-color: transparent;
                 }
             }
         }
@@ -169,7 +157,7 @@
             }
         .card {        
             @include card-grid-lg(10%);
-            margin: 5.5rem 0;
+            margin: 5.5rem auto;
             h3 {
                 text-align: left;
                 color: $text-color-wt
@@ -179,6 +167,8 @@
                     grid-row: 1 / 4;
                 }
             .accordion-btn{
+                cursor: auto;
+                text-align: center;
                 background-color: transparent;
                 box-shadow: none;
                 grid-column: 6 / 12;
@@ -203,6 +193,67 @@
             }
         }
     }
+
+    /* ===== Connect ===== */
+    .connect-container {
+        flex-direction: row;
+        text-align: left;
+       .col {
+            flex-basis: 50%;
+            max-width: 50%;        
+        }
+    }
+
+    .form-container {
+        .form {
+            input[type=submit]:hover {
+                background-color: transparent;
+                color: $secondary-color;
+                transition: all 0.3s ease-in-out;
+            }
+            input[type = submit]:disabled:hover{
+                background-color: #ccc;
+                color: #fff;
+                cursor: default;
+            }
+        }
+        .btn a {
+            padding: 1rem 2rem;
+            border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+            font-size: 1.4rem;
+            margin: 2rem auto;
+            border: 2px solid $secondary-color;
+            background: $secondary-color;
+            color: $text-color-dk;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+        .content{
+            flex-direction: row;
+            .socials {
+                width: auto;
+                justify-content: center;
+                margin-top: 0;
+                display: block;
+                .fa-brands {
+                    color: $secondary-color;
+                    font-size: 2.5rem;
+                    margin-left: 2rem;
+                }
+            }
+            .copyright {
+                margin-right: 2rem;
+            }
+            .pipe {
+                display: block;
+            }
+        }
+        
+    }
+    
 }
 
 @media (min-width: 1024px) {
@@ -241,8 +292,8 @@
     }
 
     .work {
-        .card {
-            max-width: 1150px;
+        .container {
+            max-width: 1600px;
         }
     }
 }
