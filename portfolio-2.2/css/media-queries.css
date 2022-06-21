@@ -110,7 +110,7 @@ section {
   color: #E8E7E2;
   position: relative;
   text-align: center;
-  padding: 2.5rem;
+  padding: 2.5rem 0;
 }
 .header .gn-trigger {
   position: relative;
@@ -217,8 +217,9 @@ header.header-up {
   border: 2px solid #566A68;
   background-color: #566A68;
   position: absolute;
-  padding: 1.5rem 2.5rem;
-  border-radius: 50% 50% 50% 50% / 25% 75% 25% 75%;
+  padding: 1rem 3.5rem;
+  border-top-left-radius: 20% 70%;
+  border-bottom-right-radius: 20% 70%;
   transition: all 0.3s ease-in-out;
 }
 
@@ -460,10 +461,11 @@ header.header-up {
 .form-container .form input[type=submit] {
   cursor: pointer;
   width: 20%;
-  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  padding: 1rem 3.5rem;
+  border-top-left-radius: 20% 70%;
+  border-bottom-right-radius: 20% 70%;
   font-size: 1.4rem;
   min-width: 7.5rem;
-  padding: 1rem 2rem;
   margin: 2rem auto;
   border: 2px solid #E8E7E2;
   background: #E8E7E2;
@@ -473,6 +475,9 @@ header.header-up {
 .form-container .form input[type=submit]:disabled {
   background-color: #ccc;
   color: #fff;
+  padding: 1rem 3.5rem;
+  border-top-left-radius: 20% 70%;
+  border-bottom-right-radius: 20% 70%;
   cursor: default;
 }
 .form-container .form textarea {
@@ -493,8 +498,9 @@ header.header-up {
   margin: 2rem auto;
 }
 .form-container .btn a {
-  padding: 1rem 2rem;
-  border-radius: 25% 75% 25% 75%/50% 50% 50% 50%;
+  padding: 1rem 3.5rem;
+  border-top-left-radius: 20% 70%;
+  border-bottom-right-radius: 20% 70%;
   font-size: 1.4rem;
   margin: 0 auto;
   border: 2px solid #E8E7E2;
@@ -572,37 +578,22 @@ header.header-up {
     font-weight: 400;
     padding: 1rem;
   }
-  .header .gn-items li:before,
-  .header .gn-items li:after {
-    content: "";
-    position: absolute;
-    display: block;
-    border: 0px solid transparent;
-    width: 0%;
-    height: 0%;
-    transition: all 0.3s ease;
+  .header .gn-items li a {
+    padding: 1rem;
   }
-  .header .gn-items li:before {
-    width: 0%;
+  .header .gn-items li:hover a {
+    width: 100%;
     height: 0%;
-    right: 0;
-    bottom: 0;
-    border-bottom: 2px solid transparent;
-    border-right: 2px solid transparent;
-  }
-  .header .gn-items li:after {
-    width: 0%;
-    height: 0%;
-    top: 0;
-    left: 0;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
+    background-color: #E8E7E2;
+    border-top-right-radius: 20% 50%;
+    border-bottom-left-radius: 20% 50%;
+    color: #566A68;
   }
   .header .gn-items li:hover:before,
   .header .gn-items li:hover:after {
     width: 1.3rem;
     height: 1.3rem;
-    border-color: #E8E3DD;
+    border-color: #E8E7E2;
   }
 
   /*===== Banner =====*/
@@ -705,6 +696,14 @@ header.header-up {
   }
   .work .card .accordion-btn .icon {
     display: none;
+    transition: all 0.3s ease-in-out;
+  }
+  .work .card .accordion-btn .link {
+    transition: all 0.3s ease-in-out;
+  }
+  .work .card .accordion-btn .link:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
   }
   .work .card .content {
     grid-column: 1 / 7;

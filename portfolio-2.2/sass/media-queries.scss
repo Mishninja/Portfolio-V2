@@ -44,42 +44,50 @@
             border-bottom: none;
             font-weight: 400;
             padding: 1rem;
+            a {
+                padding: 1rem;
+            }
         }
 
-        .gn-items li:before,
-        .gn-items li:after {
-            content: "";
-            position: absolute;
-            display: block;
-            border: 0px solid transparent;
-            width: 0%;
+        // .gn-items li:before,
+        // .gn-items li:after {
+        //     content: "";
+        //     position: absolute;
+        //     display: block;
+        //     border: 0px solid transparent;
+        //     width: 0%;
+        //     height: 0%;
+        //     transition: all 0.3s ease;
+        // }
+        
+
+        .gn-items li:hover a{
+            width: 100%;
             height: 0%;
-            transition: all 0.3s ease;
+            background-color: $secondary-color;
+            border-top-right-radius: 20% 50%;
+            border-bottom-left-radius: 20% 50%;
+            color: $primary-color;
         }
 
-        .gn-items li:before{
-            width: 0%;
-            height: 0%;
-            right: 0;
-            bottom: 0;
-            border-bottom: 2px solid transparent;
-            border-right: 2px solid transparent;
+        .active {
+
         }
 
-        .gn-items li:after{
-            width: 0%;
-            height: 0%;
-            top: 0;
-            left: 0;
-            border-top: 2px solid transparent;
-            border-left: 2px solid transparent;
-        }
+        // .gn-items li:after{
+        //     width: 0%;
+        //     height: 0%;
+        //     top: 0;
+        //     left: 0;
+        //     border-top: 2px solid transparent;
+        //     border-left: 2px solid transparent;
+        // }
 
         .gn-items li:hover:before,
         .gn-items li:hover:after {
             width: 1.3rem;
             height: 1.3rem;
-            border-color: #E8E3DD;
+            border-color: $secondary-color;
         }
     }
 
@@ -179,6 +187,14 @@
                 grid-row: 1 / 2;
                 .icon {
                     display: none;
+                    transition: all 0.3s ease-in-out;
+                }
+                .link {
+                    transition: all 0.3s ease-in-out;
+                }
+                .link:hover {
+                    transform: scale(1.2);
+                    transition: all 0.3s ease-in-out;
                 }
             }            
             .content {
