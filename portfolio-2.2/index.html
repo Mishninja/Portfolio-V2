@@ -25,7 +25,7 @@
     <header class="header">
         <div class="logo">
             <a class="logo-link" href="index.html" title="Home Page">
-                <img src="images/logo-white.svg" alt="Logo">
+                <img src="images/logo-white.svg" alt="Logo" loading="lazy">
             </a>
         </div>
         <button class="gn-trigger">
@@ -42,10 +42,10 @@
     <main class="main">
         <section class="bnr bg-repeat">
             <div class="left col">
-                <div><img class="birds" src="images/birdline-teal.png"></div>
-                <div><img class="birds-even" src="images/birdline-teal.png"></div>
-                <div><img class="birds" src="images/birdline-teal.png"></div>
-                <div><img class="birds-even" src="images/birdline-teal.png"></div>
+                <div><img class="birds" src="images/birdline-teal.png" alt="bird-logo" loading="lazy"></div>
+                <div><img class="birds-even" src="images/birdline-teal.png" alt="bird-logo" loading="lazy"></div>
+                <div><img class="birds" src="images/birdline-teal.png" alt="bird-logo" loading="lazy"></div>
+                <div><img class="birds-even" src="images/birdline-teal.png" alt="bird-logo" loading="lazy"></div>
             </div>
             <div class="right col">
                 <h1>Michelle Cheung</h1>
@@ -61,7 +61,7 @@
             <div class="container">
                 <div class="card">
                     <div class="display-vid">
-                        <video autoplay loop class="vid" poster="images/studybuddy/study-buddy-mock.jpg">
+                        <video autoplay loop class="vid" poster="images/studybuddy/study-buddy-mock.jpg" loading>
                             <source src="media/studybuddy/study-buddy-video.mp4" type="video/mp4">
                             "Sorry your browser does not support video."
                         </video>
@@ -95,7 +95,44 @@
                             </div>
                         </div>                        
                     </div>
-                </div>                
+                </div>
+                <div class="card">
+                    <div class="display-vid">
+                        <video autoplay loop class="vid" poster="images/studybuddy/study-buddy-mock.jpg">
+                            <source src="media/studybuddy/study-buddy-video.mp4" type="video/mp4">
+                            "Sorry your browser does not support video."
+                        </video>
+                    </div>
+                    <div class="accordion-btn">
+                        <h3>PHP Contact Form</h3>
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </div>
+                    <div class="content">
+                        <div class="description">
+                            <div class="blurb">
+                                <p>A reusable contact form for a portfolio or a local business. This contact form uses the PHPMailer class and Google reCaptcha to safely handle contact form inputs and emails. The form also has required fields to ensure users include all necessary information.</p>
+                                <p>My main takeaways from this project are a stronger understanding of conditional rendering in PHP and how to implement the PHP Mailer class. I reused the code to implement my own contact form below. Check it out down below or on my GitHub.</p>
+                            </div>
+                            <div class="ftr">
+                                <div class="skills">
+                                    <h4>Skills: HTML, CSS, JS, PHP</h4>
+                                </div>
+                                <div class="links">
+                                    <div class="web-link">
+                                        <a href="https://contact.michellecheung.net/index.php" title="link to contact page demo">
+                                            <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
+                                        </a>
+                                    </div>
+                                    <div class="git-link">
+                                        <a href="" title="link to Study Buddy Github">
+                                            <i class="icon fa-brands fa-github fa-xl"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="about" class="about">
