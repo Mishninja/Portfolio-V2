@@ -9,7 +9,7 @@
 
 @mixin card-grid-lg ($title) {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
     grid-template-rows: [first] $title [line2] auto [line2] auto [line3] $title [end];
 }

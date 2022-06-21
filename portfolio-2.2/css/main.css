@@ -110,7 +110,7 @@ section {
   color: #E8E7E2;
   position: relative;
   text-align: center;
-  padding: 2.5rem;
+  padding: 2.5rem 0;
 }
 .header .gn-trigger {
   position: relative;
@@ -217,8 +217,9 @@ header.header-up {
   border: 2px solid #566A68;
   background-color: #566A68;
   position: absolute;
-  padding: 1.5rem 2.5rem;
-  border-radius: 79% 21% 73% 27% / 50% 72% 28% 50%;
+  padding: 1rem 3.5rem;
+  border-top-left-radius: 20% 70%;
+  border-bottom-right-radius: 20% 70%;
   transition: all 0.3s ease-in-out;
 }
 
@@ -248,10 +249,11 @@ header.header-up {
   justify-content: center;
   align-items: center;
 }
+.work .card .display-vid .image {
+  display: block;
+}
 .work .card .display-vid .vid {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
+  display: none;
 }
 .work .card .accordion-btn {
   cursor: pointer;
@@ -459,10 +461,11 @@ header.header-up {
 .form-container .form input[type=submit] {
   cursor: pointer;
   width: 20%;
-  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  padding: 1rem 3.5rem;
+  border-top-left-radius: 20% 70%;
+  border-bottom-right-radius: 20% 70%;
   font-size: 1.4rem;
   min-width: 7.5rem;
-  padding: 1rem 2rem;
   margin: 2rem auto;
   border: 2px solid #E8E7E2;
   background: #E8E7E2;
@@ -472,6 +475,9 @@ header.header-up {
 .form-container .form input[type=submit]:disabled {
   background-color: #ccc;
   color: #fff;
+  padding: 1rem 3.5rem;
+  border-top-left-radius: 20% 70%;
+  border-bottom-right-radius: 20% 70%;
   cursor: default;
 }
 .form-container .form textarea {
@@ -492,8 +498,9 @@ header.header-up {
   margin: 2rem auto;
 }
 .form-container .btn a {
-  padding: 1rem 2rem;
-  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  padding: 1rem 3.5rem;
+  border-top-left-radius: 20% 70%;
+  border-bottom-right-radius: 20% 70%;
   font-size: 1.4rem;
   margin: 0 auto;
   border: 2px solid #E8E7E2;
