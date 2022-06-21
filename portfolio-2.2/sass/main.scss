@@ -231,7 +231,8 @@ header.header-up {
                 background-color: $primary-color;
                 position: absolute;
                 padding: 1.5rem 2.5rem;
-                border-radius: 79% 21% 73% 27% / 50% 72% 28% 50%;
+                // border-radius: 79% 21% 73% 27% / 50% 72% 28% 50%;
+                border-radius: 50% 50% 50% 50% / 25% 75% 25% 75%;
                 transition: all 0.3s ease-in-out;
             }
         }     
@@ -259,10 +260,11 @@ header.header-up {
              min-height: 40vh;
              background-color: $primary-color;
              @include flex(flex, center, center);
+            .image {
+                display: block;
+            }
              .vid {
-                 width: 100%;
-                 height: auto;
-                 margin: 0 auto;
+                display: none;
              }
          }
          .accordion-btn{ 
@@ -516,7 +518,7 @@ header.header-up {
         margin: 2rem auto;
         a {
             padding: 1rem 2rem;
-            border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+            border-radius: 25% 75% 25% 75% / 50% 50% 50% 50% ;
             font-size: 1.4rem;
             margin: 0 auto;
             border: 2px solid $secondary-color;

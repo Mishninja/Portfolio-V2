@@ -218,7 +218,7 @@ header.header-up {
   background-color: #566A68;
   position: absolute;
   padding: 1.5rem 2.5rem;
-  border-radius: 79% 21% 73% 27% / 50% 72% 28% 50%;
+  border-radius: 50% 50% 50% 50% / 25% 75% 25% 75%;
   transition: all 0.3s ease-in-out;
 }
 
@@ -248,10 +248,11 @@ header.header-up {
   justify-content: center;
   align-items: center;
 }
+.work .card .display-vid .image {
+  display: block;
+}
 .work .card .display-vid .vid {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
+  display: none;
 }
 .work .card .accordion-btn {
   cursor: pointer;
@@ -493,7 +494,7 @@ header.header-up {
 }
 .form-container .btn a {
   padding: 1rem 2rem;
-  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  border-radius: 25% 75% 25% 75%/50% 50% 50% 50%;
   font-size: 1.4rem;
   margin: 0 auto;
   border: 2px solid #E8E7E2;
@@ -664,34 +665,49 @@ header.header-up {
   .work h2 {
     color: #E8E7E2;
   }
+  .work .reverse {
+    flex-direction: row-reverse;
+  }
   .work .card {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
-    grid-template-rows: [first] 10% [line2] auto [line2] auto [line3] 10% [end];
-    margin: 5.5rem auto;
+    display: flex;
   }
   .work .card h3 {
     text-align: left;
     color: #E8E7E2;
   }
+  .work .card .text {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    grid-template-rows: [first] 10% [line2] auto [line2] auto [line3] 10% [end];
+    margin: 5.5rem auto;
+    flex-basis: 50%;
+  }
   .work .card .display-vid {
-    grid-column: 1 / 7;
-    grid-row: 1 / 4;
+    flex-basis: 50%;
+  }
+  .work .card .display-vid .image {
+    display: none;
+  }
+  .work .card .display-vid .vid {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
   .work .card .accordion-btn {
     cursor: auto;
-    text-align: center;
+    padding: 2rem 0;
     background-color: transparent;
     box-shadow: none;
-    grid-column: 6 / 12;
+    grid-column: 2 / 6;
     grid-row: 1 / 2;
   }
   .work .card .accordion-btn .icon {
     display: none;
   }
   .work .card .content {
-    grid-column: 7 / 13;
+    grid-column: 1 / 7;
     grid-row: 2 / 4;
     background-color: transparent;
     box-shadow: none;

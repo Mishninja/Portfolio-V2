@@ -130,17 +130,6 @@
         .right {
             padding-top: 20rem;
             .cta {
-                // a::before {
-                //     content: "";
-                //     display: block;
-                //     position: absolute;
-                //     width: 11rem;
-                //     height: 4.5rem;
-                //     top: 0;
-                //     right: 0;
-                //     border-radius: 79% 21% 73% 27% / 50% 72% 28% 50%;
-                //     border: 2px solid $primary-color;
-                // }
                 a:hover{
                     color: $primary-color;
                     background-color: transparent;
@@ -155,31 +144,45 @@
         h2 {
                 color: $text-color-wt
             }
+        .reverse {
+                flex-direction: row-reverse;
+            }
         .card {        
-            @include card-grid-lg(10%);
-            margin: 5.5rem auto;
+            display: flex;            
             h3 {
                 text-align: left;
                 color: $text-color-wt
                 }
+            .text {
+                @include card-grid-lg(10%);
+                margin: 5.5rem auto;
+                flex-basis: 50%;
+            }
             .display-vid {
-                    grid-column: 1 / 7;
-                    grid-row: 1 / 4;
+                    flex-basis: 50%;
+                    .image{
+                        display: none;
+                    }
+                    .vid {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                    }
                 }
             .accordion-btn{
                 cursor: auto;
-                text-align: center;
+                padding: 2rem 0;
                 background-color: transparent;
                 box-shadow: none;
-                grid-column: 6 / 12;
+                grid-column: 2 / 6;
                 grid-row: 1 / 2;
                 .icon {
                     display: none;
                 }
-                
             }            
             .content {
-                grid-column: 7 / 13;
+                grid-column: 1 / 7;
                 grid-row: 2 / 4;
                 background-color: transparent;
                 box-shadow: none;
