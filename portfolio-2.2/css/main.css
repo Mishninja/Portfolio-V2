@@ -266,6 +266,7 @@ header.header-up {
 .work .card .content {
   display: none;
   background-color: #F2F7F5;
+  color: #004643;
 }
 .work .card .content .description {
   margin: 0 auto;
@@ -312,15 +313,12 @@ header.header-up {
 .about .about-me .img {
   width: 70%;
   position: relative;
-  background-color: #004643;
-  border: solid #004643 2px;
   margin-bottom: 4rem;
-  border-radius: 29% 71% 48% 52% / 50% 50% 50% 50%;
 }
 .about .about-me .img img {
   width: 100%;
   margin: 0 auto;
-  clip-path: circle(50%);
+  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
 }
 .about .about-me .img::after {
   position: absolute;
@@ -329,8 +327,8 @@ header.header-up {
   content: "";
   width: 100%;
   height: 100%;
-  border: 2px #004643 solid;
-  transform: rotate(-45deg);
+  border: 3px #FFA8BA solid;
+  transform: rotate(0deg);
   border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
 }
 .about .about-me .img::before {
@@ -340,38 +338,49 @@ header.header-up {
   content: "";
   width: 100%;
   height: 100%;
-  border: 2px #004643 solid;
-  border-radius: 53% 83% 98% 57% / 38% 50% 55% 65%;
-  transform: rotate(45deg);
+  border: 3px #FFA8BA solid;
+  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  transform: rotate(-25deg);
 }
-.about .get-to-know {
-  width: 80%;
+.about .game {
+  width: 85%;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 5rem 2rem;
+  border-radius: 0.5rem;
+  border: 0.6rem solid #FFA8BA;
   background-color: #004643;
   color: #F2F7F5;
   text-align: center;
+  box-shadow: -20px 20px 10px -6px rgba(20, 20, 20, 0.2);
 }
-.about .get-to-know h3 {
+.about .game h3 {
   font-size: 2.4rem;
   margin-bottom: 2.5rem;
 }
-.about .get-to-know .terms {
-  width: 50%;
-  margin: 3rem auto;
+.about .game p {
+  margin-top: 2rem;
 }
-.about .get-to-know .terms .tile {
-  text-align: center;
-  padding: 1.5rem;
-  border: 1px solid #F2F7F5;
-  border-radius: 62% 38% 39% 61% / 25% 55% 45% 75%;
-  margin: 2rem;
+.about .game .instructions-desk {
+  display: none;
 }
-.about .get-to-know .terms .tile.rev {
-  border-radius: 75% 25% 83% 17% / 61% 77% 23% 39%;
+.about .game .container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.about .game .container .droppable {
+  display: none;
+}
+.about .game .container .word-bank {
+  width: 80%;
+}
+.about .game .container .word-bank .draggable-item {
+  border-radius: 0.4rem;
+  border: 0.1rem solid #F2F7F5;
+  padding: 2rem 2rem;
+  margin-bottom: 1.5rem;
 }
 
-/*===== About =====*/
 /*===== Connect =====*/
 .connect-container {
   max-width: 60%;
@@ -397,7 +406,7 @@ header.header-up {
   content: "";
   width: 100%;
   height: 100%;
-  border: 2px #004643 solid;
+  border: 3px #FFA8BA solid;
   border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
 }
 .connect-container .image {
@@ -455,13 +464,14 @@ header.header-up {
 .form-container .form input[type=submit] {
   cursor: pointer;
   width: 20%;
+  min-width: 10.7rem;
   padding: 1rem 3.5rem;
   border-top-left-radius: 20% 70%;
   border-bottom-right-radius: 20% 70%;
   font-size: 1.4rem;
   min-width: 7.5rem;
   margin: 2rem auto;
-  border: 2px solid #F2F7F5;
+  border: 2px solid #FFA8BA;
   background: #F2F7F5;
   color: #004643;
   transition: all 0.3s ease-in-out;
@@ -473,6 +483,7 @@ header.header-up {
   border-top-left-radius: 20% 70%;
   border-bottom-right-radius: 20% 70%;
   cursor: default;
+  min-width: 10.7rem;
 }
 .form-container .form textarea {
   width: 80%;

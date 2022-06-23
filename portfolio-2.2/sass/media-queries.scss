@@ -12,7 +12,7 @@
 @media (min-width: 800px) {
     .about {
         .about-me {
-            max-width: 775px;
+            max-width: 1000px;
         }
         .get-to-know {
             max-width: 775px;
@@ -211,6 +211,72 @@
                 }
             }
         }
+    }
+
+    /* ===== About ===== */
+    .about {
+        .about-me {
+            flex-direction: row;
+            .img, .content {
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+            .img {
+                padding: 2rem 3rem;
+            }
+        }
+        .game {
+        width: 85%;
+        margin: 0 auto;
+        padding: 5rem 2rem;
+        border-radius: 0.5rem;
+        border: 0.6rem solid $accent-color;
+        background-color: $primary-color;
+        color: $secondary-color;
+        text-align: center;
+        box-shadow: -20px 20px 10px -6px rgba(20, 20, 20, 0.2);
+        h3 {
+            font-size: 2.4rem;
+            margin-bottom: 2.5rem;
+        }
+        p {
+            margin-top: 2rem;
+        }
+        .instructions-desk {
+            display: block;
+        }
+        .container {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+            .droppable {
+                display: block;
+            }
+            .holder {
+                flex-basis: 33.33333333%;
+                margin: 0 1rem;
+                border-radius: 0.4rem;
+                border: 0.5rem solid $secondary-color;
+            }
+            .word-bank {                
+                .draggable-item {
+                    border-radius: 0.4rem;
+                    border: 0.1rem solid $secondary-color;
+                    padding: 1rem 2rem;
+                }
+            }
+            //if user puts like item in dislike droppable area, background becomes pink
+            .dislike .like-item {
+                background: $accent-color;
+            } 
+            .dislike .like-item {
+                background: $accent-color;
+            } 
+        }
+        
+        
+        
+    }
     }
 
     /* ===== Connect ===== */
