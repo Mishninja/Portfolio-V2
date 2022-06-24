@@ -29,11 +29,11 @@
     <header class="header">
         <div class="logo">
             <a class="logo-link" href="index.html" title="Home Page">
-                <img src="images/logo-white.svg" alt="Logo">
+                <img src="images/logo-pink-white.svg" alt="Logo" loading="lazy">
             </a>
         </div>
         <button class="gn-trigger">
-            <div class="burger"></div>
+            <div class="burger"><i class="fa-solid fa-chevron-down icon"></i></i></div>
         </button>
         <nav class="gn">
             <ul class="gn-items">
@@ -45,12 +45,6 @@
     </header>
     <main class="main">
         <section class="bnr bg-repeat">
-            <div class="left col">
-                <div><img class="birds" src="images/birdline-teal.png"></div>
-                <div><img class="birds-even" src="images/birdline-teal.png"></div>
-                <div><img class="birds" src="images/birdline-teal.png"></div>
-                <div><img class="birds-even" src="images/birdline-teal.png"></div>
-            </div>
             <div class="right col">
                 <h1>Michelle Cheung</h1>
                 <h3> Creativity meets efficient problem solving</h3>
@@ -59,49 +53,52 @@
                     <a href="#about" title="About section">About Me</a>
                 </div>
             </div>
+            <div class="left col">
+                <img src="images/bnr-img.svg" alt="Peace sign illustration">
+            </div>
         </section>
         <section id="work" class="work">
             <h2 class="section-heading">Work</h2>
             <div class="container">
                 <div class="card">
                     <div class="display-vid">
-                        <img class="image" src="images/studybuddy/study-buddy-mock.jpg" alt="Study Buddy Mock Up" loading="lazy">
-                        <video autoplay loop class="vid" poster="images/studybuddy/study-buddy-mock.jpg">
-                            <source src="media/studybuddy/study-buddy-video.mp4" type="video/mp4">
+                        <img class="image" src="images/studybuddy/study-buddy-mock.png" alt="Study Buddy Mock Up" loading="lazy">
+                        <video autoplay loop class="vid" poster="images/studybuddy/study-buddy-mock.png">
+                            <source src="media/studybuddy/study-buddy-video.webm" type="video/mp4">
                             "Sorry your browser does not support video."
                         </video>
                     </div>
-                    <div class="text">
+                    <div class="content-wrapper">
                         <div class="accordion-btn">
                             <h3>Study Buddy Flashcards</h3>
                             <i class="fa-solid fa-chevron-down icon"></i>
                         </div>
                         <div class="content">
                             <div class="description">
-                                <div class="blurb">
-                                    <p>A simple web app that allows you to make flashcards for studying. This project was a steep learning curve
-                                        for me; however, after completing it, I am now familiar with concepts such as Object Oriented
-                                        Programming, JSON objects, and sessions.</p>
-                                    <p>I stored each question as a JSON object in local storage using JSON.stringify(). Each object had an id,
-                                        question, and answer property. Each time a new question is added, a new instantiation of the question
-                                        object is created and is dynamically added to the page.</p>
+                                <h4 class="heading">Description</h4>
+                                <p>A flash card web app for studying. This web page was built using an object oriented approach and uses local storage, JSON and sessions.</p>
+                                <h4 class="heading">Tools</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <h4 class="heading">Takeaways</h4>
+                                <ul>
+                                    <li>Learned Object Oriented Programming in JS.</li>
+                                    <li>Allowed me to practice my HTML, CSS and JavaScript.</li>
+                                </ul>
+                            </div>
+                            <div class="ftr">
+                                <div class="web-link">
+                                    <a href="https://studybuddy.michellecheung.net/" title="link to Study Buddy web app" target="_blank">
+                                        <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
+                                    </a>
                                 </div>
-                                <div class="ftr">
-                                    <div class="skills">
-                                        <h4>Skills: HTML, CSS, JS</h4>
-                                    </div>
-                                    <div class="links">
-                                        <div class="web-link">
-                                            <a href="https://studybuddy.michellecheung.net/" title="link to Study Buddy web app" target="_blank">
-                                                <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
-                                            </a>
-                                        </div>
-                                        <div class="git-link">
-                                            <a href="https://github.com/Mishninja/Study-Buddy-Flashcards" title="link to Study Buddy Github" target="_blank">
-                                                <i class="icon fa-brands fa-github fa-xl"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div class="git-link">
+                                    <a href="https://github.com/Mishninja/Study-Buddy-Flashcards" title="link to Study Buddy Github" target="_blank">
+                                        <i class="icon fa-brands fa-github fa-xl"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -111,41 +108,43 @@
                     <div class="display-vid">
                         <img class="image" src="images/contactform/contac-form-mock.png" alt="Contact Form Mock Up" loading="lazy">
                         <video autoplay loop class="vid" poster="images/contactform/contac-form-mock.png">
-                            <source src="media/contactform/contact-form-mock.mp4" type="video/mp4">
+                            <source src="media/contactform/contact-page-video.webm" type="video/mp4">
                             "Sorry your browser does not support video."
                         </video>
                     </div>
-                    <div class="text">
+                    <div class="content-wrapper">
                         <div class="accordion-btn">
                             <h3>PHP Contact Form</h3>
                             <i class="fa-solid fa-chevron-down icon"></i>
                         </div>
                         <div class="content">
                             <div class="description">
-                                <div class="blurb">
-                                    <p>A reusable contact form for a portfolio or a local business. This contact form uses the PHPMailer class
-                                        and Google reCaptcha to safely handle contact form inputs and emails. The form also has required fields
-                                        to ensure users include all necessary information.</p>
-                                    <p>My main takeaways from this project are a stronger understanding of conditional rendering in PHP and how
-                                        to implement the PHP Mailer class. I reused the code to implement my own contact form below. Check it
-                                        out down below or on my GitHub.</p>
+                                <h4 class="heading">Description</h4>
+                                <p>A reusable contact form for a portfpo or a local business. This contact form uses the PHPMailer class and Google reCaptcha to safely handle contact form inputs and emails. The form also has required fields to ensure users include all necessary information.</p>
+                                <h4 class="heading">Tools</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>PHPMailer</li>
+                                    <li>Google reCaptcha</li>
+                                </ul>
+                                <h4 class="heading">Takeaways</h4>
+                                <ul>
+                                    <li>Became more familiar with conditional rendering in PHP.</li>
+                                    <li>Practiced reading documentation to implement something new.</li>
+                                </ul>
+                            </div>
+                            <div class="ftr">
+                                <div class="web-link">
+                                    <a href="https://contact.michellecheung.net/index.php" title="link to contact page demo" target="_blank">
+                                        <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
+                                    </a>
                                 </div>
-                                <div class="ftr">
-                                    <div class="skills">
-                                        <h4>Skills: HTML, CSS, JS, PHP</h4>
-                                    </div>
-                                    <div class="links">
-                                        <div class="web-link">
-                                            <a href="https://contact.michellecheung.net/index.php" title="link to contact page demo" target="_blank">
-                                                <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
-                                            </a>
-                                        </div>
-                                        <div class="git-link">
-                                            <a href="https://github.com/Mishninja/Contact-Form" title="link to contact form on Github" target="_blank">
-                                                <i class="icon fa-brands fa-github fa-xl"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div class="git-link">
+                                    <a href="https://github.com/Mishninja/Contact-Form" title="link to contact form on Github" target="_blank">
+                                        <i class="icon fa-brands fa-github fa-xl"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -155,31 +154,38 @@
                     <div class="display-vid">
                         <img class="image" loading="lazy" src="images/supu/supu-mockup.png" alt="Supu onboarding screen">
                         <video class="vid" autoplay loop class="vid" poster="images/supu/supu-mockup.png" loading>
-                            <source src="media/supu/supu-mock.mp4" type="video/mp4">
+                            <source src="media/supu/supu-video.webm" type="video/mp4">
                             "Sorry your browser does not support video."
                         </video>
                     </div>
-                    <div class="text">
+                    <div class="content-wrapper">
                         <div class="accordion-btn">
                             <h3>SUPU Prototype</h3>
                             <i class="fa-solid fa-chevron-down icon"></i>
                         </div>
                         <div class="content">
                             <div class="description">
-                                <div class="blurb">
-                                    <p>SUPU is an fictional noodle restaurant for which I created a prototype app for online ordering. The project was created on Figma and applies several UI/UX design principles, such as the law of easing, law of context, and law of feedback. This project introduced me to the powerful prototyping and design capabilities of Figma such as components, grids, and variants.</p>
-                                    <p>Logo Design: <a href="https://anitalam.ca/" title="Anita's portfolio" target="_blank">Anita Lam</a></p>
-                                </div>
-                                <div class="ftr">
-                                    <div class="skills">
-                                        <h4>Skills: Figma, UI/UX, Design principles</h4>
-                                    </div>
-                                    <div class="links">
-                                        <div class="web-link">
-                                            <a href="https://www.figma.com/proto/vxwNdOycT3XDnZA1CF7ubA/SUPU-prototype?node-id=2%3A2&starting-point-node-id=2%3A2&scaling=scale-down" title="link to Figma prototype" target="_blank">
-                                                <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
-                                            </a>
-                                        </div>
+                                <h4 class="heading">Description</h4>
+                                <p>SUPU is an fictional noodle restaurant for which I created a prototype app for online ordering.</p>
+                                <p>Logo Design: <a href="https://anitalam.ca/" title="Anita's portfolio" target="_blank">Anita Lam</a></p>
+                                <h4 class="heading">Tools</h4>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>UI/UX</li>
+                                    <li>Design Principles</li>
+                                </ul>
+                                <h4 class="heading">Takeaways</h4>
+                                <ul>
+                                    <li>Application of UI/UX laws such as law of easing, law of context, and law of feedback.</li>
+                                    <li>Familiarizing myself with Figma prototyping tools such as variants, components and grids.</li>
+                                </ul>
+                            </div>
+                            <div class="ftr">
+                                <div class="links">
+                                    <div class="web-link">
+                                        <a href="https://www.figma.com/proto/vxwNdOycT3XDnZA1CF7ubA/SUPU-prototype?node-id=2%3A2&starting-point-node-id=2%3A2&scaling=scale-down" title="link to Figma prototype" target="_blank">
+                                            <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

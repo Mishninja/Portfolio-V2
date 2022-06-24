@@ -14,6 +14,7 @@
 @media (min-width: 992px) {
     .header {
         justify-content: center;
+        border-bottom: solid 3px $secondary-color;
         .gn-trigger {
             display: none;
         }
@@ -21,6 +22,7 @@
         .gn {
             display: block !important;
             position: static;
+            border-bottom: none;
         }
 
         .gn-items {
@@ -35,20 +37,14 @@
             border-bottom: none;
             font-weight: 400;
             a {
-                padding: 0.5rem 2rem;
                 border: 3px solid $primary-color;
             }
         }
         .gn-items li:hover a{
             width: 100%;
             height: 0%;
-            background-color: $accent-color;
-            border-top-right-radius: 30% 70%;
-            border-top-left-radius: 30% 70%;
-            border-bottom-right-radius: 30% 70%;
-            border-bottom-left-radius: 30% 70%;
-            border: 3px solid $secondary-color;
-            color: $primary-color;
+            border-radius: 0.4rem;
+            border-bottom: 3px solid $accent-color;
             font-weight: 600;
         }
         .gn-items li:hover:before,
@@ -117,21 +113,7 @@
                 flex-basis: 40%;
                 border: 4px solid $accent-color;
                 border-radius: 0.4rem;
-
-                
-                border-radius: 4px;
             }
-            // .content-wrapper::before {
-            //     content: "";
-            //     width: 100%;
-            //     height: 100%;
-            //     border: 4px solid $secondary-color;
-            //     border-radius: 0.4rem;
-            //     position: absolute;
-            //     top: 2rem;
-            //     right: -2rem;
-            //     z-index: -1;
-            // }
             .display-vid {
                     flex-basis: 60%;
                     .image{
@@ -182,8 +164,16 @@
                     li {
                         list-style-type: circle;
                     }
+                    a {
+                        color: $accent-color;
+                    }
                 }
-                
+                .ftr {
+                    padding: 4rem 0 0;
+                    .icon {
+                        color: $accent-color;
+                    }
+                }                
                 
             }
         }
@@ -196,6 +186,7 @@
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             column-gap: 2rem;
+            padding: 0 4.5rem;
             .img {
                 width: 100%;
                 padding: 2rem 3rem;
@@ -317,7 +308,6 @@
                 margin-top: 0;
                 display: block;
                 .fa-brands {
-                    color: $secondary-color;
                     font-size: 2.5rem;
                     margin-left: 2rem;
                 }

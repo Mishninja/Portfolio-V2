@@ -82,7 +82,7 @@ section {
   /*===== Burger Menu =====*/
 }
 .header .logo img {
-  width: 6rem;
+  width: 4rem;
   padding-left: 1rem;
 }
 .header .gn {
@@ -92,6 +92,7 @@ section {
   left: 0;
   color: #F2F7F5;
   background-color: #004643;
+  border-bottom: solid 3px #F2F7F5;
   width: 100%;
 }
 .header .gn a {
@@ -293,15 +294,20 @@ header.header-up {
 .work .card .content .description ul {
   margin-bottom: 3rem;
 }
+.work .card .content .description a {
+  color: #004643;
+}
 .work .card .content .ftr {
   display: flex;
   justify-content: center;
+  padding: 5rem 0;
 }
 .work .card .content .ftr .git-link {
   margin-left: 1.5rem;
 }
 .work .card .content .ftr .icon {
-  color: #FFA8BA;
+  font-size: 3rem;
+  color: #004643;
 }
 
 /*===== About =====*/
@@ -314,23 +320,22 @@ header.header-up {
   align-items: center;
   width: 70%;
   margin: 5rem auto;
-  padding: 0 4.5rem;
+  padding: 0 4.5rem 7rem;
 }
 .about .panel .img {
   width: 100%;
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
+  filter: drop-shadow(-17px 15px 3px #f2f7f550);
 }
 .about .panel .img img {
   width: 80%;
   border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  border: 6px solid #FFA8BA;
 }
 .about .panel .img.me {
-  background-image: url(../images/about/about-bg1.svg);
-}
-.about .panel .img.cat {
-  background-image: url(../images/about/about-bg2.svg);
+  filter: drop-shadow(15px 5px 3px #f2f7f550);
 }
 .about .game {
   width: 85%;
@@ -515,7 +520,7 @@ header.header-up {
 
 .footer {
   background-color: #004643;
-  color: #F2F7F5;
+  color: #FFA8BA;
   padding: 2rem;
   margin: 0 auto;
 }

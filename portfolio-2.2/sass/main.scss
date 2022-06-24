@@ -71,10 +71,9 @@ section {
     padding: 1.5rem;
     background-color: $primary-color;
     transition: top .3s ease-in-out;
-
     .logo {
         img {
-            width: 6rem;
+            width: 4rem;
             padding-left: 1rem;
         }
     }
@@ -86,6 +85,7 @@ section {
         left: 0;
         color: $text-color-lt;
         background-color: $primary-color;
+        border-bottom: solid 3px $secondary-color;
         width: 100%;
         a {
             color: $secondary-color;
@@ -247,7 +247,7 @@ header.header-up {
             }
              .vid {
                 display: none;
-                filter:drop-shadow(-17px 15px 3px #f2f7f550);
+                filter: drop-shadow(-17px 15px 3px #f2f7f550);
              }
          }
          .accordion-btn{ 
@@ -274,7 +274,7 @@ header.header-up {
         .content {
             display: none;
             background-color: $secondary-color;
-            color: $text-color-dk;
+            color: $text-color-dk;            
             .description {
                 margin: 0 auto;
                 width: 80%;
@@ -285,20 +285,21 @@ header.header-up {
                 }
                 ul {
                     margin-bottom: 3rem;
-                }
-                // box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
-                // -webkit-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
-                // -moz-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
-                
+                } 
+                a{
+                    color: $primary-color;
+                }               
              }
             .ftr {
                 display: flex;
                 justify-content: center;
+                padding: 5rem 0;
                 .git-link {
                         margin-left: 1.5rem;
                     }
                 .icon {
-                    color: $accent-color;
+                    font-size: 3rem;
+                    color: $primary-color;
                 }
             }
              
@@ -316,22 +317,21 @@ header.header-up {
         align-items: center;
         width: 70%;
         margin: 5rem auto;
-        padding: 0 4.5rem;
+        padding: 0 4.5rem 7rem;
         .img {
             width: 100%;
             margin-bottom: 4rem;
             display: flex;
-             justify-content: center;
+            justify-content: center;
+            filter: drop-shadow(-17px 15px 3px #f2f7f550);
             img {
                 width: 80%;
                 border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+                border: 6px solid $accent-color;
             }
         }
         .img.me {
-            background-image: url(../images/about/about-bg1.svg);
-        }
-        .img.cat {
-            background-image: url(../images/about/about-bg2.svg);
+            filter: drop-shadow(15px 5px 3px #f2f7f550);
         }
     }
     .game {
@@ -535,7 +535,7 @@ header.header-up {
 
 .footer {
     background-color: $primary-color;
-    color: $secondary-color;
+    color: $accent-color;
     padding: 2rem;
     margin: 0 auto;
     .content {        
