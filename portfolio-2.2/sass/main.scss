@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 @import url("https://use.typekit.net/mus6lse.css");
+@import url("https://use.typekit.net/mus6lse.css");
 @import 'mixins', 'variables';
 
 
@@ -16,7 +17,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.4;
     font-weight: 400;
-    color: $text-color-dk;
+    color: $text-color-lt;
     background-color: $secondary-color;
     overflow-x: hidden;
 }
@@ -31,7 +32,7 @@ img {
 }
 
 section {
-    margin-top: 7rem;
+    padding-top: 9rem;
 }
 
 .row-rev {
@@ -41,7 +42,7 @@ section {
 .bg-repeat {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 .section-heading {
@@ -67,13 +68,13 @@ section {
     left: 0;
     z-index: 999;
     will-change: top;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
     background-color: $primary-color;
     transition: top .3s ease-in-out;
 
     .logo {
         img {
-            width: 4rem;
+            width: 6rem;
             padding-left: 1rem;
         }
     }
@@ -83,7 +84,7 @@ section {
         position: absolute;
         top: 4.5rem;
         left: 0;
-        color: $text-color-wt;
+        color: $text-color-lt;
         background-color: $primary-color;
         width: 100%;
         a {
@@ -139,51 +140,6 @@ section {
         transition: all 0.3s ease-in-out;
     }
 
-    // .burger:before,
-    // .burger:after {
-    //     content: '';
-    //     display: block;
-    //     position: absolute;
-    //     background: $secondary-color;
-    //     width: 1.8rem;
-    //     height: .3rem;
-    //     top: -1.7rem;
-    // }
-
-    // .burger:before {
-    //     right: 4.2rem;
-    //     top: 1.3rem;
-    //     transform: rotate(35deg);
-    // }
-
-    // .burger:after {
-    //     left: .4rem;
-    //     transform: rotate(-35deg);
-    //     top: 1.3rem;
-    // }
-
-    // .burger,
-    // .burger::before,
-    // .burger::after {
-    //     /* transition-property: transform, top, background;
-    //     transition-duration: 0.35s; */
-    //     transition: all 0.25s linear;
-    // }
-
-    // .gn-trigger.is-active .burger:before {
-    //     right: 3.4rem;
-    //     width: 2.2rem;
-    //     height: .3rem;
-    //     transform: rotate(45deg);
-    // }
-
-    // .gn-trigger.is-active .burger:after {
-    //     left: -0.6rem;
-    //     width: 2.2rem;
-    //     height: .3rem;
-    //     transform: rotate(-45deg);
-    // }
-
     .gn-trigger.is-active,
     .burger {
         transition: all 0.25s linear;
@@ -198,7 +154,7 @@ header.header-up {
 
 /*===== Main =====*/
 .main {
-    background-color: $secondary-color;
+    background-color: $primary-color;
 }
 
 /*===== Homepage Banner =====*/
@@ -208,12 +164,14 @@ header.header-up {
     height: 60vh;
     margin: 5rem auto;
     padding: 11rem 0 0;
-    background-color: $secondary-color;
-    background-image: url(../images/banner-bg.png);
     background-position-y: top;
     overflow: hidden;
     .left {
-            display: none;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 70%;
+        }
         }
 
     .right {
@@ -239,9 +197,10 @@ header.header-up {
         .cta {
             @include flex(flex,center,center);
             a {
-                color: $secondary-color;
-                border: 2px solid $primary-color;
-                background-color: $primary-color;
+                color: $primary-color;
+                font-weight: 600;
+                border: 3px solid $secondary-color;
+                background-color: $accent-color;
                 position: absolute;
                 padding: 1rem 3.5rem;
                 border-top-left-radius: 20% 70%;
@@ -257,7 +216,7 @@ header.header-up {
     padding-top: 5rem;
     margin-top: 0;
     background-color: $primary-color;
-    color: $secondary-color;
+    color: $text-color-dk;
     .container {
         width: 100%;
         margin: 0 auto;
@@ -351,38 +310,21 @@ header.header-up {
         margin: 5rem auto;
         padding: 0 4.5rem;
         .img {
-            position: relative;
+            width: 100%;
             margin-bottom: 4rem;
-            img{
-                width: 100%;
-                margin: 0 auto;
+            display: flex;
+             justify-content: center;
+            img {
+                width: 80%;
                 border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
             }
         }
-        
-        // .img::after {
-        //     position: absolute;
-        //     bottom: -1.5rem;
-        //     left: 0;
-        //     content:"";
-        //     width: 95%;
-        //     height: 95%;
-        //     border: 3px $accent-color solid;
-        //     transform: rotate(0deg);
-        //     border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
-        // }
-        // .img::before {
-        //     position: absolute;
-        //     bottom: -1rem;
-        //     left: 0;
-        //     content:"";
-        //     width: 95%;
-        //     height: 95%;
-        //     border: 3px $accent-color solid;
-        //     border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
-        //     transform: rotate(-25deg);
-        // }
-        
+        .img.me {
+            background-image: url(../images/about/about-bg1.svg);
+        }
+        .img.cat {
+            background-image: url(../images/about/about-bg2.svg);
+        }
     }
     .game {
         width: 85%;
@@ -431,145 +373,150 @@ header.header-up {
 
 
 /*===== Connect =====*/
-
-.connect-container {
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 2rem 3rem 12rem;
-    @include flex(flex, center, center);
-    flex-direction: column-reverse;
-    position: relative;
-    text-align: center;
-    .content {
-        .sec-header {
-            font-size: 3.6rem;
-            margin-bottom: 2.5rem;
-        }
-        p {
-            font-size: 2rem;
-        }
-    }
-    
-    .image::after,.image::before {
-        position: absolute;
-        left: 0;
-        content:"";
-        width: 100%;
-        height: 100%;
-        border: 3px $accent-color solid;
-        border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
-    }
-    .image {
-        width: 100%;
-        position: relative;
-        margin: 3rem 0;
-    }
-    .image::before {
-        bottom: -1rem;
-        transform: rotate(180deg);
-    }
-    .image::before {
-        bottom: 1.5rem;
-        transform: rotate(4deg);
-    }
-    img {
-        width: 100%;
-        border-radius:59% 41% 45% 55% / 30% 40% 60% 70%; 
-    }
-    // recolor triangle
-    .triangle {
-        position: absolute;
-        bottom: -14rem;
-        width: 15rem;
-        height: 20rem;
-        background-image: url(../images/connect/triangle.svg);
-        border-radius: 1.5rem;
-        z-index: 10;
-    } 
-    
-}
-
-
-
-.form-container {
-    background-color: $primary-color;
-    padding-top: 20rem;
-    padding-bottom: 6rem;
-    .error-msg {
-        color: $secondary-color;
-        text-align: center;
-    }
-    .form {
-        width: 80%;
+.connect {
+    background-color: $secondary-color;
+    color: $text-color-dk;
+    .connect-container {
+        max-width: 60%;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        min-width: 25rem;
-        max-width: 60rem;
-        input[type = text],
-        input[type = email],
-        input[type = subject]{
-            width: 80%;            
-            margin: 0.5rem auto;
-            border-radius: 2rem;
-            @extend .form-style;
-            background-color: $secondary-color;
+        padding: 2rem 3rem 12rem;
+        @include flex(flex, center, center);
+        flex-direction: column-reverse;
+        position: relative;
+        text-align: center;
+        .content {
+            .sec-header {
+                font-size: 3.6rem;
+                font-weight: 500;
+                margin-bottom: 2.5rem;
+                font-family: $heading-font;
+            }
+            p {
+                font-size: 2rem;
+            }
         }
-
-        input[type = submit] {
-            cursor: pointer;            
-            width: 20%;
-            min-width: 10.7rem;
-            padding: 1rem 3.5rem;
-            border-top-left-radius: 20% 70%;
-            border-bottom-right-radius: 20% 70%;
-            font-size: 1.4rem;
-            min-width: 7.5rem;
-            margin: 2rem auto;
-            border: 2px solid $accent-color;
-            background: $secondary-color;
-            color: $text-color-dk;
-            transition: all 0.3s ease-in-out;
+        
+        .image::after,.image::before {
+            position: absolute;
+            left: 0;
+            content:"";
+            width: 100%;
+            height: 100%;
+            border: 3px $accent-color solid;
+            border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
         }
-
-        input[type = submit]:disabled {
-            background-color: #ccc;
-            color: #fff;
-            padding: 1rem 3.5rem;
-            border-top-left-radius: 20% 70%;
-            border-bottom-right-radius: 20% 70%;
-            cursor: default;
-            min-width: 10.7rem;
+        .image {
+            width: 100%;
+            position: relative;
+            margin: 3rem 0;
         }
-
-        textarea {
-            width: 80%;
-            resize: none;
-            background-color: $secondary-color;
+        .image::before {
+            bottom: -1rem;
+            transform: rotate(180deg);
+        }
+        .image::before {
+            bottom: 1.5rem;
+            transform: rotate(4deg);
+        }
+        img {
+            width: 100%;
+            border-radius:59% 41% 45% 55% / 30% 40% 60% 70%; 
+        }
+        
+        .triangle {
+            position: absolute;
+            bottom: -14rem;
+            width: 15rem;
+            height: 20rem;
+            background-image: url(../images/connect/triangle.svg);
             border-radius: 1.5rem;
-            padding: 1rem 2rem;
-            font-size: 1.2rem;
-            font-family: $body-font;
-            margin: 0.5rem auto;
-        }
-
-        .g-recaptcha {
-            margin: 2.5rem auto;
-        }
+            z-index: 10;
+        } 
+        
     }
-    .btn {
-        width: 20%;
-        margin: 2rem auto;
-        a {
-            padding: 1rem 3.5rem;
-            border-top-left-radius: 20% 70%;
-            border-bottom-right-radius: 20% 70%;
-            font-size: 1.4rem;
+
+
+
+    .form-container {
+        background-color: $primary-color;
+        padding-top: 20rem;
+        padding-bottom: 6rem;
+        .error-msg {
+            color: $secondary-color;
+            text-align: center;
+        }
+        .form {
+            width: 80%;
             margin: 0 auto;
-            border: 2px solid $secondary-color;
-            background: $secondary-color;
-            color: $text-color-dk;
-            transition: all 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            min-width: 25rem;
+            max-width: 60rem;
+            input[type = text],
+            input[type = email],
+            input[type = subject]{
+                width: 80%;            
+                margin: 0.5rem auto;
+                border-radius: 2rem;
+                @extend .form-style;
+                background-color: $secondary-color;
+            }
+
+            input[type = submit] {
+                cursor: pointer;            
+                width: 20%;
+                min-width: 10.7rem;
+                padding: 1rem 3.5rem;
+                border-top-left-radius: 20% 70%;
+                border-bottom-right-radius: 20% 70%;
+                font-size: 1.4rem;
+                min-width: 7.5rem;
+                margin: 2rem auto;
+                border: 2px solid $accent-color;
+                background: $secondary-color;
+                color: $text-color-dk;
+                transition: all 0.3s ease-in-out;
+            }
+
+            input[type = submit]:disabled {
+                background-color: #ccc;
+                color: #fff;
+                padding: 1rem 3.5rem;
+                border-top-left-radius: 20% 70%;
+                border-bottom-right-radius: 20% 70%;
+                cursor: default;
+                min-width: 10.7rem;
+            }
+
+            textarea {
+                width: 80%;
+                resize: none;
+                background-color: $secondary-color;
+                border-radius: 1.5rem;
+                padding: 1rem 2rem;
+                font-size: 1.2rem;
+                font-family: $body-font;
+                margin: 0.5rem auto;
+            }
+
+            .g-recaptcha {
+                margin: 2.5rem auto;
+            }
+        }
+        .btn {
+            width: 20%;
+            margin: 2rem auto;
+            a {
+                padding: 1rem 3.5rem;
+                border-top-left-radius: 20% 70%;
+                border-bottom-right-radius: 20% 70%;
+                font-size: 1.4rem;
+                margin: 0 auto;
+                border: 2px solid $secondary-color;
+                background: $secondary-color;
+                color: $text-color-dk;
+                transition: all 0.3s ease-in-out;
+            }
         }
     }
 }
@@ -597,6 +544,4 @@ header.header-up {
             display: none;
         }
     }
-
-    
 }

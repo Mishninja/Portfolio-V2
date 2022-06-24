@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 @import url("https://use.typekit.net/mus6lse.css");
-.form-style, .form-container .form input[type=text],
-.form-container .form input[type=email],
-.form-container .form input[type=subject] {
+@import url("https://use.typekit.net/mus6lse.css");
+.form-style, .connect .form-container .form input[type=text],
+.connect .form-container .form input[type=email],
+.connect .form-container .form input[type=subject] {
   border: none;
   padding: 1rem 2rem;
   color: #004643;
@@ -22,7 +23,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
   font-weight: 400;
-  color: #004643;
+  color: #F2F7F5;
   background-color: #F2F7F5;
   overflow-x: hidden;
 }
@@ -37,7 +38,7 @@ img {
 }
 
 section {
-  margin-top: 7rem;
+  padding-top: 9rem;
 }
 
 .row-rev {
@@ -47,12 +48,12 @@ section {
 .bg-repeat {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 .section-heading {
   font-size: 5rem;
-  font-family: kigelia-lgc, sans-serif;
+  font-family: proxima-nova, sans-serif;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -75,13 +76,13 @@ section {
   left: 0;
   z-index: 999;
   will-change: top;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem;
   background-color: #004643;
   transition: top .3s ease-in-out;
   /*===== Burger Menu =====*/
 }
 .header .logo img {
-  width: 4rem;
+  width: 6rem;
   padding-left: 1rem;
 }
 .header .gn {
@@ -153,7 +154,7 @@ header.header-up {
 
 /*===== Main =====*/
 .main {
-  background-color: #F2F7F5;
+  background-color: #004643;
 }
 
 /*===== Homepage Banner =====*/
@@ -162,13 +163,15 @@ header.header-up {
   height: 60vh;
   margin: 5rem auto;
   padding: 11rem 0 0;
-  background-color: #F2F7F5;
-  background-image: url(../images/banner-bg.png);
   background-position-y: top;
   overflow: hidden;
 }
 .bnr .left {
-  display: none;
+  width: 100%;
+  height: 100%;
+}
+.bnr .left img {
+  width: 70%;
 }
 .bnr .right {
   margin-right: 1.5rem;
@@ -177,7 +180,7 @@ header.header-up {
 }
 .bnr .right h1 {
   font-size: 5.6rem;
-  font-family: kigelia-lgc, sans-serif;
+  font-family: proxima-nova, sans-serif;
   font-weight: 600;
   margin-bottom: 2rem;
 }
@@ -197,9 +200,10 @@ header.header-up {
   align-items: center;
 }
 .bnr .right .cta a {
-  color: #F2F7F5;
-  border: 2px solid #004643;
-  background-color: #004643;
+  color: #004643;
+  font-weight: 600;
+  border: 3px solid #F2F7F5;
+  background-color: #FFA8BA;
   position: absolute;
   padding: 1rem 3.5rem;
   border-top-left-radius: 20% 70%;
@@ -212,7 +216,7 @@ header.header-up {
   padding-top: 5rem;
   margin-top: 0;
   background-color: #004643;
-  color: #F2F7F5;
+  color: #004643;
 }
 .work .container {
   width: 100%;
@@ -311,13 +315,20 @@ header.header-up {
   padding: 0 4.5rem;
 }
 .about .panel .img {
-  position: relative;
+  width: 100%;
   margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
 }
 .about .panel .img img {
-  width: 100%;
-  margin: 0 auto;
+  width: 80%;
   border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+}
+.about .panel .img.me {
+  background-image: url(../images/about/about-bg1.svg);
+}
+.about .panel .img.cat {
+  background-image: url(../images/about/about-bg2.svg);
 }
 .about .game {
   width: 85%;
@@ -359,7 +370,11 @@ header.header-up {
 }
 
 /*===== Connect =====*/
-.connect-container {
+.connect {
+  background-color: #F2F7F5;
+  color: #004643;
+}
+.connect .connect-container {
   max-width: 60%;
   margin: 0 auto;
   padding: 2rem 3rem 12rem;
@@ -370,14 +385,16 @@ header.header-up {
   position: relative;
   text-align: center;
 }
-.connect-container .content .sec-header {
+.connect .connect-container .content .sec-header {
   font-size: 3.6rem;
+  font-weight: 500;
   margin-bottom: 2.5rem;
+  font-family: proxima-nova, sans-serif;
 }
-.connect-container .content p {
+.connect .connect-container .content p {
   font-size: 2rem;
 }
-.connect-container .image::after, .connect-container .image::before {
+.connect .connect-container .image::after, .connect .connect-container .image::before {
   position: absolute;
   left: 0;
   content: "";
@@ -386,24 +403,24 @@ header.header-up {
   border: 3px #FFA8BA solid;
   border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
 }
-.connect-container .image {
+.connect .connect-container .image {
   width: 100%;
   position: relative;
   margin: 3rem 0;
 }
-.connect-container .image::before {
+.connect .connect-container .image::before {
   bottom: -1rem;
   transform: rotate(180deg);
 }
-.connect-container .image::before {
+.connect .connect-container .image::before {
   bottom: 1.5rem;
   transform: rotate(4deg);
 }
-.connect-container img {
+.connect .connect-container img {
   width: 100%;
   border-radius: 59% 41% 45% 55% / 30% 40% 60% 70%;
 }
-.connect-container .triangle {
+.connect .connect-container .triangle {
   position: absolute;
   bottom: -14rem;
   width: 15rem;
@@ -412,17 +429,16 @@ header.header-up {
   border-radius: 1.5rem;
   z-index: 10;
 }
-
-.form-container {
+.connect .form-container {
   background-color: #004643;
   padding-top: 20rem;
   padding-bottom: 6rem;
 }
-.form-container .error-msg {
+.connect .form-container .error-msg {
   color: #F2F7F5;
   text-align: center;
 }
-.form-container .form {
+.connect .form-container .form {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -430,15 +446,15 @@ header.header-up {
   min-width: 25rem;
   max-width: 60rem;
 }
-.form-container .form input[type=text],
-.form-container .form input[type=email],
-.form-container .form input[type=subject] {
+.connect .form-container .form input[type=text],
+.connect .form-container .form input[type=email],
+.connect .form-container .form input[type=subject] {
   width: 80%;
   margin: 0.5rem auto;
   border-radius: 2rem;
   background-color: #F2F7F5;
 }
-.form-container .form input[type=submit] {
+.connect .form-container .form input[type=submit] {
   cursor: pointer;
   width: 20%;
   min-width: 10.7rem;
@@ -453,7 +469,7 @@ header.header-up {
   color: #004643;
   transition: all 0.3s ease-in-out;
 }
-.form-container .form input[type=submit]:disabled {
+.connect .form-container .form input[type=submit]:disabled {
   background-color: #ccc;
   color: #fff;
   padding: 1rem 3.5rem;
@@ -462,7 +478,7 @@ header.header-up {
   cursor: default;
   min-width: 10.7rem;
 }
-.form-container .form textarea {
+.connect .form-container .form textarea {
   width: 80%;
   resize: none;
   background-color: #F2F7F5;
@@ -472,14 +488,14 @@ header.header-up {
   font-family: "Oxygen", sans-serif;
   margin: 0.5rem auto;
 }
-.form-container .form .g-recaptcha {
+.connect .form-container .form .g-recaptcha {
   margin: 2.5rem auto;
 }
-.form-container .btn {
+.connect .form-container .btn {
   width: 20%;
   margin: 2rem auto;
 }
-.form-container .btn a {
+.connect .form-container .btn a {
   padding: 1rem 3.5rem;
   border-top-left-radius: 20% 70%;
   border-bottom-right-radius: 20% 70%;
@@ -520,9 +536,9 @@ header.header-up {
   display: none;
 }
 
-.form-style, .form-container .form input[type=text],
-.form-container .form input[type=email],
-.form-container .form input[type=subject] {
+.form-style, .connect .form-container .form input[type=text],
+.connect .form-container .form input[type=email],
+.connect .form-container .form input[type=subject] {
   border: none;
   padding: 1rem 2rem;
   color: #004643;
@@ -594,40 +610,12 @@ header.header-up {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    opacity: 25%;
-  }
-  .bnr .left .birds, .bnr .left .birds-even {
-    display: flex;
-  }
-  .bnr .left .birds-even {
-    transform: translateY(-40rem);
-    animation: move-birdseven 2s ease-in-out;
-  }
-  .bnr .left .birds {
-    transform: translateY(-12rem);
-    animation: move-birds 2s ease-in-out;
-  }
-  @keyframes move-birdseven {
-    0% {
-      transform: translateY(-120rem);
-    }
-    100% {
-      transform: translateY(-40rem);
-    }
-  }
-  @keyframes move-birds {
-    0% {
-      transform: translateY(100rem);
-    }
-    100% {
-      transform: translateY(-12rem);
-    }
   }
   .bnr .right {
     padding-top: 20rem;
   }
   .bnr .right .cta a:hover {
-    color: #004643;
+    color: #F2F7F5;
     background-color: transparent;
   }
 
@@ -772,26 +760,25 @@ header.header-up {
   }
 
   /* ===== Connect ===== */
-  .connect-container {
-    flex-direction: row;
-    text-align: left;
+  .connect .connect-container {
+    flex-direction: row-reverse;
+    text-align: center;
   }
-  .connect-container .col {
+  .connect .connect-container .col {
     flex-basis: 50%;
     max-width: 50%;
   }
-
-  .form-container .form input[type=submit]:hover {
+  .connect .form-container .form input[type=submit]:hover {
     background-color: transparent;
     color: #F2F7F5;
     transition: all 0.3s ease-in-out;
   }
-  .form-container .form input[type=submit]:disabled:hover {
+  .connect .form-container .form input[type=submit]:disabled:hover {
     background-color: #ccc;
     color: #fff;
     cursor: default;
   }
-  .form-container .btn a {
+  .connect .form-container .btn a {
     padding: 1rem 2rem;
     border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
     font-size: 1.4rem;
@@ -829,7 +816,7 @@ header.header-up {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   .bnr .left .birds {

@@ -108,38 +108,37 @@
             overflow: hidden;
             display: flex;
             justify-content: center;
-            opacity: 25%;
 
-            .birds, .birds-even {
-                display: flex;
-            }
+            // .birds, .birds-even {
+            //     display: flex;
+            // }
         
-            .birds-even {
-                transform: translateY(-40rem);
-                animation: move-birdseven 2s ease-in-out;
+            // .birds-even {
+            //     transform: translateY(-40rem);
+            //     animation: move-birdseven 2s ease-in-out;
                 
-            }
+            // }
             
-            .birds {
-                transform: translateY(-12rem);
-                animation: move-birds 2s ease-in-out;
-            }
+            // .birds {
+            //     transform: translateY(-12rem);
+            //     animation: move-birds 2s ease-in-out;
+            // }
             
-            @keyframes move-birdseven {
-                0% {transform: translateY(-120rem);}
-                100%{transform: translateY(-40rem);}
-            }
+            // @keyframes move-birdseven {
+            //     0% {transform: translateY(-120rem);}
+            //     100%{transform: translateY(-40rem);}
+            // }
 
-            @keyframes move-birds {
-                0% {transform: translateY(100rem);}
-                100%{transform: translateY(-12rem);}
-            }
+            // @keyframes move-birds {
+            //     0% {transform: translateY(100rem);}
+            //     100%{transform: translateY(-12rem);}
+            // }
         }
         .right {
             padding-top: 20rem;
             .cta {
                 a:hover{
-                    color: $primary-color;
+                    color: $secondary-color;
                     background-color: transparent;
                 }
             }
@@ -150,7 +149,7 @@
     .work {
         background-color: $primary-color;
         h2 {
-                color: $text-color-wt
+                color: $text-color-lt
             }
         .reverse {
                 flex-direction: row-reverse;
@@ -159,7 +158,7 @@
             display: flex;            
             h3 {
                 text-align: left;
-                color: $text-color-wt
+                color: $text-color-lt
                 }
             .text {
                 @include card-grid-lg(10%);
@@ -294,38 +293,40 @@
     }
 
     /* ===== Connect ===== */
-    .connect-container {
-        flex-direction: row ;
-        text-align: left;
+    .connect {
 
-       .col {
-            flex-basis: 50%;
-            max-width: 50%;        
+        .connect-container {
+            flex-direction: row-reverse ;
+            text-align: center;
+        .col {
+                flex-basis: 50%;
+                max-width: 50%;        
+            }
         }
-    }
 
-    .form-container {
-        .form {
-            input[type=submit]:hover {
-                background-color: transparent;
-                color: $secondary-color;
+        .form-container {
+            .form {
+                input[type=submit]:hover {
+                    background-color: transparent;
+                    color: $secondary-color;
+                    transition: all 0.3s ease-in-out;
+                }
+                input[type = submit]:disabled:hover{
+                    background-color: #ccc;
+                    color: #fff;
+                    cursor: default;
+                }
+            }
+            .btn a {
+                padding: 1rem 2rem;
+                border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+                font-size: 1.4rem;
+                margin: 2rem auto;
+                border: 2px solid $secondary-color;
+                background: $secondary-color;
+                color: $text-color-dk;
                 transition: all 0.3s ease-in-out;
             }
-            input[type = submit]:disabled:hover{
-                background-color: #ccc;
-                color: #fff;
-                cursor: default;
-            }
-        }
-        .btn a {
-            padding: 1rem 2rem;
-            border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
-            font-size: 1.4rem;
-            margin: 2rem auto;
-            border: 2px solid $secondary-color;
-            background: $secondary-color;
-            color: $text-color-dk;
-            transition: all 0.3s ease-in-out;
         }
     }
 
@@ -361,7 +362,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 1000px;
+        max-width: 1200px;
         margin: 0 auto;
         
         .left{
