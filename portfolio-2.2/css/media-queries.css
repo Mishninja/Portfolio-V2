@@ -252,6 +252,7 @@ header.header-up {
 }
 .work .card .display-vid .vid {
   display: none;
+  filter: drop-shadow(-17px 15px 3px #f2f7f550);
 }
 .work .card .accordion-btn {
   cursor: pointer;
@@ -652,11 +653,13 @@ header.header-up {
     color: #F2F7F5;
   }
   .work .card .content-wrapper {
+    position: relative;
     margin: 5.5rem auto;
     padding: 4rem 0;
     flex-basis: 40%;
     border: 4px solid #FFA8BA;
     border-radius: 0.4rem;
+    border-radius: 4px;
   }
   .work .card .display-vid {
     flex-basis: 60%;

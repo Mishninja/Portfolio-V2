@@ -111,12 +111,27 @@
                 color: $text-color-lt;
             }
             .content-wrapper {
+                position: relative;
                 margin: 5.5rem auto;
                 padding: 4rem 0;
                 flex-basis: 40%;
                 border: 4px solid $accent-color;
                 border-radius: 0.4rem;
+
+                
+                border-radius: 4px;
             }
+            // .content-wrapper::before {
+            //     content: "";
+            //     width: 100%;
+            //     height: 100%;
+            //     border: 4px solid $secondary-color;
+            //     border-radius: 0.4rem;
+            //     position: absolute;
+            //     top: 2rem;
+            //     right: -2rem;
+            //     z-index: -1;
+            // }
             .display-vid {
                     flex-basis: 60%;
                     .image{

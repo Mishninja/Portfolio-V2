@@ -252,6 +252,7 @@ header.header-up {
 }
 .work .card .display-vid .vid {
   display: none;
+  filter: drop-shadow(-17px 15px 3px #f2f7f550);
 }
 .work .card .accordion-btn {
   cursor: pointer;
