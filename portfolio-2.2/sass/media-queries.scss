@@ -34,27 +34,33 @@
             margin-right: 3rem;
             border-bottom: none;
             font-weight: 400;
-            padding: 1rem 2rem;
             a {
-                padding: 1rem;
+                padding: 0.5rem 2rem;
+                border: 3px solid $primary-color;
             }
         }
         .gn-items li:hover a{
             width: 100%;
             height: 0%;
             background-color: $accent-color;
-            border-top-right-radius: 20% 70%;
-            border-top-left-radius: 20% 70%;
-            border-bottom-right-radius: 20% 70%;
-            border-bottom-left-radius: 20% 70%;
+            border-top-right-radius: 30% 70%;
+            border-top-left-radius: 30% 70%;
+            border-bottom-right-radius: 30% 70%;
+            border-bottom-left-radius: 30% 70%;
             border: 3px solid $secondary-color;
             color: $primary-color;
+            font-weight: 600;
         }
         .gn-items li:hover:before,
         .gn-items li:hover:after {
             width: 1.3rem;
             height: 1.3rem;
             border-color: $secondary-color;
+        }
+        .logo {
+            img {
+                width: 8rem;
+            }
         }
     }
 
@@ -98,18 +104,21 @@
                 flex-direction: row-reverse;
             }
         .card {        
-            display: flex;            
+            display: flex;
+            max-width: 1200px;      
+            margin: 15rem auto;      
             h3 {
-                text-align: left;
                 color: $text-color-lt;
-                }
-            .text {
-                @include card-grid-lg(10%);
+            }
+            .content-wrapper {
                 margin: 5.5rem auto;
-                flex-basis: 50%;
+                padding: 4rem 0;
+                flex-basis: 40%;
+                border: 4px solid $accent-color;
+                border-radius: 0.4rem;
             }
             .display-vid {
-                    flex-basis: 50%;
+                    flex-basis: 60%;
                     .image{
                         display: none;
                     }
@@ -120,13 +129,15 @@
                         margin: 0 auto;
                     }
                 }
-            .accordion-btn{
+            .accordion-btn {
                 cursor: auto;
-                padding: 2rem 0;
+                padding: 0 0 4rem;
                 background-color: transparent;
                 box-shadow: none;
-                grid-column: 2 / 6;
-                grid-row: 1 / 2;
+                justify-content: center;
+                h3 {
+                    font-size: 2.6rem;
+                }
                 .icon {
                     display: none;
                     transition: all 0.3s ease-in-out;
@@ -140,17 +151,25 @@
                 }
             }            
             .content {
-                grid-column: 1 / 7;
-                grid-row: 2 / 4;
                 background-color: transparent;
                 box-shadow: none;
                 display: block;
                 .description {
-                    background-color: $secondary-color;
-                    box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
-                        -webkit-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
-                        -moz-box-shadow: -2px 9px 7px -4px rgba(0,0, 0, 0.19);
+                    color: $text-color-lt;
+                    height: 100%;
+                    h4 {
+                        font-size: 2rem;
+
+                    }
+                    ul {
+                        margin-left: 2.5rem;
+                    }
+                    li {
+                        list-style-type: circle;
+                    }
                 }
+                
+                
             }
         }
     }
@@ -307,28 +326,9 @@
         align-items: center;
         max-width: 1200px;
         margin: 0 auto;
-        
-        .left{
-            .birds {
-                transform: translateY(0);
-            }
-
-            .birds-even {
-                transform: translateY(-31rem);
-            }
-
-            @keyframes move-birdseven {
-                0% {transform: translateY(-120rem);}
-                100%{transform: translateY(-31rem);}
-            }
-
-            @keyframes move-birds {
-                0% {transform: translateY(100rem);}
-                100%{transform: translateY(0rem);}
-            }
-        }
         .right {
             padding-top: 0;
+            padding-left: 4rem;
             h1 {
                 font-size: 6.4rem;
             }
@@ -342,14 +342,3 @@
     }
 }
 
-@media (min-width: 1500px) {
-    .work {
-        .card {
-            .content {
-                .description {
-                    padding: 5rem 10rem; 
-                }
-            }
-        }
-    }
-}
