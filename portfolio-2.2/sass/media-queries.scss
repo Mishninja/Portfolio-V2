@@ -215,18 +215,32 @@
 
     /* ===== About ===== */
     .about {
-        .about-me {
-            flex-direction: row;
-            .img, .content {
-                flex-basis: 50%;
-                max-width: 50%;
-            }
+        .panel {
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 2rem;
             .img {
+                width: 100%;
                 padding: 2rem 3rem;
+                grid-column: 1 / 6;
+            }
+            .content {
+                grid-column: 8 / 13;
+            }
+        }
+        .panel-rev {
+            .img {
+                grid-column: 8 / -1;
+                grid-row: 1 / 2;
+            }
+            .content {
+                grid-column: -13 / 6;
+                grid-row: 1 / 2;
             }
         }
         .game {
-        width: 85%;
+        width: 100%;
         margin: 0 auto;
         padding: 5rem 2rem;
         border-radius: 0.5rem;
@@ -281,8 +295,9 @@
 
     /* ===== Connect ===== */
     .connect-container {
-        flex-direction: row;
+        flex-direction: row ;
         text-align: left;
+
        .col {
             flex-basis: 50%;
             max-width: 50%;        

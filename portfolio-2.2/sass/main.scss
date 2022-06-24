@@ -343,45 +343,46 @@ header.header-up {
 /*===== About =====*/
 .about {
     width: 100%;
-    .about-me {
-        width: 80%;
-        margin: 5rem auto;
-        @include flex(flex, center, center);
+    .panel {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin: 5rem auto;
+        padding: 0 4.5rem;
         .img {
-            width: 70%;
             position: relative;
-            // border: solid $accent-color 2px;
             margin-bottom: 4rem;
-            // border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
             img{
                 width: 100%;
                 margin: 0 auto;
                 border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
             }
         }
-        .img::after {
-            position: absolute;
-            bottom: -1.5rem;
-            left: 0;
-            content:"";
-            width: 100%;
-            height: 100%;
-            border: 3px $accent-color solid;
-            transform: rotate(0deg);
-            border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
-        }
-        .img::before {
-            position: absolute;
-            bottom: -1rem;
-            left: 0;
-            content:"";
-            width: 100%;
-            height: 100%;
-            border: 3px $accent-color solid;
-            border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
-            transform: rotate(-25deg);
-        }
+        
+        // .img::after {
+        //     position: absolute;
+        //     bottom: -1.5rem;
+        //     left: 0;
+        //     content:"";
+        //     width: 95%;
+        //     height: 95%;
+        //     border: 3px $accent-color solid;
+        //     transform: rotate(0deg);
+        //     border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+        // }
+        // .img::before {
+        //     position: absolute;
+        //     bottom: -1rem;
+        //     left: 0;
+        //     content:"";
+        //     width: 95%;
+        //     height: 95%;
+        //     border: 3px $accent-color solid;
+        //     border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+        //     transform: rotate(-25deg);
+        // }
+        
     }
     .game {
         width: 85%;
