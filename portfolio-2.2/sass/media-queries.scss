@@ -273,6 +273,14 @@
         }
 
         .form-container {
+            display: flex;
+            .graphic {
+                display: block;
+                width: 10%;
+                height: 100%;
+                margin: 0 auto;
+            }
+            
             .form {
                 input[type=submit]:hover {
                     background-color: transparent;

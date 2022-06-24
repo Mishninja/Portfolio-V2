@@ -85,7 +85,8 @@ if (array_key_exists('email', $_POST)) {
     </div>
     <div class="triangle bg-repeat"></div>
 </div>
-<div class="form-container" id = 'form-container'>
+<div class="form-container" id='form-container'>
+    <div class="graphic bg-repeat"><img src="images/bnr-img.svg"></div>
     <?php if (empty($msg)) { ?>
         <form class="form" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
             <input type="text" name="name" placeholder="First and Last Name" id="name" required />
@@ -102,7 +103,7 @@ if (array_key_exists('email', $_POST)) {
             </div>";
     } ?>
 
-
+    <div class="graphic bg-repeat"><img src="images/bnr-img.svg"></div>
 </div>
 
 <script>
@@ -110,7 +111,6 @@ if (array_key_exists('email', $_POST)) {
         var submitBtn = document.getElementById("submit");
         submitBtn.removeAttribute("disabled");
     }
-    
 </script>
 </body>
 

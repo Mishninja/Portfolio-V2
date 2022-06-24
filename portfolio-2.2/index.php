@@ -120,7 +120,7 @@
                         <div class="content">
                             <div class="description">
                                 <h4 class="heading">Description</h4>
-                                <p>A reusable contact form for a portfpo or a local business. This contact form uses the PHPMailer class and Google reCaptcha to safely handle contact form inputs and emails. The form also has required fields to ensure users include all necessary information.</p>
+                                <p>A reusable contact form for a portfolio or a local business. This contact form uses the PHPMailer class and Google reCaptcha to safely handle contact form inputs and emails. The form also has required fields to ensure users include all necessary information.</p>
                                 <h4 class="heading">Tools</h4>
                                 <ul>
                                     <li>HTML</li>
