@@ -1,14 +1,5 @@
 @import 'main', 'mixins';
 
-
-@media (min-width: 576px) {
-    
-}
-
-@media (min-width: 768px) {
-    
-}
-
 @media (min-width: 800px) {
     .about {
         .about-me {
@@ -43,46 +34,22 @@
             margin-right: 3rem;
             border-bottom: none;
             font-weight: 400;
-            padding: 1rem;
+            padding: 1rem 2rem;
             a {
                 padding: 1rem;
             }
         }
-
-        // .gn-items li:before,
-        // .gn-items li:after {
-        //     content: "";
-        //     position: absolute;
-        //     display: block;
-        //     border: 0px solid transparent;
-        //     width: 0%;
-        //     height: 0%;
-        //     transition: all 0.3s ease;
-        // }
-        
-
         .gn-items li:hover a{
             width: 100%;
             height: 0%;
-            background-color: $secondary-color;
-            border-top-right-radius: 20% 50%;
-            border-bottom-left-radius: 20% 50%;
+            background-color: $accent-color;
+            border-top-right-radius: 20% 70%;
+            border-top-left-radius: 20% 70%;
+            border-bottom-right-radius: 20% 70%;
+            border-bottom-left-radius: 20% 70%;
+            border: 3px solid $secondary-color;
             color: $primary-color;
         }
-
-        .active {
-
-        }
-
-        // .gn-items li:after{
-        //     width: 0%;
-        //     height: 0%;
-        //     top: 0;
-        //     left: 0;
-        //     border-top: 2px solid transparent;
-        //     border-left: 2px solid transparent;
-        // }
-
         .gn-items li:hover:before,
         .gn-items li:hover:after {
             width: 1.3rem;
@@ -95,44 +62,20 @@
 
     .bnr {
         background-image: none;
-        display: flex;
+        flex-direction: row;
         height: 100vh;
         padding: 0;
         .col {
             flex-basis: 50%;
             max-width: 50%;
-        }
-    
+        }   
         .left {
+            padding-top: 0;
+            height: 70vh;
             display: block;
             overflow: hidden;
             display: flex;
             justify-content: center;
-
-            // .birds, .birds-even {
-            //     display: flex;
-            // }
-        
-            // .birds-even {
-            //     transform: translateY(-40rem);
-            //     animation: move-birdseven 2s ease-in-out;
-                
-            // }
-            
-            // .birds {
-            //     transform: translateY(-12rem);
-            //     animation: move-birds 2s ease-in-out;
-            // }
-            
-            // @keyframes move-birdseven {
-            //     0% {transform: translateY(-120rem);}
-            //     100%{transform: translateY(-40rem);}
-            // }
-
-            // @keyframes move-birds {
-            //     0% {transform: translateY(100rem);}
-            //     100%{transform: translateY(-12rem);}
-            // }
         }
         .right {
             padding-top: 20rem;
@@ -158,7 +101,7 @@
             display: flex;            
             h3 {
                 text-align: left;
-                color: $text-color-lt
+                color: $text-color-lt;
                 }
             .text {
                 @include card-grid-lg(10%);
