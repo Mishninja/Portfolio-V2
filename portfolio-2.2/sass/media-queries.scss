@@ -65,6 +65,7 @@
     .bnr {
         background-image: none;
         flex-direction: row;
+        align-items: center;
         height: 100vh;
         padding: 0;
         .col {
@@ -334,9 +335,6 @@
 
 @media (min-width: 1024px) {
     .bnr {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         max-width: 1200px;
         margin: 0 auto;
         .right {
