@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 @import url("https://use.typekit.net/mus6lse.css");
+@import url("https://use.typekit.net/mus6lse.css");
 @import 'mixins', 'variables';
 
 
@@ -16,7 +17,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.4;
     font-weight: 400;
-    color: $text-color-dk;
+    color: $text-color-lt;
     background-color: $secondary-color;
     overflow-x: hidden;
 }
@@ -31,7 +32,7 @@ img {
 }
 
 section {
-    margin-top: 7rem;
+    padding-top: 9rem;
 }
 
 .row-rev {
@@ -41,14 +42,14 @@ section {
 .bg-repeat {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 .section-heading {
     font-size: 5rem;
     font-family: $heading-font;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
 }
 
 .active,
@@ -67,13 +68,13 @@ section {
     left: 0;
     z-index: 999;
     will-change: top;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
     background-color: $primary-color;
     transition: top .3s ease-in-out;
-
     .logo {
         img {
-            width: 5rem;
+            width: 4rem;
+            padding-left: 1rem;
         }
     }
 
@@ -82,8 +83,9 @@ section {
         position: absolute;
         top: 4.5rem;
         left: 0;
-        color: $text-color-wt;
+        color: $text-color-lt;
         background-color: $primary-color;
+        border-bottom: solid 3px $secondary-color;
         width: 100%;
         a {
             color: $secondary-color;
@@ -113,63 +115,30 @@ section {
         height: 3rem;
         border: none;
         background: transparent;
+        cursor: pointer;
     }
 
     .burger {
         position: absolute;
         align-items: center;
-        width: 5rem;
+        width: 3rem;
         height: 3rem;
         color: $secondary-color;
         font-weight: 300;
         top: 0;
-        right: 0;
+        right: 2.5rem;
     }
 
-    .burger:before,
-    .burger:after {
-        content: '';
-        display: block;
-        position: absolute;
-        background: $secondary-color;
-        width: 1.8rem;
-        height: .3rem;
-        top: -1.7rem;
+    .burger .icon {
+        font-size: 3rem;
+        margin-right: auto;
+        transition: all 0.3s ease-in-out;
     }
 
-    .burger:before {
-        right: 4.2rem;
-        top: 1.3rem;
-        transform: rotate(35deg);
+    .gn-trigger.is-active .burger .icon {
+        transform: rotateX(180deg);
+        transition: all 0.3s ease-in-out;
     }
-
-    .burger:after {
-        left: .4rem;
-        transform: rotate(-35deg);
-        top: 1.3rem;
-    }
-
-    .burger,
-    .burger::before,
-    .burger::after {
-        /* transition-property: transform, top, background;
-        transition-duration: 0.35s; */
-        transition: all 0.25s linear;
-    }
-
-    // .gn-trigger.is-active .burger:before {
-    //     right: 3.4rem;
-    //     width: 2.2rem;
-    //     height: .3rem;
-    //     transform: rotate(45deg);
-    // }
-
-    // .gn-trigger.is-active .burger:after {
-    //     left: -0.6rem;
-    //     width: 2.2rem;
-    //     height: .3rem;
-    //     transform: rotate(-45deg);
-    // }
 
     .gn-trigger.is-active,
     .burger {
@@ -185,22 +154,29 @@ header.header-up {
 
 /*===== Main =====*/
 .main {
-    background-color: $secondary-color;
+    background-color: $primary-color;
 }
 
 /*===== Homepage Banner =====*/
 
 .bnr {
     width: 100%;
-    height: 60vh;
-    margin: 5rem auto;
-    padding: 11rem 0 0;
-    background-color: $secondary-color;
-    background-image: url(../images/banner-bg.png);
+    margin: 0 auto;
+    padding-top: 10rem;
+    height: 100vh;
     background-position-y: top;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
     .left {
-            display: none;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 70%;            
+        }
         }
 
     .right {
@@ -225,14 +201,18 @@ header.header-up {
         }
         .cta {
             @include flex(flex,center,center);
+            margin-top: 7rem;
             a {
-                color: $secondary-color;
-                border: 2px solid $primary-color;
-                background-color: $primary-color;
+                color: $primary-color;
+                font-weight: 600;
+                border: 3px solid $secondary-color;
+                background-color: $accent-color;
                 position: absolute;
                 padding: 1rem 3.5rem;
                 border-top-left-radius: 20% 70%;
+                border-top-right-radius: 20% 70%;
                 border-bottom-right-radius: 20% 70%;
+                border-bottom-left-radius: 20% 70%;
                 transition: all 0.3s ease-in-out;
             }
         }     
@@ -243,14 +223,18 @@ header.header-up {
 .work {
     padding-top: 5rem;
     margin-top: 0;
+    background-color: $primary-color;
+    color: $text-color-lt;
     .container {
         width: 100%;
         margin: 0 auto;
     }
      .card {
-         width: 100%;
+        margin: 10rem auto;
+        width: 100%;
          h3 {
              font-size: 2.4rem;
+             color: $text-color-dk;
          }
          p {
              margin-bottom: 2.5rem;
@@ -265,6 +249,7 @@ header.header-up {
             }
              .vid {
                 display: none;
+                filter: drop-shadow(-17px 15px 3px #f2f7f550);
              }
          }
          .accordion-btn{ 
@@ -272,44 +257,53 @@ header.header-up {
              @include flex(flex, space-between, center);
              margin: 0 auto;
              padding: 2rem 3rem;
+             font-family: $heading-font;
              background-color: $secondary-color;
-            box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
+            box-shadow: -2px 9px 7px -4px rgba(255, 255, 255, 0.19);
             -webkit-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
             -moz-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
             .icon {
-                font-size: 2rem;
+                font-size: 3.5rem; 
+                color: $text-color-dk;
+                transition: all 0.3s ease-in-out;
             }
+            
          }
-         .content {
+        .accordion-btn.active .icon{
+            transform: rotate(180deg);
+            transition: all 0.3s ease-in-out;
+        }
+        .content {
             display: none;
             background-color: $secondary-color;
-             .description {
+            color: $text-color-dk;            
+            .description {
                 margin: 0 auto;
-                padding: 3rem 8rem 3rem 5rem;
-                box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
-                -webkit-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
-                -moz-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
-                .ftr {
-                    display: grid;
-                    grid-template-columns: [first] 50% [line2] auto [line3] 50% [end];
-                    .skills {
-                        grid-column-start: 1;
-                        grid-column-end: 2;
-                    }
-                    .links {
-                        font-size: 1.5rem;
-                        grid-column-start: 3;
-                        grid-column-end: 4;
-                        @include flex(flex, flex-end, center);
-                        .git-link {
-                            margin-left: 1.5rem;
-                        }
-                        a {
-                            color: $primary-color;
-                        }
-                    }
+                width: 80%;
+                h4 {
+                    font-weight: 700;
+                    font-size: 2.2rem;
+                    margin-bottom: 2.5rem;
                 }
+                ul {
+                    margin-bottom: 3rem;
+                } 
+                a{
+                    color: $primary-color;
+                }               
              }
+            .ftr {
+                display: flex;
+                justify-content: center;
+                padding: 5rem 0;
+                .git-link {
+                        margin-left: 1.5rem;
+                    }
+                .icon {
+                    font-size: 3rem;
+                    color: $primary-color;
+                }
+            }
              
          }
 
@@ -319,224 +313,230 @@ header.header-up {
 /*===== About =====*/
 .about {
     width: 100%;
-    .about-me {
-        width: 80%;
-        margin: 5rem auto;
-        @include flex(flex, center, center);
+    .panel {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin: 5rem auto;
+        padding: 0 4.5rem 7rem;
         .img {
-            width: 70%;
-            position: relative;
-            background-color: $primary-color;
-            border: solid $primary-color 2px;
+            width: 100%;
             margin-bottom: 4rem;
-            border-radius: 29% 71% 48% 52% / 50% 50% 50% 50%;
-            img{
-                width: 100%;
-                margin: 0 auto;
-                clip-path: circle(50%);
+            display: flex;
+            justify-content: center;
+            filter: drop-shadow(-17px 15px 3px #f2f7f550);
+            img {
+                width: 80%;
+                border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+                border: 6px solid $accent-color;
             }
         }
-        .img::after {
-            position: absolute;
-            bottom: -1.5rem;
-            left: 0;
-            content:"";
-            width: 100%;
-            height: 100%;
-            border: 2px $primary-color solid;
-            transform: rotate(-45deg);
-            border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
-        }
-        .img::before {
-            position: absolute;
-            bottom: -1rem;
-            left: 0;
-            content:"";
-            width: 100%;
-            height: 100%;
-            border: 2px $primary-color solid;
-            border-radius: 53% 83% 98% 57% / 38% 50% 55% 65%;
-            transform: rotate(45deg);
+        .img.me {
+            filter: drop-shadow(15px 5px 3px #f2f7f550);
         }
     }
-    .get-to-know {
-        width: 80%;
+    .game {
+        width: 85%;
         margin: 0 auto;
-        padding: 3rem;
+        padding: 5rem 2rem;
+        border-radius: 0.5rem;
+        border: 0.6rem solid $accent-color;
         background-color: $primary-color;
         color: $secondary-color;
         text-align: center;
+        box-shadow: -20px 20px 10px -6px rgba(20, 20, 20, 0.2);
         h3 {
             font-size: 2.4rem;
             margin-bottom: 2.5rem;
-            
-        }
-        .terms {
-            width: 50%;
-            margin: 3rem auto;
-            .tile {
-                text-align: center;
-                padding: 1.5rem;
-                border: 1px solid $secondary-color;
-                border-radius: 62% 38% 39% 61% / 25% 55% 45% 75%;
-                margin: 2rem;
-            }
-            .tile.rev {
-                border-radius: 75% 25% 83% 17% / 61% 77% 23% 39%;
-            }
-        }
-        
-        
-    }
-
-    
-}
-
-/*===== Connect =====*/
-
-.connect-container {
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 2rem 3rem 12rem;
-    @include flex(flex, center, center);
-    flex-direction: column-reverse;
-    position: relative;
-    text-align: center;
-    .content {
-        .sec-header {
-            font-size: 3.6rem;
-            margin-bottom: 2.5rem;
         }
         p {
-            font-size: 2rem;
+            margin-top: 2rem;
+        }
+        .instructions-desk {
+            display: none;
+        }
+        .container {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+            .droppable {
+                display: none;
+            }
+            .word-bank {   
+                width: 80%;
+                .draggable-item {
+                    border-radius: 0.4rem;
+                    border: 0.1rem solid $secondary-color;
+                    padding: 2rem 2rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            
         }
     }
-    
-    .image::after,.image::before {
-        position: absolute;
-        left: 0;
-        content:"";
-        width: 100%;
-        height: 100%;
-        border: 2px $primary-color solid;
-        border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
-    }
-    .image {
-        width: 100%;
-        position: relative;
-        margin: 3rem 0;
-    }
-    .image::before {
-        bottom: -1rem;
-        transform: rotate(180deg);
-    }
-    .image::before {
-        bottom: 1.5rem;
-        transform: rotate(4deg);
-    }
-    img {
-        width: 100%;
-        border-radius:59% 41% 45% 55% / 30% 40% 60% 70%; 
-    }
-    .triangle {
-        position: absolute;
-        bottom: -14rem;
-        width: 15rem;
-        height: 20rem;
-        background-image: url(../images/connect/triangle.svg);
-        border-radius: 1.5rem;
-        z-index: 10;
-    }
+
     
 }
 
 
 
-.form-container {
-    background-color: $primary-color;
-    padding-top: 20rem;
-    padding-bottom: 6rem;
-    .error-msg {
-        color: $secondary-color;
-        text-align: center;
-    }
-    .form {
-        width: 80%;
+
+/*===== Connect =====*/
+.connect {
+    background-color: $secondary-color;
+    color: $text-color-dk;
+    .connect-container {
+        max-width: 60%;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        min-width: 25rem;
-        max-width: 60rem;
-        input[type = text],
-        input[type = email],
-        input[type = subject]{
-            width: 80%;            
-            margin: 0.5rem auto;
-            border-radius: 2rem;
-            @extend .form-style;
-            background-color: $secondary-color;
+        padding: 2rem 3rem 12rem;
+        @include flex(flex, center, center);
+        flex-direction: column-reverse;
+        position: relative;
+        text-align: center;
+        .content {
+            .sec-header {
+                font-size: 3.6rem;
+                font-weight: 500;
+                margin-bottom: 2.5rem;
+                font-family: $heading-font;
+            }
+            p {
+                font-size: 2rem;
+            }
         }
-
-        input[type = submit] {
-            cursor: pointer;            
-            width: 20%;
-            padding: 1rem 3.5rem;
-            border-top-left-radius: 20% 70%;
-            border-bottom-right-radius: 20% 70%;
-            font-size: 1.4rem;
-            min-width: 7.5rem;
-            margin: 2rem auto;
-            border: 2px solid $secondary-color;
-            background: $secondary-color;
-            color: $text-color-dk;
-            transition: all 0.3s ease-in-out;
+        
+        .image::after,.image::before {
+            position: absolute;
+            left: 0;
+            content:"";
+            width: 100%;
+            height: 100%;
+            border: 3px $accent-color solid;
+            border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
         }
-
-        input[type = submit]:disabled {
-            background-color: #ccc;
-            color: #fff;
-            padding: 1rem 3.5rem;
-            border-top-left-radius: 20% 70%;
-            border-bottom-right-radius: 20% 70%;
-            cursor: default;
+        .image {
+            width: 100%;
+            position: relative;
+            margin: 3rem 0;
         }
-
-        textarea {
-            width: 80%;
-            resize: none;
-            background-color: $secondary-color;
+        .image::before {
+            bottom: -1rem;
+            transform: rotate(180deg);
+        }
+        .image::before {
+            bottom: 1.5rem;
+            transform: rotate(4deg);
+        }
+        img {
+            width: 100%;
+            border-radius:59% 41% 45% 55% / 30% 40% 60% 70%; 
+        }
+        
+        .triangle {
+            position: absolute;
+            bottom: -14rem;
+            width: 15rem;
+            height: 20rem;
+            background-image: url(../images/connect/triangle.svg);
             border-radius: 1.5rem;
-            padding: 1rem 2rem;
-            font-size: 1.2rem;
-            font-family: $body-font;
-            margin: 0.5rem auto;
-        }
-
-        .g-recaptcha {
-            margin: 2.5rem auto;
-        }
+            z-index: 10;
+        } 
+        
     }
-    .btn {
-        width: 20%;
-        margin: 2rem auto;
-        a {
-            padding: 1rem 3.5rem;
-            border-top-left-radius: 20% 70%;
-            border-bottom-right-radius: 20% 70%;
-            font-size: 1.4rem;
+
+
+
+    .form-container {
+        background-color: $primary-color;
+        padding-top: 20rem;
+        padding-bottom: 6rem;
+        .graphic {
+            display: none;
+        }
+        .error-msg {
+            color: $secondary-color;
+            text-align: center;
+        }
+        .form {
+            width: 80%;
             margin: 0 auto;
-            border: 2px solid $secondary-color;
-            background: $secondary-color;
-            color: $text-color-dk;
-            transition: all 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            min-width: 25rem;
+            max-width: 60rem;
+            input[type = text],
+            input[type = email],
+            input[type = subject]{
+                width: 80%;            
+                margin: 0.5rem auto;
+                border-radius: 2rem;
+                @extend .form-style;
+                background-color: $secondary-color;
+            }
+
+            input[type = submit] {
+                cursor: pointer;            
+                width: 20%;
+                min-width: 10.7rem;
+                padding: 1rem 3.5rem;
+                border-top-left-radius: 20% 70%;
+                border-top-right-radius: 20% 70%;
+                border-bottom-right-radius: 20% 70%;
+                border-bottom-left-radius: 20% 70%;
+                font-size: 1.4rem;
+                font-weight: 600;
+                margin: 2rem auto;
+                border: 2px solid $secondary-color;
+                background: $accent-color;
+                color: $text-color-dk;
+                transition: all 0.3s ease-in-out;
+            }
+
+            input[type = submit]:disabled {
+                background-color: #ccc;
+                color: #fff;
+                cursor: default;
+            }
+
+            textarea {
+                width: 80%;
+                resize: none;
+                background-color: $secondary-color;
+                border-radius: 1.5rem;
+                padding: 1rem 2rem;
+                font-size: 1.2rem;
+                font-family: $body-font;
+                margin: 0.5rem auto;
+            }
+
+            .g-recaptcha {
+                margin: 2.5rem auto;
+            }
+        }
+        .btn {
+            width: 20%;
+            margin: 2rem auto;
+            a {
+                padding: 1rem 3.5rem;
+                border-top-left-radius: 20% 70%;
+                border-top-right-radius: 20% 70%;
+                border-bottom-right-radius: 20% 70%;
+                border-bottom-left-radius: 20% 70%;
+                font-size: 1.4rem;
+                margin: 0 auto;
+                border: 2px solid $secondary-color;
+                background: $secondary-color;
+                color: $text-color-dk;
+                transition: all 0.3s ease-in-out;
+            }
         }
     }
 }
 
 .footer {
     background-color: $primary-color;
-    color: $secondary-color;
+    color: $accent-color;
     padding: 2rem;
     margin: 0 auto;
     .content {        
@@ -549,7 +549,7 @@ header.header-up {
             @include flex(flex, space-evenly, center);
             flex-direction: row;
             .fa-brands {                
-                color: $secondary-color;
+                color: $accent-color;
                 font-size: 2.5rem;
             }
         }        
@@ -557,6 +557,4 @@ header.header-up {
             display: none;
         }
     }
-
-    
 }
