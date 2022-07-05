@@ -24,7 +24,6 @@ body {
   line-height: 1.4;
   font-weight: 400;
   color: #F2F7F5;
-  background-color: #F2F7F5;
   overflow-x: hidden;
 }
 
@@ -66,7 +65,6 @@ section {
 /*===== Navigation =====*/
 .header {
   width: 100%;
-  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,14 +74,16 @@ section {
   left: 0;
   z-index: 999;
   will-change: top;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   background-color: #004643;
   transition: top .3s ease-in-out;
   /*===== Burger Menu =====*/
 }
-.header .logo img {
-  width: 4rem;
-  padding-left: 1rem;
+.header .logo .logo-link {
+  display: block;
+}
+.header .logo .logo-link img {
+  height: 4rem;
 }
 .header .gn {
   display: none;
@@ -613,6 +613,7 @@ header.header-up {
   .bnr {
     background-image: none;
     flex-direction: row;
+    align-items: center;
     height: 100vh;
     padding: 0;
   }
@@ -856,9 +857,6 @@ header.header-up {
 }
 @media (min-width: 1024px) {
   .bnr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
   }
