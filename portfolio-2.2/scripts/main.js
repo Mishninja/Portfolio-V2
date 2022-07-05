@@ -88,16 +88,34 @@ jQuery(function($) {
 
 /* ===== Accordion ===== */
 var acc = document.getElementsByClassName("accordion-btn");
-// var i;
 
-for (var i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+
+function reportWindowSize() {
+    var width = window.innerWidth;
+    if (width < 992) {
+        
+        console.log('mobile:' + width);
+        //check that window is tablet or mobile width
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+        }
     } else {
-      panel.style.display = "block";
+        console.log('desktop:' + width);
     }
-  });
 }
+
+window.onresize = reportWindowSize;
+
+
+
+
+
