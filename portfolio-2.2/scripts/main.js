@@ -87,18 +87,13 @@ jQuery(function($) {
 });
 
 /* ===== Accordion ===== */
-var acc = document.getElementsByClassName("accordion-btn");
+var acc = document.querySelectorAll(".accordion-btn");
+var content = document.querySelectorAll(".content");
 
-
-function reportWindowSize() {
-    var width = window.innerWidth;
-    if (width < 992) {
-        
-        console.log('mobile:' + width);
-        //check that window is tablet or mobile width
+function makeAccordionWork() {
+    if(window.innerWidth < 992) {
         for (var i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
-                
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
                 if (panel.style.display === "block") {
@@ -108,12 +103,44 @@ function reportWindowSize() {
                 }
             });
         }
-    } else {
-        console.log('desktop:' + width);
     }
 }
 
-window.onresize = reportWindowSize;
+//When user first loads in, make sure accordion works as expected
+//Disable in desktop view
+
+function accordionOnLoad() {
+    if (window.innerWidth < 992) {
+        makeAccordionWork();
+    } else if (window.innerWidth >= 992) {
+        //display: block for all content panels
+        content.forEach(item => {
+            item.style.display = "block";
+        });
+    }
+}
+
+accordionOnLoad();
+
+function reportWindowSize() {
+    var width = window.innerWidth;
+    if (width < 992) {
+        //check that window is tablet or mobile width
+        content.forEach(item=> {
+            item.style.display = "none";
+        })
+        makeAccordionWork();
+        
+    } else if (window.innerWidth >= 992) {
+        //display: block for all content panels
+        console.log('i am here');
+        content.forEach(item => {
+            item.style.display = "block";
+        });
+    }
+}
+
+window.addEventListener("resize", reportWindowSize);
 
 
 
