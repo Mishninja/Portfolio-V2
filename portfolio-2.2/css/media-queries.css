@@ -24,7 +24,6 @@ body {
   line-height: 1.4;
   font-weight: 400;
   color: #F2F7F5;
-  background-color: #F2F7F5;
   overflow-x: hidden;
 }
 
@@ -613,6 +612,7 @@ header.header-up {
   .bnr {
     background-image: none;
     flex-direction: row;
+    align-items: center;
     height: 100vh;
     padding: 0;
   }
@@ -856,9 +856,6 @@ header.header-up {
 }
 @media (min-width: 1024px) {
   .bnr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
   }
