@@ -58,12 +58,13 @@ section {
 
 /*===== Navigation =====*/
 .header {
-    width: 100%;
     @include flex(flex, space-between, center);
+    // width: 100%;
     text-decoration: none;
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     z-index: 999;
     will-change: top;
     padding: 1rem 1.5rem;
