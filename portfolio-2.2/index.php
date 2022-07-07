@@ -28,7 +28,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a class="logo-link" href="index.html" title="Home Page">
+            <a class="logo-link" href="index.php" title="Home Page">
                 <img src="images/logo-pink-white.svg" alt="Logo" loading="lazy">
             </a>
         </div>
