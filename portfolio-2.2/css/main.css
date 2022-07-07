@@ -24,6 +24,7 @@ body {
   line-height: 1.4;
   font-weight: 400;
   color: #F2F7F5;
+  background-color: #F2F7F5;
   overflow-x: hidden;
 }
 
@@ -76,7 +77,7 @@ section {
   will-change: top;
   padding: 1.5rem;
   background-color: #004643;
-  transition: top .3s ease-in-out;
+  transition: top 0.3s ease-in-out;
   /*===== Burger Menu =====*/
 }
 .header .logo img {
@@ -230,15 +231,17 @@ header.header-up {
   margin: 0 auto;
 }
 .work .card {
-  margin: 10rem auto;
+  margin: 0 auto;
   width: 100%;
 }
 .work .card h3 {
-  font-size: 2.4rem;
+  font-size: 2rem;
+  font-weight: 700;
   color: #004643;
 }
 .work .card p {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
 }
 .work .card .display-vid {
   height: auto;
@@ -253,7 +256,7 @@ header.header-up {
 }
 .work .card .display-vid .vid {
   display: none;
-  filter: drop-shadow(-17px 15px 3px #f2f7f550);
+  filter: drop-shadow(-17px 15px 3px rgba(242, 247, 245, 0.3137254902));
 }
 .work .card .accordion-btn {
   cursor: pointer;
@@ -261,7 +264,7 @@ header.header-up {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
   font-family: proxima-nova, sans-serif;
   background-color: #F2F7F5;
   box-shadow: -2px 9px 7px -4px rgba(255, 255, 255, 0.19);
@@ -269,7 +272,7 @@ header.header-up {
   -moz-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
 }
 .work .card .accordion-btn .icon {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #004643;
   transition: all 0.3s ease-in-out;
 }
@@ -288,11 +291,12 @@ header.header-up {
 }
 .work .card .content .description h4 {
   font-weight: 700;
-  font-size: 2.2rem;
-  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 .work .card .content .description ul {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
 }
 .work .card .content .description a {
   color: #004643;
@@ -300,7 +304,7 @@ header.header-up {
 .work .card .content .ftr {
   display: flex;
   justify-content: center;
-  padding: 5rem 0;
+  padding-bottom: 2rem;
 }
 .work .card .content .ftr .git-link {
   margin-left: 1.5rem;
@@ -327,15 +331,15 @@ header.header-up {
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
-  filter: drop-shadow(-17px 15px 3px #f2f7f550);
+  filter: drop-shadow(-17px 15px 3px rgba(242, 247, 245, 0.3137254902));
 }
 .about .panel .img img {
   width: 80%;
-  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  border-radius: 48% 52% 68% 32%/50% 50% 50% 50%;
   border: 6px solid #FFA8BA;
 }
 .about .panel .img.me {
-  filter: drop-shadow(15px 5px 3px #f2f7f550);
+  filter: drop-shadow(15px 5px 3px rgba(242, 247, 245, 0.3137254902));
 }
 .about .game {
   width: 85%;
@@ -408,7 +412,7 @@ header.header-up {
   width: 100%;
   height: 100%;
   border: 3px #FFA8BA solid;
-  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  border-radius: 48% 52% 68% 32%/50% 50% 50% 50%;
 }
 .connect .connect-container .image {
   width: 100%;
@@ -425,7 +429,7 @@ header.header-up {
 }
 .connect .connect-container img {
   width: 100%;
-  border-radius: 59% 41% 45% 55% / 30% 40% 60% 70%;
+  border-radius: 59% 41% 45% 55%/30% 40% 60% 70%;
 }
 .connect .connect-container .triangle {
   position: absolute;
