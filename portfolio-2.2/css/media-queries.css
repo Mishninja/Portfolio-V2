@@ -64,13 +64,12 @@ section {
 
 /*===== Navigation =====*/
 .header {
-  width: 100%;
-  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
   position: fixed;
+  right: 0;
   top: 0;
   left: 0;
   z-index: 999;
