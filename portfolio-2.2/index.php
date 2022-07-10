@@ -194,6 +194,26 @@
                 </div>
             </div>
         </section>
+        <section id="about" class="about">
+            <h2 class="section-heading">About Me</h2>
+            <div class="panel">
+                <div class="img bg-repeat me">
+                    <img src="images/about/pp.jpg" alt="Photo of Michelle">
+                </div>
+                <div class="content">
+                    <p>I am currently a student enrolled in the BCIT New Media and Web Development program. I initially dipped my toes into the computer sciences disciplines while completing my bachelor in science at UBC. I quickly realized that I was able to combine the satisfaction of problem solving with my passion for creating things as a front end developer.</p>
+                </div>
+            </div>
+            <div class="panel panel-rev">
+                <div class="img bg-repeat cat">
+                    <img src="images/about/tiger.jpg" alt="Photo of Tiger the cat">
+                </div>
+                <div class="content">
+                    <p>Hi, i’m Tiger! I love treats and food so much I learned to do tricks for them! I can hi-five and shake a paw. When i’m
+                        not on the prowl for food, I love taking naps and keeping my human company while she studies and works.</p>
+                </div>
+            </div>
+        </section>
         <section class="connect" id="connect">
             <?php include 'contact.php'; ?>
         </section>
