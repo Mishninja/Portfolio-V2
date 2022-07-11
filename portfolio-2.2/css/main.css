@@ -24,7 +24,6 @@ body {
   line-height: 1.4;
   font-weight: 400;
   color: #F2F7F5;
-  background-color: #F2F7F5;
   overflow-x: hidden;
 }
 
@@ -73,16 +72,19 @@ section {
   right: 0;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 999;
   will-change: top;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   background-color: #004643;
   transition: top .3s ease-in-out;
   /*===== Burger Menu =====*/
 }
-.header .logo img {
-  width: 4rem;
-  padding-left: 1rem;
+.header .logo .logo-link {
+  display: block;
+}
+.header .logo .logo-link img {
+  height: 4rem;
 }
 .header .gn {
   display: none;

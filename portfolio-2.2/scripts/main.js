@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
+//
 jQuery(function($) {
 
     var windowWidth = $('body').width();
-
+    var navBtn = $('.gn-trigger');
     /*
     Hide/Show Header 
     */
@@ -23,8 +24,11 @@ jQuery(function($) {
           return;
         }
 
-        if (st > lastScrollTop && st > navbarHeight){
-            // Scroll Down
+        if (navBtn.hasClass('is-active')){
+            $('header').removeClass('header-up').addClass('header-down');
+        } else if(st > lastScrollTop && st > navbarHeight){// Scroll Down
+            console.log('st: ' + st);
+            console.log('lastScrollTop: ' + lastScrollTop);
             $('header').removeClass('header-down').addClass('header-up');
         } else {
             // Scroll Up

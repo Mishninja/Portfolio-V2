@@ -18,7 +18,6 @@ body {
     line-height: 1.4;
     font-weight: 400;
     color: $text-color-lt;
-    background-color: $secondary-color;
     overflow-x: hidden;
 }
 
@@ -60,21 +59,26 @@ section {
 /*===== Navigation =====*/
 .header {
     @include flex(flex, space-between, center);
+    // width: 100%;
     text-decoration: none;
     position: fixed;
     right: 0;
     top: 0;
     left: 0;
+    right: 0;
     z-index: 999;
     will-change: top;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     background-color: $primary-color;
     transition: top .3s ease-in-out;
     .logo {
-        img {
-            width: 4rem;
-            padding-left: 1rem;
+        .logo-link {
+            display: block;
+            img {
+                height: 4rem;
+            }
         }
+        
     }
 
     .gn {
