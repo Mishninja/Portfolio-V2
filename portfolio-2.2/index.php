@@ -19,13 +19,18 @@
     <meta property="twitter:title" content="Michelle Cheung's Web Development and Design Portfolio" />
     <meta property="twitter:description" content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
     <meta property="twitter:image" content="images/logo-bg.png" />
+
     <title>Michelle's Portfolio</title>
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics --s>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-50W90RK4EE"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
