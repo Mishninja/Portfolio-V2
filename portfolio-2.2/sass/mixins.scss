@@ -6,29 +6,24 @@
     align-items: $align;
 }
 
-
-@mixin card-grid-lg ($title) {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1rem;
-    grid-template-rows: [first] $title [line2] auto [line2] auto [line3] $title [end];
-}
-
-@mixin card-grid-sm($col, $row){
-    display: grid;
-    grid-template-columns: [first] $col [line2] auto [line3] $col [end];
-    grid-template-rows: [first] auto [line2] $row [line3] auto [end];
-}
-
-
-@mixin content-grid($col) {
-    display: grid;
-    grid-template-columns: [first] $col [line2] auto [line3] $col [end];
-}
-
-.form-style{
+.form-style {
     border: none;
     padding: 1rem 2rem;
+    color: #004643;
+    font-family: "Oxygen", sans-serif;
+}
+
+@mixin button-style {
+    font-weight: 600;
+    font-size: 1.4rem;
+    border: 3px solid $secondary-color;
+    background-color: $accent-color;
     color: $text-color-dk;
-    font-family: $body-font;
+    position: absolute;
+    padding: 1rem 3.5rem;
+    border-top-left-radius: 20% 70%;
+    border-top-right-radius: 20% 70%;
+    border-bottom-right-radius: 20% 70%;
+    border-bottom-left-radius: 20% 70%;
+    transition: all 0.3s ease-in-out;
 }
