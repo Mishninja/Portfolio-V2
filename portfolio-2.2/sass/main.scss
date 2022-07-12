@@ -207,6 +207,7 @@ header.header-up {
             margin-top: 7rem;
             a {
                 @include button-style;
+                position: absolute;
             }
         }     
     }
@@ -492,6 +493,7 @@ header.header-up {
                 cursor: pointer;            
                 width: 10%;
                 min-width: 10.7rem;
+                margin: 2rem auto;
                 @include button-style;
             }
 

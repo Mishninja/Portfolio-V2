@@ -292,6 +292,13 @@
                 max-width: 50%;        
             }
         }
+        .error-msg-wrap {
+            .btn {
+                a:hover {
+                    @include button-hover-style;
+                }
+            }
+        }
 
         .form-container {
             display: flex;
@@ -312,16 +319,6 @@
                     cursor: default;
                 }
             }
-            // .btn a {
-            //     padding: 1rem 2rem;
-            //     border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
-            //     font-size: 1.4rem;
-            //     margin: 2rem auto;
-            //     border: 2px solid $secondary-color;
-            //     background: $secondary-color;
-            //     color: $text-color-dk;
-            //     transition: all 0.3s ease-in-out;
-            // }
         }
     }
 

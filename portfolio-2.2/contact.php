@@ -97,10 +97,12 @@ if (array_key_exists('email', $_POST)) {
             <input type="submit" value="Send" id="submit" disabled>
         </form>
     <?php } else {
+        echo "<div class='error-msg-wrap'>";
         echo "<h2 class='error-msg'>" . $msg . "</h2>";
         echo "<div class='btn'>
                 <a href=index.php>Send another message.</a>
             </div>";
+        echo "</div>";
     } ?>
 
     <div class="graphic bg-repeat"><img src="images/bnr-img.svg" alt="Peace sign graphic"></div>
