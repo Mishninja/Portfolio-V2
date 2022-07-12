@@ -169,7 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card supu">
                     <div class="display-vid">
                         <img class="image" loading="lazy" src="images/supu/supu-mockup.png" alt="Supu onboarding screen">
                         <video class="vid" autoplay loop class="vid" poster="images/supu/supu-mockup.png" loading>
