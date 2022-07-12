@@ -213,7 +213,6 @@ header.header-up {
   border: 3px solid #F2F7F5;
   background-color: #FFA8BA;
   color: #004643;
-  position: absolute;
   padding: 1rem 3.5rem;
   border-top-left-radius: 20% 70%;
   border-top-right-radius: 20% 70%;
@@ -827,6 +826,11 @@ header.header-up {
   .connect .connect-container .col {
     flex-basis: 50%;
     max-width: 50%;
+  }
+  .connect .error-msg-wrap .btn a:hover {
+    color: #F2F7F5;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
   }
   .connect .form-container {
     display: flex;
