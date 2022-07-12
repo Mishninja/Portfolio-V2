@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 @import url("https://use.typekit.net/mus6lse.css");
-@import url("https://use.typekit.net/mus6lse.css");
 .form-style, .connect .form-container .form input[type=text],
 .connect .form-container .form input[type=email],
 .connect .form-container .form input[type=subject] {
@@ -233,6 +232,12 @@ header.header-up {
   width: 100%;
   margin: 0 auto;
 }
+.work .card.supu video {
+  width: 50% !important;
+}
+.work .card.supu img {
+  width: 50%;
+}
 .work .card {
   margin: 0 auto;
   width: 100%;
@@ -334,11 +339,13 @@ header.header-up {
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
-  filter: drop-shadow(-17px 15px 3px rgba(242, 247, 245, 0.3137254902));
 }
 .about .panel .img img {
   width: 80%;
-  border-radius: 48% 52% 68% 32%/50% 50% 50% 50%;
+  border-top-left-radius: 65% 60%;
+  border-top-right-radius: 65% 60%;
+  border-bottom-right-radius: 65% 60%;
+  border-bottom-left-radius: 65% 60%;
   border: 6px solid #FFA8BA;
 }
 .about .panel .img.me {
@@ -408,31 +415,18 @@ header.header-up {
 .connect .connect-container .content p {
   font-size: 2rem;
 }
-.connect .connect-container .image::after, .connect .connect-container .image::before {
-  position: absolute;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 100%;
-  border: 3px #FFA8BA solid;
-  border-radius: 48% 52% 68% 32%/50% 50% 50% 50%;
-}
 .connect .connect-container .image {
   width: 100%;
   position: relative;
   margin: 3rem 0;
 }
-.connect .connect-container .image::before {
-  bottom: -1rem;
-  transform: rotate(180deg);
-}
-.connect .connect-container .image::before {
-  bottom: 1.5rem;
-  transform: rotate(4deg);
-}
 .connect .connect-container img {
   width: 100%;
-  border-radius: 59% 41% 45% 55%/30% 40% 60% 70%;
+  border-top-left-radius: 65% 60%;
+  border-top-right-radius: 65% 60%;
+  border-bottom-right-radius: 65% 60%;
+  border-bottom-left-radius: 65% 60%;
+  border: 6px solid #FFA8BA;
 }
 .connect .connect-container .triangle {
   position: absolute;
