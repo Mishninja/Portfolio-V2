@@ -27,3 +27,9 @@
     border-bottom-left-radius: 20% 70%;
     transition: all 0.3s ease-in-out;
 }
+
+@mixin button-hover-style {
+    color: $secondary-color;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
