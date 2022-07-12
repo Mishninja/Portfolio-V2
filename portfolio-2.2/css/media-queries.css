@@ -348,8 +348,11 @@ header.header-up {
   border-bottom-left-radius: 65% 60%;
   border: 6px solid #FFA8BA;
 }
-.about .panel .img.me {
-  filter: drop-shadow(15px 5px 3px rgba(242, 247, 245, 0.3137254902));
+.about .panel .img.cat img {
+  border-top-left-radius: 60% 65%;
+  border-top-right-radius: 60% 65%;
+  border-bottom-right-radius: 60% 65%;
+  border-bottom-left-radius: 60% 65%;
 }
 .about .game {
   width: 85%;
