@@ -208,6 +208,7 @@ header.header-up {
             a {
                 @include button-style;
                 position: absolute;
+
             }
         }     
     }
@@ -488,6 +489,7 @@ header.header-up {
                 @extend .form-style;
                 background-color: $secondary-color;
             }
+
 
             input[type = submit] {
                 cursor: pointer;            

@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/media-queries.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics --s>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-50W90RK4EE"></script>
     <script>
         window.dataLayer = window.dataLayer || [];

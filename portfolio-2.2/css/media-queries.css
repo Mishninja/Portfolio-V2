@@ -213,6 +213,7 @@ header.header-up {
   border: 3px solid #F2F7F5;
   background-color: #FFA8BA;
   color: #004643;
+  position: absolute;
   padding: 1rem 3.5rem;
   border-top-left-radius: 20% 70%;
   border-top-right-radius: 20% 70%;
@@ -620,7 +621,6 @@ header.header-up {
     height: 0%;
     border-radius: 0.4rem;
     border-bottom: 3px solid #FFA8BA;
-    font-weight: 600;
   }
   .header .gn-items li:hover:before,
 .header .gn-items li:hover:after {
