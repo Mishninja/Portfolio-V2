@@ -173,12 +173,12 @@ header.header-up {
 }
 .bnr .left {
   width: 100%;
-  height: 20vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
 }
 .bnr .left img {
-  width: 70%;
+  width: 100%;
 }
 .bnr .right {
   margin-right: 1.5rem;
