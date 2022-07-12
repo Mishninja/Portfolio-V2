@@ -82,10 +82,6 @@
                 <div class="card">
                     <div class="display-vid">
                         <img class="image" src="images/studybuddy/study-buddy-mock.png" alt="Study Buddy Mock Up" loading="lazy">
-                        <video autoplay loop class="vid" poster="images/studybuddy/study-buddy-mock.png">
-                            <source src="media/studybuddy/study-buddy-video.webm" type="video/mp4">
-                            "Sorry your browser does not support video."
-                        </video>
                     </div>
                     <div class="content-wrapper">
                         <div class="accordion-btn">
@@ -126,10 +122,6 @@
                 <div class="card reverse">
                     <div class="display-vid">
                         <img class="image" src="images/contactform/contac-form-mock.png" alt="Contact Form Mock Up" loading="lazy">
-                        <video autoplay loop class="vid" poster="images/contactform/contac-form-mock.png">
-                            <source src="media/contactform/contact-page-video.webm" type="video/mp4">
-                            "Sorry your browser does not support video."
-                        </video>
                     </div>
                     <div class="content-wrapper">
                         <div class="accordion-btn">
@@ -172,10 +164,7 @@
                 <div class="card supu">
                     <div class="display-vid">
                         <img class="image" loading="lazy" src="images/supu/supu-mockup.png" alt="Supu onboarding screen">
-                        <video class="vid" autoplay loop class="vid" poster="images/supu/supu-mockup.png" loading>
-                            <source src="media/supu/supu-video.webm" type="video/mp4">
-                            "Sorry your browser does not support video."
-                        </video>
+                        
                     </div>
                     <div class="content-wrapper">
                         <div class="accordion-btn">
