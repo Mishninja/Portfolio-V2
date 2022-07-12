@@ -26,9 +26,8 @@ jQuery(function($) {
 
         if (navBtn.hasClass('is-active')){
             $('header').removeClass('header-up').addClass('header-down');
-        } else if(st > lastScrollTop && st > navbarHeight){// Scroll Down
-            console.log('st: ' + st);
-            console.log('lastScrollTop: ' + lastScrollTop);
+        } else if(st > lastScrollTop && st > navbarHeight){
+            // Scroll Down
             $('header').removeClass('header-down').addClass('header-up');
         } else {
             // Scroll Up
@@ -91,8 +90,6 @@ jQuery(function($) {
 });
 
 /* ===== Accordion ===== */
-// var acc = document.querySelectorAll(".accordion-btn");
-// var content = document.querySelectorAll(".content");
 
 
 //Initialize accordion
