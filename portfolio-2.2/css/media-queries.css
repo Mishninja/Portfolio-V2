@@ -64,25 +64,27 @@ section {
 
 /*===== Navigation =====*/
 .header {
-  width: 100%;
-  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
   position: fixed;
+  right: 0;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 999;
   will-change: top;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   background-color: #004643;
-  transition: top .3s ease-in-out;
+  transition: top 0.3s ease-in-out;
   /*===== Burger Menu =====*/
 }
-.header .logo img {
-  width: 4rem;
-  padding-left: 1rem;
+.header .logo .logo-link {
+  display: block;
+}
+.header .logo .logo-link img {
+  height: 4rem;
 }
 .header .gn {
   display: none;
@@ -231,15 +233,17 @@ header.header-up {
   margin: 0 auto;
 }
 .work .card {
-  margin: 10rem auto;
+  margin: 0 auto;
   width: 100%;
 }
 .work .card h3 {
-  font-size: 2.4rem;
+  font-size: 2rem;
+  font-weight: 700;
   color: #004643;
 }
 .work .card p {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
 }
 .work .card .display-vid {
   height: auto;
@@ -254,7 +258,7 @@ header.header-up {
 }
 .work .card .display-vid .vid {
   display: none;
-  filter: drop-shadow(-17px 15px 3px #f2f7f550);
+  filter: drop-shadow(-17px 15px 3px rgba(242, 247, 245, 0.3137254902));
 }
 .work .card .accordion-btn {
   cursor: pointer;
@@ -262,7 +266,7 @@ header.header-up {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
   font-family: proxima-nova, sans-serif;
   background-color: #F2F7F5;
   box-shadow: -2px 9px 7px -4px rgba(255, 255, 255, 0.19);
@@ -270,7 +274,7 @@ header.header-up {
   -moz-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
 }
 .work .card .accordion-btn .icon {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #004643;
   transition: all 0.3s ease-in-out;
 }
@@ -289,11 +293,12 @@ header.header-up {
 }
 .work .card .content .description h4 {
   font-weight: 700;
-  font-size: 2.2rem;
-  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 .work .card .content .description ul {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
 }
 .work .card .content .description a {
   color: #004643;
@@ -301,7 +306,7 @@ header.header-up {
 .work .card .content .ftr {
   display: flex;
   justify-content: center;
-  padding: 5rem 0;
+  padding-bottom: 2rem;
 }
 .work .card .content .ftr .git-link {
   margin-left: 1.5rem;
@@ -328,15 +333,15 @@ header.header-up {
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
-  filter: drop-shadow(-17px 15px 3px #f2f7f550);
+  filter: drop-shadow(-17px 15px 3px rgba(242, 247, 245, 0.3137254902));
 }
 .about .panel .img img {
   width: 80%;
-  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  border-radius: 48% 52% 68% 32%/50% 50% 50% 50%;
   border: 6px solid #FFA8BA;
 }
 .about .panel .img.me {
-  filter: drop-shadow(15px 5px 3px #f2f7f550);
+  filter: drop-shadow(15px 5px 3px rgba(242, 247, 245, 0.3137254902));
 }
 .about .game {
   width: 85%;
@@ -409,7 +414,7 @@ header.header-up {
   width: 100%;
   height: 100%;
   border: 3px #FFA8BA solid;
-  border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+  border-radius: 48% 52% 68% 32%/50% 50% 50% 50%;
 }
 .connect .connect-container .image {
   width: 100%;
@@ -426,7 +431,7 @@ header.header-up {
 }
 .connect .connect-container img {
   width: 100%;
-  border-radius: 59% 41% 45% 55% / 30% 40% 60% 70%;
+  border-radius: 59% 41% 45% 55%/30% 40% 60% 70%;
 }
 .connect .connect-container .triangle {
   position: absolute;
@@ -556,6 +561,14 @@ header.header-up {
   font-family: "Oxygen", sans-serif;
 }
 
+@media (min-width: 480px) {
+  .work .container .card .accordion-btn {
+    padding: 2rem 3rem;
+  }
+  .work .container .card .accordion-btn .icon {
+    font-size: 3rem;
+  }
+}
 @media (min-width: 800px) {
   .about .about-me {
     max-width: 1000px;
@@ -599,7 +612,7 @@ header.header-up {
     font-weight: 600;
   }
   .header .gn-items li:hover:before,
-  .header .gn-items li:hover:after {
+.header .gn-items li:hover:after {
     width: 1.3rem;
     height: 1.3rem;
     border-color: #F2F7F5;
@@ -607,14 +620,13 @@ header.header-up {
   .header .logo img {
     width: 8rem;
   }
-
   /*===== Banner =====*/
   .bnr {
     background-image: none;
     flex-direction: row;
     align-items: center;
-    height: 100vh;
-    padding: 0;
+    height: 70vh;
+    padding: 10rem 0;
   }
   .bnr .col {
     flex-basis: 50%;
@@ -635,94 +647,96 @@ header.header-up {
     color: #F2F7F5;
     background-color: transparent;
   }
-
   /*===== Works =====*/
   .work {
     background-color: #004643;
   }
-  .work h2 {
+  .work .container {
+    width: 90%;
+  }
+  .work .container h2 {
     color: #F2F7F5;
   }
-  .work .reverse {
+  .work .container .reverse {
     flex-direction: row-reverse;
   }
-  .work .card {
+  .work .container .card {
     display: flex;
     max-width: 1200px;
-    margin: 15rem auto;
+    margin: 10rem auto;
   }
-  .work .card h3 {
+  .work .container .card h3 {
     color: #F2F7F5;
   }
-  .work .card .content-wrapper {
+  .work .container .card p {
+    font-size: 1.6rem;
+  }
+  .work .container .card .content-wrapper {
     position: relative;
     margin: 5.5rem auto;
-    padding: 4rem 0;
-    flex-basis: 40%;
+    padding: 1.5rem 0 5rem;
+    flex-basis: 45%;
     border: 4px solid #FFA8BA;
     border-radius: 0.4rem;
   }
-  .work .card .display-vid {
-    flex-basis: 60%;
+  .work .container .card .display-vid {
+    flex-basis: 55%;
   }
-  .work .card .display-vid .image {
+  .work .container .card .display-vid .image {
     display: none;
   }
-  .work .card .display-vid .vid {
+  .work .container .card .display-vid .vid {
     display: block;
     width: 100%;
     height: auto;
     margin: 0 auto;
   }
-  .work .card .accordion-btn {
+  .work .container .card .accordion-btn {
     cursor: auto;
-    padding: 0 0 4rem;
+    padding: 0 0 2rem;
     background-color: transparent;
     box-shadow: none;
     justify-content: center;
   }
-  .work .card .accordion-btn h3 {
+  .work .container .card .accordion-btn h3 {
     font-size: 2.6rem;
   }
-  .work .card .accordion-btn .icon {
+  .work .container .card .accordion-btn .icon {
     display: none;
     transition: all 0.3s ease-in-out;
   }
-  .work .card .accordion-btn .link {
+  .work .container .card .accordion-btn .link {
     transition: all 0.3s ease-in-out;
   }
-  .work .card .accordion-btn .link:hover {
+  .work .container .card .accordion-btn .link:hover {
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
   }
-  .work .card .content {
+  .work .container .card .content {
     background-color: transparent;
     box-shadow: none;
     display: block;
   }
-  .work .card .content .description {
+  .work .container .card .content .description {
     color: #F2F7F5;
     height: 100%;
   }
-  .work .card .content .description h4 {
+  .work .container .card .content .description h4 {
     font-size: 2rem;
   }
-  .work .card .content .description ul {
+  .work .container .card .content .description ul {
     margin-left: 2.5rem;
+    font-size: 1.6rem;
   }
-  .work .card .content .description li {
+  .work .container .card .content .description li {
     list-style-type: circle;
   }
-  .work .card .content .description a {
+  .work .container .card .content .description a {
     color: #FFA8BA;
   }
-  .work .card .content .ftr {
-    padding: 4rem 0 0;
-  }
-  .work .card .content .ftr .icon {
+  .work .container .card .content .ftr .icon {
     color: #FFA8BA;
   }
-
   /* ===== About ===== */
   .about .panel {
     max-width: 1200px;
@@ -734,18 +748,18 @@ header.header-up {
   .about .panel .img {
     width: 100%;
     padding: 2rem 3rem;
-    grid-column: 1 / 6;
+    grid-column: 1/6;
   }
   .about .panel .content {
-    grid-column: 8 / 13;
+    grid-column: 8/13;
   }
   .about .panel-rev .img {
-    grid-column: 8 / -1;
-    grid-row: 1 / 2;
+    grid-column: 8/-1;
+    grid-row: 1/2;
   }
   .about .panel-rev .content {
-    grid-column: -13 / 6;
-    grid-row: 1 / 2;
+    grid-column: -13/6;
+    grid-row: 1/2;
   }
   .about .game {
     width: 100%;
@@ -793,7 +807,6 @@ header.header-up {
   .about .game .container .dislike .like-item {
     background: #FFA8BA;
   }
-
   /* ===== Connect ===== */
   .connect .connect-container {
     flex-direction: row-reverse;
@@ -824,7 +837,7 @@ header.header-up {
   }
   .connect .form-container .btn a {
     padding: 1rem 2rem;
-    border-radius: 48% 52% 68% 32% / 50% 50% 50% 50%;
+    border-radius: 48% 52% 68% 32%/50% 50% 50% 50%;
     font-size: 1.4rem;
     margin: 2rem auto;
     border: 2px solid #F2F7F5;
@@ -832,7 +845,6 @@ header.header-up {
     color: #004643;
     transition: all 0.3s ease-in-out;
   }
-
   /* ===== Footer ===== */
   .footer .content {
     flex-direction: row;
@@ -866,7 +878,6 @@ header.header-up {
   .bnr .right h1 {
     font-size: 6.4rem;
   }
-
   .work .container {
     max-width: 1600px;
   }

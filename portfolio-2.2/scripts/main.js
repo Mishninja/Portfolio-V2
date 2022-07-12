@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
+//
 jQuery(function($) {
 
     var windowWidth = $('body').width();
-
+    var navBtn = $('.gn-trigger');
     /*
     Hide/Show Header 
     */
@@ -23,7 +24,9 @@ jQuery(function($) {
           return;
         }
 
-        if (st > lastScrollTop && st > navbarHeight){
+        if (navBtn.hasClass('is-active')){
+            $('header').removeClass('header-up').addClass('header-down');
+        } else if(st > lastScrollTop && st > navbarHeight){
             // Scroll Down
             $('header').removeClass('header-down').addClass('header-up');
         } else {
@@ -87,17 +90,48 @@ jQuery(function($) {
 });
 
 /* ===== Accordion ===== */
-var acc = document.getElementsByClassName("accordion-btn");
-// var i;
 
-for (var i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+
+//Initialize accordion
+$(".content-wrapper").accordion({
+    active: false,
+    collapsible: true,
+    header: ".accordion-btn",
+})
+
+//When user first loads in, make sure accordion works as expected
+//Disable in desktop view
+function accordionOnLoad() {
+    if (window.innerWidth < 992) {
+        $(".content-wrapper").accordion("option", "disabled", false);
+    } else if (window.innerWidth >= 992) {
+        //display: block for all content panels
+        $(".content-wrapper").accordion("option", "disabled", true);
+        $(".content-wrapper").accordion("option", "collapsible", false);
     }
-  });
 }
+
+accordionOnLoad();
+
+//Handles window resizing
+//enables and disables accordion according to screen size
+function reportWindowSize() {
+    var width = window.innerWidth;
+    if (width < 992) {
+        //check that window is tablet or mobile width
+        $(".content-wrapper").accordion("option", "disabled", false);
+        $(".content-wrapper").accordion("option", "collapsible", true);
+    } else if (window.innerWidth >= 992) {
+        //display: block for all content panels
+        $(".content-wrapper").accordion("option", "disabled", true);
+        $(".content-wrapper").accordion("option", "collapsible", false);
+    }
+}
+
+window.addEventListener("resize", reportWindowSize);
+
+
+
+
+
+

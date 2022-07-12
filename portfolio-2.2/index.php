@@ -5,13 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Web Developer and Designer from Vancouver, B.C. and who loves building things with code. Creativity meets efficient problem solving.">
+    <meta property="og:url" content="http://michellecheung.net" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Michelle Cheung's Web Development and Design Portfolio" />
+    <meta property="og:description" content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
+    <meta property="og:image" content="images/logo-bg.png" />
+
+    <meta name="twitter:card" content="summary">
+    </meta>
+    <meta property="twitter:url" content="http://michellecheung.net" />
+    <meta property="twitter:type" content="website" />
+    <meta property="twitter:title" content="Michelle Cheung's Web Development and Design Portfolio" />
+    <meta property="twitter:description" content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
+    <meta property="twitter:image" content="images/logo-bg.png" />
+
     <title>Michelle's Portfolio</title>
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics --s>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-50W90RK4EE"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -28,7 +47,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a class="logo-link" href="index.html" title="Home Page">
+            <a class="logo-link" href="index.php" title="Home Page">
                 <img src="images/logo-pink-white.svg" alt="Logo" loading="lazy">
             </a>
         </div>
@@ -191,6 +210,26 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2 class="section-heading">About Me</h2>
+            <div class="panel">
+                <div class="img bg-repeat me">
+                    <img src="images/about/pp.jpg" alt="Photo of Michelle">
+                </div>
+                <div class="content">
+                    <p>I am currently a student enrolled in the BCIT New Media and Web Development program. I initially dipped my toes into the computer sciences disciplines while completing my bachelor in science at UBC. I quickly realized that I was able to combine the satisfaction of problem solving with my passion for creating things as a front end developer.</p>
+                </div>
+            </div>
+            <div class="panel panel-rev">
+                <div class="img bg-repeat cat">
+                    <img src="images/about/tiger.jpg" alt="Photo of Tiger the cat">
+                </div>
+                <div class="content">
+                    <p>Hi, i’m Tiger! I love treats and food so much I learned to do tricks for them! I can hi-five and shake a paw. When i’m
+                        not on the prowl for food, I love taking naps and keeping my human company while she studies and works.</p>
                 </div>
             </div>
         </section>
