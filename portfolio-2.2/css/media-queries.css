@@ -173,12 +173,12 @@ header.header-up {
 }
 .bnr .left {
   width: 100%;
-  height: 20vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
 }
 .bnr .left img {
-  width: 70%;
+  width: 100%;
 }
 .bnr .right {
   margin-right: 1.5rem;
@@ -208,10 +208,11 @@ header.header-up {
   margin-top: 7rem;
 }
 .bnr .right .cta a {
-  color: #004643;
   font-weight: 600;
+  font-size: 1.4rem;
   border: 3px solid #F2F7F5;
   background-color: #FFA8BA;
+  color: #004643;
   position: absolute;
   padding: 1rem 3.5rem;
   border-top-left-radius: 20% 70%;
@@ -450,9 +451,34 @@ header.header-up {
 .connect .form-container .graphic {
   display: none;
 }
-.connect .form-container .error-msg {
+.connect .form-container .error-msg-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.connect .form-container .error-msg-wrap .error-msg {
   color: #F2F7F5;
   text-align: center;
+  font-size: 2.5rem;
+}
+.connect .form-container .error-msg-wrap .btn {
+  width: 20%;
+  margin: 2rem auto;
+}
+.connect .form-container .error-msg-wrap .btn a {
+  font-weight: 600;
+  font-size: 1.4rem;
+  border: 3px solid #F2F7F5;
+  background-color: #FFA8BA;
+  color: #004643;
+  position: absolute;
+  padding: 1rem 3.5rem;
+  border-top-left-radius: 20% 70%;
+  border-top-right-radius: 20% 70%;
+  border-bottom-right-radius: 20% 70%;
+  border-bottom-left-radius: 20% 70%;
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
 }
 .connect .form-container .form {
   width: 80%;
@@ -471,20 +497,21 @@ header.header-up {
   background-color: #F2F7F5;
 }
 .connect .form-container .form input[type=submit] {
-  cursor: pointer;
   width: 20%;
   min-width: 10.7rem;
+  padding: 1rem 3.5rem;
+  margin: 2rem auto;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border: 3px solid #F2F7F5;
+  background-color: #FFA8BA;
+  color: #004643;
+  position: absolute;
   padding: 1rem 3.5rem;
   border-top-left-radius: 20% 70%;
   border-top-right-radius: 20% 70%;
   border-bottom-right-radius: 20% 70%;
   border-bottom-left-radius: 20% 70%;
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin: 2rem auto;
-  border: 2px solid #F2F7F5;
-  background: #FFA8BA;
-  color: #004643;
   transition: all 0.3s ease-in-out;
 }
 .connect .form-container .form input[type=submit]:disabled {
@@ -504,23 +531,6 @@ header.header-up {
 }
 .connect .form-container .form .g-recaptcha {
   margin: 2.5rem auto;
-}
-.connect .form-container .btn {
-  width: 20%;
-  margin: 2rem auto;
-}
-.connect .form-container .btn a {
-  padding: 1rem 3.5rem;
-  border-top-left-radius: 20% 70%;
-  border-top-right-radius: 20% 70%;
-  border-bottom-right-radius: 20% 70%;
-  border-bottom-left-radius: 20% 70%;
-  font-size: 1.4rem;
-  margin: 0 auto;
-  border: 2px solid #F2F7F5;
-  background: #F2F7F5;
-  color: #004643;
-  transition: all 0.3s ease-in-out;
 }
 
 .footer {
@@ -609,7 +619,6 @@ header.header-up {
     height: 0%;
     border-radius: 0.4rem;
     border-bottom: 3px solid #FFA8BA;
-    font-weight: 600;
   }
   .header .gn-items li:hover:before,
 .header .gn-items li:hover:after {

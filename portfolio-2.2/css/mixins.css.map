@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AA4BA,WAAW;EACP,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,SAAS;EAClB,KAAK,EC5BO,OAAO;ED6BnB,WAAW,ECzBH,oBACE",
-"sources": ["../sass/mixins.scss","../sass/variables.scss"],
-"names": [],
-"file": "mixins.css"
-}
+{"version":3,"sourceRoot":"","sources":["../sass/mixins.scss"],"names":[],"mappings":"AAQA;EACI;EACA;EACA;EACA","file":"mixins.css"}
