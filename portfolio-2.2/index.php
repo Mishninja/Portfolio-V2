@@ -6,19 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A Web Developer and Designer from Vancouver, B.C. and who loves building things with code. Creativity meets efficient problem solving.">
-    <meta property="og:url" content="http://michellecheung.net" />
+    <meta property="og:url" content="https://michellecheung.net" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Michelle Cheung's Web Development and Design Portfolio" />
     <meta property="og:description" content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
-    <meta property="og:image" content="images/logo-bg.png" />
+    <meta property="og:image" content="https://michellecheung.net/images/logo-bg.png" />
+    <meta property="og:image:alt" content="Michelle's Logo" />
 
     <meta name="twitter:card" content="summary">
     </meta>
-    <meta property="twitter:url" content="http://michellecheung.net" />
-    <meta property="twitter:type" content="website" />
-    <meta property="twitter:title" content="Michelle Cheung's Web Development and Design Portfolio" />
-    <meta property="twitter:description" content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
-    <meta property="twitter:image" content="images/logo-bg.png" />
+    <meta name="twitter:url" content="http://michellecheung.net" />
+    <meta name="twitter:type" content="website" />
+    <meta name="twitter:title" content="Michelle Cheung's Web Development and Design Portfolio" />
+    <meta name="twitter:description" content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
+    <!-- <meta name="twitter:image" content="https://www.michellecheung.net/images/logo-bg.png" /> -->
 
     <title>Michelle's Portfolio</title>
 
@@ -30,7 +31,7 @@
     <link rel="stylesheet" href="css/media-queries.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics --s>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-50W90RK4EE"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
