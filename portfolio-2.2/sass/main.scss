@@ -206,17 +206,7 @@ header.header-up {
             @include flex(flex,center,center);
             margin-top: 7rem;
             a {
-                color: $primary-color;
-                font-weight: 600;
-                border: 3px solid $secondary-color;
-                background-color: $accent-color;
-                position: absolute;
-                padding: 1rem 3.5rem;
-                border-top-left-radius: 20% 70%;
-                border-top-right-radius: 20% 70%;
-                border-bottom-right-radius: 20% 70%;
-                border-bottom-left-radius: 20% 70%;
-                transition: all 0.3s ease-in-out;
+                @include button-style;
             }
         }     
     }
@@ -460,9 +450,23 @@ header.header-up {
         .graphic {
             display: none;
         }
-        .error-msg {
-            color: $secondary-color;
-            text-align: center;
+        .error-msg-wrap {
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            .error-msg {
+                color: $secondary-color;
+                text-align: center;
+                font-size: 2.5rem;
+            }
+            .btn {
+                width: 20%;
+                margin: 2rem auto;
+                a {
+                    @include button-style;
+                    margin: 0 auto;
+                }
+            }
         }
         .form {
             width: 80%;
@@ -481,22 +485,23 @@ header.header-up {
                 background-color: $secondary-color;
             }
 
-            input[type = submit] {
-                cursor: pointer;            
+            input[type = submit] {           
                 width: 20%;
                 min-width: 10.7rem;
                 padding: 1rem 3.5rem;
-                border-top-left-radius: 20% 70%;
-                border-top-right-radius: 20% 70%;
-                border-bottom-right-radius: 20% 70%;
-                border-bottom-left-radius: 20% 70%;
-                font-size: 1.4rem;
-                font-weight: 600;
                 margin: 2rem auto;
-                border: 2px solid $secondary-color;
-                background: $accent-color;
-                color: $text-color-dk;
-                transition: all 0.3s ease-in-out;
+                @include button-style;
+                // border-top-left-radius: 20% 70%;
+                // border-top-right-radius: 20% 70%;
+                // border-bottom-right-radius: 20% 70%;
+                // border-bottom-left-radius: 20% 70%;
+                // font-size: 1.4rem;
+                // font-weight: 600;
+                
+                // border: 3px solid $secondary-color;
+                // background: $accent-color;
+                // color: $text-color-dk;
+                // transition: all 0.3s ease-in-out;
             }
 
             input[type = submit]:disabled {
@@ -520,23 +525,7 @@ header.header-up {
                 margin: 2.5rem auto;
             }
         }
-        .btn {
-            width: 20%;
-            margin: 2rem auto;
-            a {
-                padding: 1rem 3.5rem;
-                border-top-left-radius: 20% 70%;
-                border-top-right-radius: 20% 70%;
-                border-bottom-right-radius: 20% 70%;
-                border-bottom-left-radius: 20% 70%;
-                font-size: 1.4rem;
-                margin: 0 auto;
-                border: 2px solid $secondary-color;
-                background: $secondary-color;
-                color: $text-color-dk;
-                transition: all 0.3s ease-in-out;
-            }
-        }
+        
     }
 }
 
