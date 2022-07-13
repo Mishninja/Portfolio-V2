@@ -225,9 +225,7 @@ header.header-up {
         margin: 0 auto;
     }
     .card.supu {
-        video {
-            width: 50% !important;
-        }
+        
         img {
             width: 50%;
         }
@@ -252,10 +250,6 @@ header.header-up {
             .image {
                 display: block;
             }
-             .vid {
-                display: none;
-                filter: drop-shadow(-17px 15px 3px #f2f7f550);
-             }
          }
          .accordion-btn{ 
              cursor: pointer;
@@ -400,7 +394,7 @@ header.header-up {
     background-color: $secondary-color;
     color: $text-color-dk;
     .connect-container {
-        max-width: 60%;
+        max-width: 70%;
         margin: 0 auto;
         padding: 2rem 3rem 12rem;
         @include flex(flex, center, center);
@@ -419,7 +413,7 @@ header.header-up {
             }
         }        
         .image {
-            width: 100%;
+            width: 80%;
             position: relative;
             margin: 3rem 0;
         }

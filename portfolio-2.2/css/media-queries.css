@@ -232,9 +232,6 @@ header.header-up {
   width: 100%;
   margin: 0 auto;
 }
-.work .card.supu video {
-  width: 50% !important;
-}
 .work .card.supu img {
   width: 50%;
 }
@@ -261,10 +258,6 @@ header.header-up {
 }
 .work .card .display-vid .image {
   display: block;
-}
-.work .card .display-vid .vid {
-  display: none;
-  filter: drop-shadow(-17px 15px 3px rgba(242, 247, 245, 0.3137254902));
 }
 .work .card .accordion-btn {
   cursor: pointer;
@@ -399,7 +392,7 @@ header.header-up {
   color: #004643;
 }
 .connect .connect-container {
-  max-width: 60%;
+  max-width: 70%;
   margin: 0 auto;
   padding: 2rem 3rem 12rem;
   display: flex;
@@ -419,7 +412,7 @@ header.header-up {
   font-size: 2rem;
 }
 .connect .connect-container .image {
-  width: 100%;
+  width: 80%;
   position: relative;
   margin: 3rem 0;
 }
@@ -690,15 +683,6 @@ header.header-up {
   .work .container .card .display-vid {
     flex-basis: 55%;
   }
-  .work .container .card .display-vid .image {
-    display: none;
-  }
-  .work .container .card .display-vid .vid {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
   .work .container .card .accordion-btn {
     cursor: auto;
     padding: 0 0 2rem;
@@ -818,7 +802,7 @@ header.header-up {
   /* ===== Connect ===== */
   .connect .connect-container {
     flex-direction: row-reverse;
-    text-align: center;
+    text-align: right;
   }
   .connect .connect-container .col {
     flex-basis: 50%;

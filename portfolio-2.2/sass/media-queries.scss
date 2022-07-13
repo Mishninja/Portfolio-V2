@@ -135,15 +135,8 @@
                 }
                 .display-vid {
                         flex-basis: 55%;
-                        .image{
-                            display: none;
-                        }
-                        .vid {
-                            display: block;
-                            width: 100%;
-                            height: auto;
-                            margin: 0 auto;
-                        }
+                        
+                        
                     }
                 .accordion-btn {
                     cursor: auto;
@@ -285,7 +278,7 @@
 
         .connect-container {
             flex-direction: row-reverse ;
-            text-align: center;
+            text-align: right;
         .col {
                 flex-basis: 50%;
                 max-width: 50%;        

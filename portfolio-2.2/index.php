@@ -82,10 +82,6 @@
                 <div class="card">
                     <div class="display-vid">
                         <img class="image" src="images/studybuddy/study-buddy-mock.png" alt="Study Buddy Mock Up" loading="lazy">
-                        <video autoplay loop class="vid" poster="images/studybuddy/study-buddy-mock.png">
-                            <source src="media/studybuddy/study-buddy-video.webm" type="video/mp4">
-                            "Sorry your browser does not support video."
-                        </video>
                     </div>
                     <div class="content-wrapper">
                         <div class="accordion-btn">
@@ -126,10 +122,6 @@
                 <div class="card reverse">
                     <div class="display-vid">
                         <img class="image" src="images/contactform/contac-form-mock.png" alt="Contact Form Mock Up" loading="lazy">
-                        <video autoplay loop class="vid" poster="images/contactform/contac-form-mock.png">
-                            <source src="media/contactform/contact-page-video.webm" type="video/mp4">
-                            "Sorry your browser does not support video."
-                        </video>
                     </div>
                     <div class="content-wrapper">
                         <div class="accordion-btn">
@@ -172,10 +164,7 @@
                 <div class="card supu">
                     <div class="display-vid">
                         <img class="image" loading="lazy" src="images/supu/supu-mockup.png" alt="Supu onboarding screen">
-                        <video class="vid" autoplay loop class="vid" poster="images/supu/supu-mockup.png" loading>
-                            <source src="media/supu/supu-video.webm" type="video/mp4">
-                            "Sorry your browser does not support video."
-                        </video>
+
                     </div>
                     <div class="content-wrapper">
                         <div class="accordion-btn">
@@ -250,6 +239,7 @@
         </div>
     </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4a13e67f54.js" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/scroll-lock.js"></script>
