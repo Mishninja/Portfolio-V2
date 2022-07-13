@@ -91,7 +91,6 @@ jQuery(function($) {
 
 /* ===== Accordion ===== */
 
-
 //Initialize accordion
 $(".content-wrapper").accordion({
     active: false,
@@ -121,10 +120,12 @@ function reportWindowSize() {
         //check that window is tablet or mobile width
         $(".content-wrapper").accordion("option", "disabled", false);
         $(".content-wrapper").accordion("option", "collapsible", true);
+        $(".content").css("height","auto");
     } else if (window.innerWidth >= 992) {
         //display: block for all content panels
         $(".content-wrapper").accordion("option", "disabled", true);
         $(".content-wrapper").accordion("option", "collapsible", false);
+        $(".content").css("height", "auto");
     }
 }
 

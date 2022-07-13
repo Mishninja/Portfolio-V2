@@ -235,6 +235,9 @@ header.header-up {
 .work .card.supu img {
   width: 50%;
 }
+.work .card.perkhero img {
+  width: 80%;
+}
 .work .card {
   margin: 0 auto;
   width: 100%;
