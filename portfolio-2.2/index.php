@@ -12,8 +12,8 @@
     <meta property="og:description" content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
     <meta property="og:image" content="images/logo-bg.png" />
 
-    <meta name="twitter:card" content="summary">
-    </meta>
+    <meta name="twitter:card" content="summary"/>
+  
     <meta property="twitter:url" content="http://michellecheung.net" />
     <meta property="twitter:type" content="website" />
     <meta property="twitter:title" content="Michelle Cheung's Web Development and Design Portfolio" />
@@ -52,7 +52,7 @@
             </a>
         </div>
         <button class="gn-trigger">
-            <div class="burger"><i class="fa-solid fa-chevron-down icon"></i></i></div>
+            <div class="burger"><i class="fa-solid fa-chevron-down icon"></i></div>
         </button>
         <nav class="gn">
             <ul class="gn-items">
@@ -277,7 +277,7 @@
                 <a href="https://www.linkedin.com/in/michelle-cheung-vancouver" title="link to my Linkedin profile">
                     <i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/Mishninja" target="_blank" title="link to my Github">
-                    <i class="fa-brands fa-github"></i></i></a>
+                    <i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </footer>

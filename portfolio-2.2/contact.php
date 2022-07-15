@@ -81,7 +81,7 @@ if (array_key_exists('email', $_POST)) {
         <p>Get in touch using the form below!</p>
     </div>
     <div class="col image">
-        <img src="images/connect/connect.jpg">
+        <img src="images/connect/connect.jpg" alt="Image of Michelle standing on a bridge in the forest">
     </div>
     <div class="triangle bg-repeat"></div>
 </div>
@@ -91,7 +91,7 @@ if (array_key_exists('email', $_POST)) {
         <form class="form" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
             <input type="text" name="name" placeholder="First and Last Name" id="name" required />
             <input type="email" name="email" placeholder="Email" id="email" required>
-            <input type="subject" name="subject" placeholder="Subject" id="subject">
+            <input type="text" name="subject" placeholder="Subject" id="subject">
             <textarea id="message" class="textarea" placeholder="Your Message" name="message" rows="8"></textarea>
             <div class="g-recaptcha" data-callback="captchaVerified" data-sitekey="6Lcb9nsgAAAAAImVLS72C-fFIENAuAlGbWHbhlKS"></div>
             <input type="submit" value="Send" id="submit" disabled>
