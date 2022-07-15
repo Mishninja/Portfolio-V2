@@ -200,6 +200,49 @@
                         </div>
                     </div>
                 </div>
+                <div class="card reverse perkhero">
+                    <div class="display-vid">
+                        <img class="image" src="images/perkhero/perk-hero-icons.png" alt="Perk hero website icons" loading="lazy">
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="accordion-btn">
+                            <h3>Website Icons</h3>
+                            <i class="fa-solid fa-chevron-down icon"></i>
+                        </div>
+                        <div class="content">
+                            <div class="description">
+                                <h4 class="heading">Description</h4>
+                                <p>These icons were designed for the Perk Hero website. These icons were to be displayed next to a set
+                                    of corresponding text, so I had to convey the message within each icon. I was given a design style
+                                    tile, and a reference image of the style they wanted.</p>
+                                <p>I drafted up the designs on paper first, then moved into Illustrator to finalize the designs. After a
+                                    few rounds of emails, these were the final icons produced.</p>
+                                <h4 class="heading">Tools</h4>
+                                <ul>
+                                    <li>Adobe Illustrator</li>
+                                    <li>Graphic Design Principles</li>
+                                </ul>
+                                <h4 class="heading">Takeaways</h4>
+                                <ul>
+                                    <li>Practiced my Illustrator and graphic design skills.</li>
+                                    <li>Required concise communication with the client.</li>
+                                </ul>
+                            </div>
+                            <div class="ftr">
+                                <div class="web-link">
+                                    <a href="https://contact.michellecheung.net/index.php" title="link to contact page demo" target="_blank">
+                                        <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
+                                    </a>
+                                </div>
+                                <div class="git-link">
+                                    <a href="https://github.com/Mishninja/Contact-Form" title="link to contact form on Github" target="_blank">
+                                        <i class="icon fa-brands fa-github fa-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="about" class="about">
