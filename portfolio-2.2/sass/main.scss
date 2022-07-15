@@ -224,12 +224,17 @@ header.header-up {
         width: 100%;
         margin: 0 auto;
     }
-    .card.supu {
-        
+    .card.supu {        
         img {
             width: 50%;
         }
     }
+    .card.perkhero {
+        img {
+            width: 80%;
+        }
+    }
+
      .card {
         margin: 0 auto;
         width: 100%;
@@ -275,7 +280,8 @@ header.header-up {
         .content {
             display: none;
             background-color: $secondary-color;
-            color: $text-color-dk;            
+            color: $text-color-dk;    
+            padding-bottom: 2.5rem;
             .description {
                 margin: 0 auto;
                 width: 80%;
@@ -295,7 +301,7 @@ header.header-up {
             .ftr {
                 display: flex;
                 justify-content: center;
-                padding-bottom: 2rem;
+                padding-top: 2rem;
                 .git-link {
                         margin-left: 1.5rem;
                     }
