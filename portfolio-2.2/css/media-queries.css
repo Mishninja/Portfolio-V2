@@ -288,6 +288,7 @@ header.header-up {
   display: none;
   background-color: #F2F7F5;
   color: #004643;
+  padding-bottom: 2.5rem;
 }
 .work .card .content .description {
   margin: 0 auto;
@@ -308,7 +309,8 @@ header.header-up {
 .work .card .content .ftr {
   display: flex;
   justify-content: center;
-  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-top: 2rem;
 }
 .work .card .content .ftr .git-link {
   margin-left: 1.5rem;
@@ -729,12 +731,16 @@ header.header-up {
   .work .container .card .content .description a {
     color: #FFA8BA;
   }
+  .work .container .card .content .ftr {
+    padding-bottom: 0;
+  }
   .work .container .card .content .ftr .icon {
     color: #FFA8BA;
   }
   /* ===== About ===== */
   .about .panel {
     max-width: 1200px;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 2rem;
@@ -742,11 +748,11 @@ header.header-up {
   }
   .about .panel .img {
     width: 100%;
-    padding: 2rem 3rem;
-    grid-column: 1/6;
+    padding: 0;
+    grid-column: 1/7;
   }
   .about .panel .content {
-    grid-column: 8/13;
+    grid-column: 7/13;
   }
   .about .panel-rev .img {
     grid-column: 8/-1;

@@ -87,7 +87,6 @@ jQuery(function($) {
     return false;
 });
 });
-});
 
 /* ===== Accordion ===== */
 
@@ -130,6 +129,10 @@ function reportWindowSize() {
 }
 
 window.addEventListener("resize", reportWindowSize);
+
+});
+
+
 
 
 
