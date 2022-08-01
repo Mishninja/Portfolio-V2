@@ -12,8 +12,8 @@
     <meta property="og:description" content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
     <meta property="og:image" content="images/logo-bg.png" />
 
-    <meta name="twitter:card" content="summary"/>
-  
+    <meta name="twitter:card" content="summary" />
+
     <meta property="twitter:url" content="http://michellecheung.net" />
     <meta property="twitter:type" content="website" />
     <meta property="twitter:title" content="Michelle Cheung's Web Development and Design Portfolio" />
@@ -25,7 +25,8 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="sass/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -200,33 +201,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="card reverse perkhero">
+                <div class="card reverse bh">
                     <div class="display-vid">
-                        <img class="image" src="images/perkhero/perk-hero-icons.png" alt="Perk hero website icons" loading="lazy">
+                        <img class="image" src="images/beautyhub/beauty-hub-mock.png" alt="Beauty hub landing page mock ups" loading="lazy">
                     </div>
                     <div class="content-wrapper">
                         <div class="accordion-btn">
-                            <h3>Website Icons</h3>
+                            <h3>Beauty Hub Landing Page</h3>
                             <i class="fa-solid fa-chevron-down icon"></i>
                         </div>
                         <div class="content">
                             <div class="description">
                                 <h4 class="heading">Description</h4>
-                                <p>These icons were designed for the Perk Hero website. These icons were to be displayed next to a set
-                                    of corresponding text, so I had to convey the message within each icon. I was given a design style
-                                    tile, and a reference image of the style they wanted.</p>
-                                <p>I drafted up the designs on paper first, then moved into Illustrator to finalize the designs. After a
-                                    few rounds of emails, these were the final icons produced.</p>
+                                <p>A hi-fidelity mock up for a landing page designed and prototyped on Figma.</p>
+                                <p>Beauty Hub is a fictional small business focused on a clean beauty products. A minimal and almost sterile-looking design was chosen.</p>
                                 <h4 class="heading">Tools</h4>
                                 <ul>
-                                    <li>Adobe Illustrator</li>
-                                    <li>Graphic Design Principles</li>
+                                    <li>Figma</li>
+                                    <li>Photoshop</li>
                                 </ul>
                                 <h4 class="heading">Takeaways</h4>
                                 <ul>
-                                    <li>Practiced my Illustrator and graphic design skills.</li>
-                                    <li>Required concise communication with the client.</li>
+                                    <li>How to prototype in Figma</li>
+                                    <li>Designing on a grid</li>
+                                    <li>Creating effective call to actions above the fold</li>
                                 </ul>
+                            </div>
+                            <div class="ftr">
+                                <div class="web-link">
+                                    <a href="beautyhub.html" title="link to more details for Beauty Hub Landing Page Mock Up">
+                                        <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -274,7 +280,10 @@
     <script src="https://kit.fontawesome.com/4a13e67f54.js" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/scroll-lock.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

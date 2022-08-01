@@ -308,16 +308,98 @@ header.header-up {
 }
 .work .card .content .ftr {
   display: flex;
-  justify-content: center;
-  padding-top: 2rem;
-  padding-top: 2rem;
+  justify-content: space-evenly;
+  padding: 2rem 0;
 }
-.work .card .content .ftr .git-link {
-  margin-left: 1.5rem;
-}
-.work .card .content .ftr .icon {
+.work .card .content .ftr .web-link .icon,
+.work .card .content .ftr .git-link .icon {
   font-size: 3rem;
   color: #004643;
+}
+
+/*===== Artifact Page =====*/
+.artifact-page {
+  line-height: 1.5;
+}
+.artifact-page .main {
+  padding-top: 10rem;
+}
+.artifact-page .main section {
+  padding-top: 0;
+}
+.artifact-page .main h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.artifact-page .main .intro {
+  text-align: center;
+}
+.artifact-page .main .intro h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.artifact-page .main .intro p {
+  padding-top: 2rem;
+}
+.artifact-page .main .intro img {
+  max-width: 60rem;
+}
+.artifact-page .main .overview,
+.artifact-page .main .takeaway {
+  padding: 2.5rem 3rem;
+  margin: 1rem;
+}
+.artifact-page .main .overview .link,
+.artifact-page .main .takeaway .link {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.artifact-page .main .overview .link a .icon,
+.artifact-page .main .takeaway .link a .icon {
+  color: #FFA8BA;
+  font-size: 3rem;
+}
+.artifact-page .main .overview .list,
+.artifact-page .main .takeaway .list {
+  padding-top: 2rem;
+}
+.artifact-page .main .overview .list ul,
+.artifact-page .main .takeaway .list ul {
+  font-size: 1.4rem;
+  list-style-type: circle;
+  margin-left: 5rem;
+}
+.artifact-page .main .overview .img,
+.artifact-page .main .takeaway .img {
+  display: flex;
+}
+.artifact-page .main .overview .img img,
+.artifact-page .main .takeaway .img img {
+  width: 50%;
+  margin: 0 auto;
+  padding: 3rem;
+}
+.artifact-page .main .img {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  padding: 2rem 1.5rem;
+}
+.artifact-page .main .img .caption {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.artifact-page .main .mock-ups {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*===== About =====*/
