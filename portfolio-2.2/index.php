@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A Web Developer and Designer from Vancouver, B.C. and who loves building things with code. Creativity meets efficient problem solving.">
+    <meta name="description" content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code.">
     <meta property="og:url" content="http://michellecheung.net" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Michelle Cheung's Web Development and Design Portfolio" />
     <meta property="og:description" content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
-    <meta property="og:image" content="images/logo-bg.png" />
+    <meta property="og:image" content="images/bnr-img.svg" />
 
     <meta name="twitter:card" content="summary" />
 
@@ -22,11 +22,11 @@
 
     <title>Michelle's Portfolio</title>
 
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="sass/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -43,12 +43,13 @@
         gtag('config', 'UA-222416771-1');
         gtag('config', 'G-50W90RK4EE');
     </script>
+
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
-            <a class="logo-link" href="index.php" title="Home Page">
+            <a class="logo-link" href="index.html" title="Home Page">
                 <img src="images/logo-pink-white.svg" alt="Logo" loading="lazy">
             </a>
         </div>
@@ -57,7 +58,7 @@
         </button>
         <nav class="gn">
             <ul class="gn-items">
-                <li><a href="#work" title="work">Work</a></li>
+                <li><a href="#work" title="My work">Work</a></li>
                 <li><a href="#about" title="About page">About</a></li>
                 <li><a href="#connect" title="Contact me">Connect</a></li>
             </ul>
@@ -81,10 +82,10 @@
             <h2 class="section-heading">Work</h2>
             <div class="container">
                 <div class="card">
-                    <div class="display-vid">
+                    <div class="display-vid" data-aos="fade-right">
                         <img class="image" src="images/studybuddy/study-buddy-mock.png" alt="Study Buddy Mock Up" loading="lazy">
                     </div>
-                    <div class="content-wrapper">
+                    <div class="content-wrapper" data-aos="fade-left">
                         <div class="accordion-btn">
                             <h3>Study Buddy Flashcards</h3>
                             <i class="fa-solid fa-chevron-down icon"></i>
@@ -92,8 +93,9 @@
                         <div class="content">
                             <div class="description">
                                 <h4 class="heading">Description</h4>
-                                <p>A flash card web app for studying. This web page was built using an object oriented approach and uses local storage, JSON and sessions.</p>
-                                <h4 class="heading">Tools</h4>
+                                <p>A flash card web app for studying. This web page was built using an object oriented approach
+                                    and uses local storage, JSON and sessions.</p>
+                                <h4 class="heading">Languages</h4>
                                 <ul>
                                     <li>HTML</li>
                                     <li>CSS</li>
@@ -121,10 +123,10 @@
                     </div>
                 </div>
                 <div class="card reverse">
-                    <div class="display-vid">
+                    <div class="display-vid " data-aos="fade-left">
                         <img class="image" src="images/contactform/contac-form-mock.png" alt="Contact Form Mock Up" loading="lazy">
                     </div>
-                    <div class="content-wrapper">
+                    <div class="content-wrapper" data-aos="fade-right">
                         <div class="accordion-btn">
                             <h3>PHP Contact Form</h3>
                             <i class="fa-solid fa-chevron-down icon"></i>
@@ -132,8 +134,10 @@
                         <div class="content">
                             <div class="description">
                                 <h4 class="heading">Description</h4>
-                                <p>A reusable contact form for a portfolio or a local business. This contact form uses the PHPMailer class and Google reCaptcha to safely handle contact form inputs and emails. The form also has required fields to ensure users include all necessary information.</p>
-                                <h4 class="heading">Tools</h4>
+                                <p>A reusable contact form for a portfolio or a local business. This contact form uses the
+                                    PHPMailer class and Google reCaptcha to safely handle contact form inputs and emails. The
+                                    form also has required fields to ensure users include all necessary information.</p>
+                                <h4 class="heading">Languages</h4>
                                 <ul>
                                     <li>HTML</li>
                                     <li>CSS</li>
@@ -163,11 +167,10 @@
                     </div>
                 </div>
                 <div class="card supu">
-                    <div class="display-vid">
+                    <div class="display-vid" data-aos="fade-right">
                         <img class="image" loading="lazy" src="images/supu/supu-mockup.png" alt="Supu onboarding screen">
-
                     </div>
-                    <div class="content-wrapper">
+                    <div class="content-wrapper" data-aos="fade-left">
                         <div class="accordion-btn">
                             <h3>SUPU Prototype</h3>
                             <i class="fa-solid fa-chevron-down icon"></i>
@@ -175,9 +178,11 @@
                         <div class="content">
                             <div class="description">
                                 <h4 class="heading">Description</h4>
-                                <p>SUPU is an fictional noodle restaurant for which I created a prototype app for online ordering.</p>
-                                <p>Logo Design: <a href="https://anitalam.ca/" title="Anita's portfolio" target="_blank">Anita Lam</a></p>
-                                <h4 class="heading">Tools</h4>
+                                <p>SUPU is an fictional noodle restaurant for which I created a prototype app for online
+                                    ordering.</p>
+                                <p>Logo Design: <a href="https://anitalam.ca/" title="Anita's portfolio" target="_blank">Anita
+                                        Lam</a></p>
+                                <h4 class="heading">Technology</h4>
                                 <ul>
                                     <li>Figma</li>
                                     <li>UI/UX</li>
@@ -185,8 +190,10 @@
                                 </ul>
                                 <h4 class="heading">Takeaways</h4>
                                 <ul>
-                                    <li>Application of UI/UX laws such as law of easing, law of context, and law of feedback.</li>
-                                    <li>Familiarizing myself with Figma prototyping tools such as variants, components and grids.</li>
+                                    <li>Application of UI/UX laws such as law of easing, law of context, and law of feedback.
+                                    </li>
+                                    <li>Familiarizing myself with Figma prototyping tools such as variants, components and
+                                        grids.</li>
                                 </ul>
                             </div>
                             <div class="ftr">
@@ -201,11 +208,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card reverse bh">
-                    <div class="display-vid">
+                <div class="card reverse">
+                    <div class="display-vid" data-aos="fade-left">
                         <img class="image" src="images/beautyhub/beauty-hub-mock.png" alt="Beauty hub landing page mock ups" loading="lazy">
                     </div>
-                    <div class="content-wrapper">
+                    <div class="content-wrapper" data-aos="fade-right">
                         <div class="accordion-btn">
                             <h3>Beauty Hub Landing Page</h3>
                             <i class="fa-solid fa-chevron-down icon"></i>
@@ -215,10 +222,53 @@
                                 <h4 class="heading">Description</h4>
                                 <p>A hi-fidelity mock up for a landing page designed and prototyped on Figma.</p>
                                 <p>Beauty Hub is a fictional small business focused on a clean beauty products. A minimal and almost sterile-looking design was chosen.</p>
-                                <h4 class="heading">Tools</h4>
+                                <h4 class="heading">Technology</h4>
                                 <ul>
                                     <li>Figma</li>
                                     <li>Photoshop</li>
+                                </ul>
+                                <h4 class="heading">Takeaways</h4>
+                                <ul>
+                                    <li>Mobile responsive design</li>
+                                    <li>UI/UX design for delivering educational information</li>
+                                    <li>Clean and DRY code</li>
+                                </ul>
+                            </div>
+                            <div class="ftr">
+                                <div class="web-link">
+                                    <a href="https://frogcharity.michellecheung.net/" title="Frog fact page" target="_blank">
+                                        <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
+                                    </a>
+                                </div>
+                                <div class="git-link">
+                                    <a href="https://github.com/Mishninja/Mobile-Responsive-Frog-Awareness-Website/tree/main/frog-fact-website" title="link to Frog Fact Website on Github" target="_blank">
+                                        <i class="icon fa-brands fa-github fa-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="display-vid" data-aos="fade-right">
+                        <img class="image" src="images/frogfacts/frog-mock.png" alt="Frog facts landing page mock ups" loading="lazy">
+                    </div>
+                    <div class="content-wrapper" data-aos="fade-left">
+                        <div class="accordion-btn">
+                            <h3>Frog Facts Page</h3>
+                            <i class="fa-solid fa-chevron-down icon"></i>
+                        </div>
+                        <div class="content">
+                            <div class="description">
+                                <h4 class="heading">Description</h4>
+                                <p>The main purpose of this website is to educate users about frogs and how climate change is affecting them. </p>
+                                <p>The website is mobile responsive and uses a number of plugins to make the information easy to read. A cohesive color scheme reflects the topic and theme of the website.</p>
+                                <h4 class="heading">Technology</h4>
+                                <ul>
+                                    <li>jQuery/JS</li>
+                                    <li>Gridder</li>
+                                    <li>Isotope/Masonry</li>
+                                    <li>Accordion</li>
                                 </ul>
                                 <h4 class="heading">Takeaways</h4>
                                 <ul>
@@ -229,7 +279,7 @@
                             </div>
                             <div class="ftr">
                                 <div class="web-link">
-                                    <a href="beautyhub.html" title="link to more details for Beauty Hub Landing Page Mock Up">
+                                    <a href="https://github.com/Mishninja/Mobile-Responsive-Frog-Awareness-Website/tree/main/frog-fact-website" title="link to more details for Beauty Hub Landing Page Mock Up">
                                         <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
                                     </a>
                                 </div>
