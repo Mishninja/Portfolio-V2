@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code.">
+    <meta property="og:url" content="http://michellecheung.net" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Michelle Cheung's Web Development and Design Portfolio" />
+    <meta property="og:description"
+        content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
+    <meta property="og:image" content="images/bnr-img.svg" />
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="twitter:url" content="http://michellecheung.net" />
+    <meta property="twitter:type" content="website" />
+    <meta property="twitter:title" content="Michelle Cheung's Web Development and Design Portfolio" />
+    <meta property="twitter:description"
+        content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
+    <meta property="twitter:image" content="images/logo-bg.png" />
+
+    <title>Michelle's Portfolio</title>
+
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+
+    <link rel="stylesheet" href="sass/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-50W90RK4EE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-222416771-1');
+        gtag('config', 'G-50W90RK4EE');
+    </script>
+
+</head>
+<body class="artifact-page">
+    <header class="header">
+        <div class="logo">
+            <a class="logo-link" href="index.html" title="Home Page">
+                <img src="images/logo-pink-white.svg" alt="Logo" loading="lazy">
+            </a>
+        </div>
+        <button class="gn-trigger">
+            <div class="burger"><i class="fa-solid fa-chevron-down icon"></i></div>
+        </button>
+        <nav class="gn">
+            <ul class="gn-items">
+                <li><a href="index.html#work" title="work">Work</a></li>
+                <li><a href="index.html#about" title="About page">About</a></li>
+                <li><a href="index.html#connect" title="Contact me">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <h1>Beauty Hub Landing Page Mock Up</h1>
+            <p>A landing page for a clean beauty brand.</p>
+            <img src="images/beautyhub/beauty-hub-mock.png">
+        </section>
+        <section class="overview">
+            <div class="list">
+                <h2>Overview</h2>
+                <div class="link">
+                    <p><a href="beautyhub.html" title="link to more details for Beauty Hub Landing Page Mock Up">View</a> the mobile prototype on Figma</p>
+                </div>
+                <ul>
+                    <li>An adaptable eCommerce website layout with a cohesive color scheme.</li>
+                    <li>The banner features a clear call to action to draws consumers in.</li>
+                    <li>The navigation layout allows for more links to be added on for future website expansion.</li>
+                    <li>The mobile view was designed on a 3 column grid and desktop view was designed on a 12 column grid.</li>
+                    <li>Hover effects were created using variants in Figma.</li>
+                    <li>All product mock-up images were photoshopped stock images</li>
+                </ul>
+            </div>
+            <div class="img">
+                <img src="images/beautyhub/mobile2.png">
+                <p class="caption">Navigation in mobile view. The menu slides in and out from the right.</p>
+            </div>
+        </section>
+        <section class="mock-ups">
+            <div class="img">
+                <img src="images/beautyhub/desk1.jpg">
+                <p class="caption">Beauty Hub banner with clear call to action.</p>
+            </div>
+            <div class="supp">
+                <div class="img">
+                    <img src="images/beautyhub/desk3.jpg">
+                    <p class="caption">Beauty Hub Featured products section (turns into a carousel in mobile view) and values section.</p>
+                </div>
+                <div class="img">
+                    <img src="images/beautyhub/desk2.jpg">
+                    <p class="caption">Beauty Hub announcement section, mailing list sign up section and footer.</p>
+                </div>
+            </div>
+        </section>
+        <div class="takeaway">
+            <div class="img">
+                <img src="images/beautyhub/mobile1.png">
+                <p class="caption">Featured Products section in mobile view is a carousel. The sides of the next slides can be seen to let users know that it is scrollable.</p>
+            </div>
+            <div class="list">
+                <h2>Takeaways</h2>
+                <ul>
+                    <li>How to use variants to prototype interactions</li>
+                    <li>Prototyping navigation interactions.</li>
+                    <li>How to create effective landing pages with room for change.</li>
+                    <li>Using different components for different viewport widths.</li>
+                    <li>Keeping in mind what how the design would be implemented with code.</li>
+                </ul>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4a13e67f54.js" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/scroll-lock.js"></script>
+</body>
+</html>

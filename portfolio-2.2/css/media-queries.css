@@ -54,6 +54,7 @@ section {
   font-family: proxima-nova, sans-serif;
   text-align: center;
   margin-bottom: 7rem;
+  font-weight: 700;
 }
 
 .active,
@@ -308,16 +309,97 @@ header.header-up {
 }
 .work .card .content .ftr {
   display: flex;
-  justify-content: center;
-  padding-top: 2rem;
-  padding-top: 2rem;
+  justify-content: space-evenly;
+  padding: 2rem 0;
 }
-.work .card .content .ftr .git-link {
-  margin-left: 1.5rem;
-}
-.work .card .content .ftr .icon {
+.work .card .content .ftr .web-link .icon,
+.work .card .content .ftr .git-link .icon {
   font-size: 3rem;
   color: #004643;
+}
+
+/*===== Artifact Page =====*/
+.artifact-page {
+  line-height: 1.5;
+}
+.artifact-page .main {
+  padding-top: 10rem;
+}
+.artifact-page .main section {
+  padding-top: 0;
+}
+.artifact-page .main h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.artifact-page .main .intro {
+  text-align: center;
+}
+.artifact-page .main .intro h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.artifact-page .main .intro p {
+  padding-top: 2rem;
+}
+.artifact-page .main .intro img {
+  max-width: 60rem;
+}
+.artifact-page .main .overview,
+.artifact-page .main .takeaway {
+  padding: 2.5rem 3rem;
+  margin: 1rem;
+}
+.artifact-page .main .overview .link,
+.artifact-page .main .takeaway .link {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.artifact-page .main .overview .link a,
+.artifact-page .main .takeaway .link a {
+  color: #FFA8BA;
+}
+.artifact-page .main .overview .list,
+.artifact-page .main .takeaway .list {
+  padding-top: 2rem;
+}
+.artifact-page .main .overview .list ul,
+.artifact-page .main .takeaway .list ul {
+  font-size: 1.4rem;
+  list-style-type: circle;
+  margin-left: 5rem;
+}
+.artifact-page .main .overview .img,
+.artifact-page .main .takeaway .img {
+  display: flex;
+}
+.artifact-page .main .overview .img img,
+.artifact-page .main .takeaway .img img {
+  width: 50%;
+  margin: 0 auto;
+  padding: 3rem;
+}
+.artifact-page .main .img {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  padding: 2rem 1.5rem;
+}
+.artifact-page .main .img .caption {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.artifact-page .main .mock-ups {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*===== About =====*/
@@ -339,18 +421,14 @@ header.header-up {
   justify-content: center;
 }
 .about .panel .img img {
-  width: 80%;
-  border-top-left-radius: 65% 60%;
-  border-top-right-radius: 65% 60%;
-  border-bottom-right-radius: 65% 60%;
-  border-bottom-left-radius: 65% 60%;
-  border: 6px solid #FFA8BA;
+  border-radius: 6px;
+  padding: 2rem;
+  width: 95%;
+  max-width: 40rem;
+  border: 4px solid #FFA8BA;
 }
-.about .panel .img.cat img {
-  border-top-left-radius: 60% 65%;
-  border-top-right-radius: 60% 65%;
-  border-bottom-right-radius: 60% 65%;
-  border-bottom-left-radius: 60% 65%;
+.about .panel .content p {
+  margin-bottom: 2.5rem;
 }
 .about .game {
   width: 85%;
@@ -422,12 +500,11 @@ header.header-up {
   margin: 3rem 0;
 }
 .connect .connect-container img {
-  width: 100%;
-  border-top-left-radius: 65% 60%;
-  border-top-right-radius: 65% 60%;
-  border-bottom-right-radius: 65% 60%;
-  border-bottom-left-radius: 65% 60%;
-  border: 6px solid #FFA8BA;
+  border-radius: 6px;
+  padding: 2rem;
+  width: 95%;
+  max-width: 40rem;
+  border: 4px solid #FFA8BA;
 }
 .connect .connect-container .triangle {
   position: absolute;
@@ -582,6 +659,21 @@ header.header-up {
   .about .get-to-know {
     max-width: 775px;
   }
+  .artifact-page .intro h1 {
+    padding-top: 3rem;
+  }
+  .artifact-page .intro p {
+    padding-bottom: 3rem;
+  }
+  .artifact-page .main .img {
+    max-width: 60rem;
+  }
+  .artifact-page .main .overview .list,
+.artifact-page .main .takeaway .list {
+    width: 75%;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 992px) {
   .header {
@@ -680,7 +772,7 @@ header.header-up {
   .work .container .card .content-wrapper {
     position: relative;
     margin: 5.5rem auto;
-    padding: 1.5rem 0 5rem;
+    padding: 3rem 0 1rem;
     flex-basis: 45%;
     border: 4px solid #FFA8BA;
     border-radius: 0.4rem;
@@ -737,30 +829,70 @@ header.header-up {
   .work .container .card .content .ftr .icon {
     color: #FFA8BA;
   }
+  /* ===== Artifact Page ===== */
+  .artifact-page .main .img {
+    max-width: 90rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .artifact-page .main .overview,
+.artifact-page .main .takeaway {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .artifact-page .main .overview .list,
+.artifact-page .main .takeaway .list {
+    width: 50%;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  .artifact-page .main .overview .list ul li,
+.artifact-page .main .takeaway .list ul li {
+    margin-bottom: 2rem;
+  }
+  .artifact-page .main .overview .img,
+.artifact-page .main .takeaway .img {
+    max-width: 35rem;
+  }
+  .artifact-page .main .overview .img img,
+.artifact-page .main .takeaway .img img {
+    width: 80%;
+  }
+  .artifact-page .main .mock-ups .supp {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    max-width: 102rem;
+  }
+  .artifact-page .main .mock-ups .supp img {
+    width: 80%;
+  }
+  .artifact-page .main .mock-ups img {
+    width: 100%;
+  }
   /* ===== About ===== */
   .about .panel {
-    max-width: 1200px;
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 2rem;
-    padding: 0 4.5rem;
+    width: 85%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
   }
-  .about .panel .img {
-    width: 100%;
-    padding: 0;
-    grid-column: 1/7;
+  .about .panel .img img {
+    width: 60%;
   }
   .about .panel .content {
-    grid-column: 7/13;
+    width: 80%;
   }
-  .about .panel-rev .img {
-    grid-column: 8/-1;
-    grid-row: 1/2;
+  .about .panel .content p {
+    margin-bottom: 2.5rem;
   }
-  .about .panel-rev .content {
-    grid-column: -13/6;
-    grid-row: 1/2;
+  .about .panel.panel-rev {
+    flex-direction: row-reverse;
   }
   .about .game {
     width: 100%;
@@ -812,6 +944,9 @@ header.header-up {
   .connect .connect-container {
     flex-direction: row-reverse;
     text-align: right;
+  }
+  .connect .connect-container .content {
+    margin-right: 6rem;
   }
   .connect .connect-container .col {
     flex-basis: 50%;
@@ -876,6 +1011,9 @@ header.header-up {
   }
   .work .container {
     max-width: 1600px;
+  }
+  .about .panel {
+    max-width: 1200px;
   }
 }
 

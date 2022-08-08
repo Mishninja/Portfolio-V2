@@ -24,6 +24,30 @@
             max-width: 775px;
         }
     }
+
+    .artifact-page{
+        .intro {
+            h1 {
+                padding-top: 3rem;
+            }
+            p {
+                padding-bottom: 3rem;
+            }
+        }
+        .main {
+            .img {
+                max-width: 60rem;
+            }
+            .overview,
+            .takeaway {
+                .list {
+                    width: 75%;
+                    max-width: 70rem;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -128,7 +152,7 @@
                 .content-wrapper {
                     position: relative;
                     margin: 5.5rem auto;
-                    padding: 1.5rem 0 5rem;
+                    padding: 3rem 0 1rem;
                     flex-basis: 45%;
                     border: 4px solid $accent-color;
                     border-radius: 0.4rem;
@@ -190,34 +214,80 @@
             }
         }
     }
+/* ===== Artifact Page ===== */
+    .artifact-page {
+        .main {
+            .img {
+                    max-width: 90rem;
+                    justify-content: center;
+                    align-items: center;
+                }
+            .overview,
+            .takeaway {
+                max-width: 80%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .list {
+                    width: 50%;
+                    max-width: 50rem;
+                    margin: 0 auto;
+                    ul {
+                            li {
+                                margin-bottom: 2rem;
+                            }
+                        }
+                }
+                .img {
+                    max-width: 35rem;
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+            .mock-ups {
+                .supp {
+                    display: flex;
+                    justify-content: center;
+                    width: 70%;
+                    margin: 0 auto;
+                    max-width: 102rem;
+                    img {
+                        width: 80%;
+                        
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 
     /* ===== About ===== */
     .about {
         .panel {
-            max-width: 1200px;
-            width: 90%;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            column-gap: 2rem;
-            padding: 0 4.5rem;
+            // max-width: 1200px;
+            width: 85%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
             .img {
-                width: 100%;
-                padding: 0;
-                grid-column: 1 / 7;
+                img {
+                    width: 60%;
+                }
             }
             .content {
-                grid-column: 7 / 13;
+                width: 80%;
+                p {
+                    margin-bottom: 2.5rem;
+                }
             }
         }
-        .panel-rev {
-            .img {
-                grid-column: 8 / -1;
-                grid-row: 1 / 2;
-            }
-            .content {
-                grid-column: -13 / 6;
-                grid-row: 1 / 2;
-            }
+        .panel.panel-rev {
+            flex-direction: row-reverse;
         }
         .game {
         width: 100%;
@@ -279,7 +349,10 @@
         .connect-container {
             flex-direction: row-reverse ;
             text-align: right;
-        .col {
+            .content {
+                margin-right: 6rem;
+            }
+            .col {
                 flex-basis: 50%;
                 max-width: 50%;        
             }
@@ -357,6 +430,12 @@
         .container {
             max-width: 1600px;
             
+        }
+    }
+
+    .about {
+        .panel {
+            max-width: 1200px;
         }
     }
 }

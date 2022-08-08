@@ -49,6 +49,7 @@ section {
     font-family: $heading-font;
     text-align: center;
     margin-bottom: 7rem;
+    font-weight: 700;
 }
 
 .active,
@@ -300,15 +301,14 @@ header.header-up {
              }
             .ftr {
                 display: flex;
-                justify-content: center;
-                padding-top: 2rem;
-                padding-top: 2rem;
+                justify-content: space-evenly;
+                padding: 2rem 0;
+                .web-link,
                 .git-link {
-                        margin-left: 1.5rem;
+                    .icon {
+                        font-size: 3rem;
+                        color: $primary-color;
                     }
-                .icon {
-                    font-size: 3rem;
-                    color: $primary-color;
                 }
             }
              
@@ -316,6 +316,86 @@ header.header-up {
 
      }
 }
+
+/*===== Artifact Page =====*/
+.artifact-page{
+    line-height: 1.5;
+    .main {
+        section {
+                padding-top: 0;
+            }
+        padding-top: 10rem;
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+        .intro {
+            text-align: center;
+            h1 {
+                font-size: 2.8rem;
+                font-weight: 700;
+            }
+            p {
+                padding-top: 2rem;
+            }
+            img {
+                max-width: 60rem;
+            }
+        }
+        .overview,
+        .takeaway {
+            padding: 2.5rem 3rem;
+            margin: 1rem;
+            .link {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding-bottom: 2rem;
+                a {
+                    color: $accent-color;    
+                }
+            }
+            .list {
+                padding-top: 2rem;
+                ul {
+                    font-size: 1.4rem;
+                    list-style-type: circle;
+                    margin-left: 5rem;
+                }
+            }
+            .img {
+                display: flex;
+                img {
+                    width: 50%;
+                    margin: 0 auto;
+                    padding: 3rem;
+                }
+            }
+        }
+        .img {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            max-width: 40rem;
+            padding: 2rem 1.5rem;
+            .caption {
+                padding-top: 1rem;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+        }
+        .mock-ups {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+        }
+    }
+}
+    
+
 
 /*===== About =====*/
 .about {
@@ -333,21 +413,17 @@ header.header-up {
             display: flex;
             justify-content: center;
             img {
-                width: 80%;
-                border-top-left-radius: 65% 60%;
-                border-top-right-radius: 65% 60%;
-                border-bottom-right-radius: 65% 60%;
-                border-bottom-left-radius: 65% 60%;
-                border: 6px solid $accent-color;
+                border-radius: 6px;
+                padding: 2rem;
+                width: 95%;
+                max-width: 40rem;
+                border: 4px solid $accent-color;
             }
         }
-        .img.cat {
-            img {
-                border-top-left-radius: 60% 65%;
-                border-top-right-radius: 60% 65%;
-                border-bottom-right-radius: 60% 65%;
-                border-bottom-left-radius: 60% 65%;
-            }
+        .content {
+            p {
+                    margin-bottom: 2.5rem;
+                }
         }
     }
     .game {
@@ -409,6 +485,7 @@ header.header-up {
         position: relative;
         text-align: center;
         .content {
+            
             .sec-header {
                 font-size: 3.6rem;
                 font-weight: 500;
@@ -425,12 +502,11 @@ header.header-up {
             margin: 3rem 0;
         }
         img {
-            width: 100%;
-            border-top-left-radius: 65% 60%;
-            border-top-right-radius: 65% 60%;
-            border-bottom-right-radius: 65% 60%;
-            border-bottom-left-radius: 65% 60%;
-            border: 6px solid $accent-color;
+            border-radius: 6px;
+            padding: 2rem;
+            width: 95%;
+            max-width: 40rem;
+            border: 4px solid $accent-color;
         }
         
         .triangle {

@@ -76,11 +76,11 @@ if (array_key_exists('email', $_POST)) {
 
 <h2 class="section-heading">Connect</h2>
 <div class="connect-container">
-    <div class="col content">
+    <div class="col content" data-aos="fade-right">
         <h3 class="sec-header">Let's chat!</h3>
         <p>Get in touch using the form below!</p>
     </div>
-    <div class="col image">
+    <div class="col image" data-aos="fade-left">
         <img src="images/connect/connect.jpg" alt="Image of Michelle standing on a bridge in the forest">
     </div>
     <div class="triangle bg-repeat"></div>
