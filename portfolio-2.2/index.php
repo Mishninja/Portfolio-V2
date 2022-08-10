@@ -214,7 +214,7 @@
                     </div>
                     <div class="content-wrapper" data-aos="fade-right">
                         <div class="accordion-btn">
-                            <h3>Beauty Hub Landing Page</h3>
+                            <h3>Beauty Hub Landing Page Mockup</h3>
                             <i class="fa-solid fa-chevron-down icon"></i>
                         </div>
                         <div class="content">
@@ -296,7 +296,12 @@
                     <img src="images/about/pp.jpg" alt="Photo of Michelle">
                 </div>
                 <div class="content">
-                    <p>I am currently a student enrolled in the BCIT New Media and Web Development program. I initially dipped my toes into the computer sciences disciplines while completing my bachelor in science at UBC. I quickly realized that I was able to combine the satisfaction of problem solving with my passion for creating things as a front end developer.</p>
+                <p>I am currently a student enrolled in the BCIT New Media and Web Development program. I initially dipped
+                        my toes into the computer sciences disciplines while completing my bachelor in science at UBC. I quickly
+                        realized that I was able to combine the satisfaction of problem solving with my passion for creating
+                        things as a front end developer.</p>
+                        <p>I have strong knowledge of HTML, CSS, JavaScript and am currently familiarizing myself with PHP and React.js. Some other skills I've learned that help me as a developer are: UI/UX principles, graphic design principles, SEO best practices, and project management methodologies.</p>
+                        <p>I am passionate about learning and am eager to gain more experience!</p>
                 </div>
             </div>
             <div class="panel panel-rev">

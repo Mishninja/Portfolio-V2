@@ -94,7 +94,7 @@ if (array_key_exists('email', $_POST)) {
             <input type="text" name="subject" placeholder="Subject" id="subject">
             <textarea id="message" class="textarea" placeholder="Your Message" name="message" rows="8"></textarea>
             <div class="g-recaptcha" data-callback="captchaVerified" data-sitekey="6Lcb9nsgAAAAAImVLS72C-fFIENAuAlGbWHbhlKS"></div>
-            <input type="submit" value="Send" id="submit" disabled>
+            <input type="submit" value="Send" id="submit" href=index.php#connect disabled>
         </form>
     <?php } else {
         echo "<div class='error-msg-wrap'>";
