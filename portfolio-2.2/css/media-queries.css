@@ -327,36 +327,30 @@ header.header-up {
 }
 .artifact-page .main section {
   padding-top: 0;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.artifact-page .main section p {
+  padding-top: 2rem;
 }
 .artifact-page .main h2 {
   font-size: 2rem;
   font-weight: 700;
-  text-align: center;
   padding-bottom: 2rem;
 }
 .artifact-page .main .intro {
-  text-align: center;
+  padding-top: 6rem;
 }
 .artifact-page .main .intro h1 {
   font-size: 2.8rem;
   font-weight: 700;
 }
-.artifact-page .main .intro p {
-  padding-top: 2rem;
-}
-.artifact-page .main .intro img {
-  max-width: 60rem;
-}
 .artifact-page .main .overview,
 .artifact-page .main .takeaway {
   padding: 2.5rem 3rem;
-  margin: 1rem;
 }
 .artifact-page .main .overview .link,
 .artifact-page .main .takeaway .link {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   padding-bottom: 2rem;
 }
 .artifact-page .main .overview .link a,
@@ -369,9 +363,18 @@ header.header-up {
 }
 .artifact-page .main .overview .list ul,
 .artifact-page .main .takeaway .list ul {
+  padding-top: 2rem;
   font-size: 1.4rem;
   list-style-type: circle;
-  margin-left: 5rem;
+  line-height: 2;
+}
+.artifact-page .main .overview .list ul a,
+.artifact-page .main .takeaway .list ul a {
+  color: #F2F7F5;
+}
+.artifact-page .main .overview .list ul a:hover,
+.artifact-page .main .takeaway .list ul a:hover {
+  color: #FFA8BA;
 }
 .artifact-page .main .overview .img,
 .artifact-page .main .takeaway .img {
@@ -668,12 +671,6 @@ header.header-up {
   .artifact-page .main .img {
     max-width: 60rem;
   }
-  .artifact-page .main .overview .list,
-.artifact-page .main .takeaway .list {
-    width: 75%;
-    max-width: 70rem;
-    margin: 0 auto;
-  }
 }
 @media (min-width: 992px) {
   .header {
@@ -835,30 +832,13 @@ header.header-up {
     justify-content: center;
     align-items: center;
   }
-  .artifact-page .main .overview,
-.artifact-page .main .takeaway {
-    max-width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .artifact-page .main .overview .list,
-.artifact-page .main .takeaway .list {
-    width: 50%;
-    max-width: 50rem;
-    margin: 0 auto;
-  }
-  .artifact-page .main .overview .list ul li,
-.artifact-page .main .takeaway .list ul li {
+  .artifact-page .main .overview .list ul li {
     margin-bottom: 2rem;
   }
-  .artifact-page .main .overview .img,
-.artifact-page .main .takeaway .img {
+  .artifact-page .main .overview .img {
     max-width: 35rem;
   }
-  .artifact-page .main .overview .img img,
-.artifact-page .main .takeaway .img img {
+  .artifact-page .main .overview .img img {
     width: 80%;
   }
   .artifact-page .main .mock-ups .supp {

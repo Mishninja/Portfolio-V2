@@ -321,37 +321,33 @@ header.header-up {
 .artifact-page{
     line-height: 1.5;
     .main {
+        padding-top: 10rem;
         section {
                 padding-top: 0;
+                max-width: 80rem;
+                margin: 0 auto;
+                p {
+                        padding-top: 2rem;
+                    }
             }
-        padding-top: 10rem;
         h2 {
             font-size: 2rem;
             font-weight: 700;
-            text-align: center;
             padding-bottom: 2rem;
         }
         .intro {
-            text-align: center;
+            padding-top: 6rem;
             h1 {
                 font-size: 2.8rem;
                 font-weight: 700;
             }
-            p {
-                padding-top: 2rem;
-            }
-            img {
-                max-width: 60rem;
-            }
+            
         }
         .overview,
         .takeaway {
             padding: 2.5rem 3rem;
-            margin: 1rem;
             .link {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
+                
                 padding-bottom: 2rem;
                 a {
                     color: $accent-color;    
@@ -360,9 +356,16 @@ header.header-up {
             .list {
                 padding-top: 2rem;
                 ul {
+                    padding-top: 2rem;
                     font-size: 1.4rem;
                     list-style-type: circle;
-                    margin-left: 5rem;
+                    line-height: 2;
+                    a {
+                        color: $text-color-lt;
+                    }
+                    a:hover {
+                        color: $accent-color;
+                    }
                 }
             }
             .img {

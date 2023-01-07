@@ -69,7 +69,7 @@
             <div class="right col">
                 <h1>Michelle Cheung</h1>
                 <h3> Creativity meets efficient problem solving</h3>
-                <h2>Front-end developer and web designer</h2>
+                <h2>Web designer</h2>
                 <div class="cta">
                     <a href="#about" title="About section">About Me</a>
                 </div>

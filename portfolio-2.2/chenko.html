@@ -28,7 +28,7 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
@@ -43,8 +43,8 @@
         gtag('config', 'UA-222416771-1');
         gtag('config', 'G-50W90RK4EE');
     </script>
-
 </head>
+
 <body class="artifact-page">
     <header class="header">
         <div class="logo">
@@ -57,71 +57,40 @@
         </button>
         <nav class="gn">
             <ul class="gn-items">
-                <li><a href="index.html#work" title="work">Work</a></li>
-                <li><a href="index.html#about" title="About page">About</a></li>
-                <li><a href="index.html#connect" title="Contact me">Connect</a></li>
+                <li><a href="#work" title="My work">Work</a></li>
+                <li><a href="#about" title="About page">About</a></li>
+                <li><a href="#connect" title="Contact me">Connect</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <section class="intro">
-            <h1>Beauty Hub Landing Page Mock Up</h1>
-            <p>A landing page for a clean beauty brand.</p>
-            <img src="images/beautyhub/beauty-hub-mock.png">
+            <img src="images/chenko/chenko-mock.png"/>
+            <h1>chenko studios Website Redesign</h1>
+            <p>chenko studios is an apparel production studio and sewing lesson provider based in Vancouver, B.C. I was hired to redesign and develop the website.</p>
         </section>
         <section class="overview">
-            <div class="list">
-                <h2>Overview</h2>
-                <div class="link">
-                    <p><a href="beautyhub.html" title="link to more details for Beauty Hub Landing Page Mock Up">View</a> the mobile prototype on Figma</p>
-                </div>
+            <div class="list process">
+                <h2>My Process</h2>
                 <ul>
-                    <li>An adaptable eCommerce website layout with a cohesive color scheme.</li>
-                    <li>The banner features a clear call to action to draws consumers in.</li>
-                    <li>The navigation layout allows for more links to be added on for future website expansion.</li>
-                    <li>The mobile view was designed on a 3 column grid and desktop view was designed on a 12 column grid.</li>
-                    <li>Hover effects were created using variants in Figma.</li>
-                    <li>All product mock-up images were photoshopped stock images</li>
+                    <li><a href="#" class="process">Research</a></li>
+                    <li><a href="#" class="process">Competitive Analysis</a></li>
+                    <li><a href="#" class="process">Redefining Site Hierarchy</a></li>
+                    <li><a href="#" class="process">Wireframe sketches</a></li>
+                    <li><a href="#" class="process">Lo-fidelity Wireframes</a></li>
+                    <li><a href="#" class="process">Development</a></li>
                 </ul>
             </div>
-            <div class="img">
-                <img src="images/beautyhub/mobile2.png">
-                <p class="caption">Navigation in mobile view. The menu slides in and out from the right.</p>
-            </div>
         </section>
-        <section class="mock-ups">
-            <div class="img">
-                <img src="images/beautyhub/desk1.jpg">
-                <p class="caption">Beauty Hub banner with clear call to action.</p>
-            </div>
-            <div class="supp">
-                <div class="img">
-                    <img src="images/beautyhub/desk3.jpg">
-                    <p class="caption">Beauty Hub Featured products section (turns into a carousel in mobile view) and values section.</p>
-                </div>
-                <div class="img">
-                    <img src="images/beautyhub/desk2.jpg">
-                    <p class="caption">Beauty Hub announcement section, mailing list sign up section and footer.</p>
-                </div>
-            </div>
+        <section id="research" class="research">
+            <h2>Research</h2>
+            <p>The redesign of the website started with onboarding where I learned about the company values, mission, and branding. I
+            took this as an opportunity to learn more about the industry as I did not have any experience in apparel production. I
+            was able to establish their target audience and better understand their business goals after speaking with the client.</p>
+            <p>I learned that the website was quickly thrown together by the client and has served them well thus far. However, they
+            were ready for an upgrade to increase their reach and elevate their brand.</p>
+            <img src="images/chenko/target.png"/>
         </section>
-        <div class="takeaway">
-            <div class="img">
-                <img src="images/beautyhub/mobile1.png">
-                <p class="caption">Featured Products section in mobile view is a carousel. The sides of the next slides can be seen to let users know that it is scrollable.</p>
-            </div>
-            <div class="list">
-                <h2>Takeaways</h2>
-                <ul>
-                    <li>How to use variants to prototype interactions</li>
-                    <li>Prototyping navigation interactions.</li>
-                    <li>How to create effective landing pages with room for change.</li>
-                    <li>Using different components for different viewport widths.</li>
-                    <li>Keeping in mind what how the design would be implemented with code.</li>
-                </ul>
-            </div>
-        </div>
-        
     </main>
     <footer class="footer">
         <div class="content">
@@ -141,5 +110,10 @@
     <script src="https://kit.fontawesome.com/4a13e67f54.js" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/scroll-lock.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
