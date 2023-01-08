@@ -13,6 +13,14 @@
             }
         }
     }
+    .artifact-page {
+        .main {
+            section {
+                max-width: 70rem;
+                padding: 5rem 1.5rem 0;
+            }
+        }
+    }
 }
 
 @media (min-width: 800px) {
@@ -25,26 +33,11 @@
         }
     }
 
-    .artifact-page{
-        .intro {
-            h1 {
-                padding-top: 3rem;
-            }
-            p {
-                padding-bottom: 3rem;
-            }
-        }
+    .artifact-page {
         .main {
-            .img {
-                max-width: 60rem;
-            }
-            .overview,
-            .takeaway {
-                .list {
-                    width: 75%;
-                    max-width: 70rem;
-                    margin: 0 auto;
-                }
+            section {
+                max-width: 80rem;
+                padding: 5rem 3.5rem 0;
             }
         }
     }
@@ -222,20 +215,14 @@
                     justify-content: center;
                     align-items: center;
                 }
-            .overview,
-            .takeaway {
-                max-width: 80%;
-                margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            .overview{
+                
                 .list {
-                    width: 50%;
-                    max-width: 50rem;
-                    margin: 0 auto;
+                    
                     ul {
                             li {
                                 margin-bottom: 2rem;
+                                
                             }
                         }
                 }

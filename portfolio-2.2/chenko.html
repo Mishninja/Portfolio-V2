@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code.">
+    <meta property="og:url" content="http://michellecheung.net" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Michelle Cheung's Web Development and Design Portfolio" />
+    <meta property="og:description"
+        content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
+    <meta property="og:image" content="images/bnr-img.svg" />
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="twitter:url" content="http://michellecheung.net" />
+    <meta property="twitter:type" content="website" />
+    <meta property="twitter:title" content="Michelle Cheung's Web Development and Design Portfolio" />
+    <meta property="twitter:description"
+        content="Creativity meets efficient problem solving. A Web Developer and Designer from Vancouver, B.C. and who loves building things with code." />
+    <meta property="twitter:image" content="images/logo-bg.png" />
+
+    <title>Michelle's Portfolio</title>
+
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-50W90RK4EE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-222416771-1');
+        gtag('config', 'G-50W90RK4EE');
+    </script>
+</head>
+
+<body class="artifact-page">
+    <header class="header">
+        <div class="logo">
+            <a class="logo-link" href="index.html" title="Home Page">
+                <img src="images/logo-pink-white.svg" alt="Logo" loading="lazy">
+            </a>
+        </div>
+        <button class="gn-trigger">
+            <div class="burger"><i class="fa-solid fa-chevron-down icon"></i></div>
+        </button>
+        <nav class="gn">
+            <ul class="gn-items">
+                <li><a href="index.php#work" title="My work">Work</a></li>
+                <li><a href="index.php#about" title="About page">About</a></li>
+                <li><a href="index.php#connect" title="Contact me">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="intro" data-aos="fade-up">
+            <h1>chenko studios Website Redesign</h1>
+            <p>chenko studios is an apparel production studio and sewing lesson provider based in Vancouver, B.C. I was hired to
+                redesign and develop the website.</p>
+            <img src="images/chenko/chenko-mock.png"/>                     
+        </section>
+        <section class="overview" data-aos="fade-up">
+            <div class="list process">
+                <h2>My Process</h2>
+                <ol>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#comp">Competitive Analysis</a></li>
+                    <li><a href="#audit">Website Audit</a></li>
+                    <li><a href="#site">Redefining Sitemap</a></li>
+                    <li><a href="#sketches">Thumbnail Sketches</a></li>
+                    <li><a href="#wireframes">Wireframes</a></li>
+                    <li><a href="#dev">Development</a></li>
+                </ol>
+            </div>
+        </section>
+        <section id="research" class="research" data-aos="fade-up">
+            <h2>Research</h2>
+            <p>The redesign of the website started with onboarding where I learned about the company values, mission, and branding. I
+            took this as an opportunity to learn more about the industry as I did not have any experience in apparel production. I
+            was able to establish their target audience and better understand their business goals after speaking with the client.</p>
+            <p>I learned that the website was quickly thrown together by the client and has served them well thus far. However, they
+            were ready for an upgrade to increase their reach and elevate their brand.</p>
+            <img src="images/chenko/target.png" alt="chenko studios target audiences"/>
+        </section>
+        <section id="comp" class="comp" data-aos="fade-up">
+            <h2>Competitive Analysis</h2>
+            <p>After onboarding, I conducted further research on other competitive brands in their industry. I found that many of the
+            competitors only offered one of the services that chenko studios was offering, so I was able to take insight from each
+            and piece them together. For example, production studios had portfolios that would show off their work and clearly list
+            their manufacturing services. Whereas sewing lesson studios were more CTA heavy.</p>
+            <img src="images/chenko/comp-analysis.png" alt="competitor logos"/>
+        </section>
+        <section id="audit" class="audit" data-aos="fade-up">
+            <h2>Website audit</h2>
+            <p>Before the redesign, I needed to determine what was or was not working on their website. After having several candidates
+            use and explore the website, I found two major problems:</p>
+            <p>
+                <ol>
+                    <li>The navigation was not intuitive for users.</li>
+                    <li>Users did not understand what kind of business chenko studios is.</li>
+                </ol>
+            </p>
+            <img src="images/chenko/audit.png" alt="chenko studios original website"/>
+        </section>
+        <section id="site" class="site" data-aos="fade-up">
+            <h2>Redefining Sitemap</h2>
+            <p>To address the first issue with their current website, I redesigned the site map, because the original website
+            navigation had confusing labels that were not intuitive to users.</p>
+            
+            <p>I closely collaborated with the client to determine a better site structure that would still reflect the brand, but also
+            be intuitive for first time users to navigate. We landed on the following structure that used the terms that the client
+            originally had, but shortened, and an about, blog, and contact page at global navigation level as well. This will let
+            users quickly navigate to the page they are looking for and reduce frustration.</p>
+            <img src="images/chenko/sitemap.png" alt="chenko studios original and final sitemaps"/>
+        </section>
+        <section id="sketches" class="sketches" data-aos="fade-up">
+            <h2>Thumbnail Sketches</h2>
+            <p>To address the issue of users not knowing what chenko studios does, I first created thumbnail sketches on paper to
+            quickly get ideas out first. I treated each “branch” of chenko (learn, make, wear) as separate landing pages that users
+            could be taken to. This meant that each page should be sufficient to tell users what that service does. I decided that a
+            banner that featured brief text explicitly explaining what the business offers accompanied by a relevant image would
+            best communicate this to users what they are looking for.</p>
+            <img src="images/chenko/sketches.png" alt="chenko studios website thumbnail sketches"/>
+        </section>
+        <section id="wireframes" class="wireframes" data-aos="fade-up">
+            <h2>Wireframes</h2>
+            <p>I then took my sketches into Figma and created wireframes so they were more presentable and easily accessible by all
+            stakeholders to review. The wireframes also provided more of a concrete visual of how the website would look, and what
+            kind of assets were needed. I incorporated CTAs that were targeted towards individuals looking for sewing lessons and
+            more informational sections for those seeking manufacturing services. After several iterations and follow-ups with the
+            client, I began gathering and creating assets.</p>
+            <img src="images/chenko/wireframes.png" alt="chenko studios home,  learn, make, and wear landing page wireframes"/>
+        </section>
+        <section id="dev" class="dev" data-aos="fade-up">
+            <h2>Development</h2>
+            <p>Throughout the previous phases, I was playing around with Squarespace to familiarize myself with the platform and its
+            capabilities, which also affected my design decisions. After implementing all the agreed upon pages, I conducted a
+            quality assurance test by ensuring that all pages were production ready. I also created documentation on how to make
+            future additions and changes while keeping the design coherent.</p>
+        </section>
+        <section id="takeaways" class="takeaways" data-aos="fade-up">
+            <h2>Takeaways</h2>
+            <p>This was an exciting project that helped me establish my creative process. I was able to adapt and apply all the
+            research techniques and design processes while redesigning the website. I also had the opportunity to learn Squarespace
+            and learned to appreciate the practicality of content management systems for small businesses.</p>
+            <p>In the future I would like to conduct user tests and track website metrics to measure the success of my designs and to
+            continue improving upon the website.</p>
+        </section>
+        <a href="index.php" class="peace-link" title="back to home"><img src="images/bnr-img.svg" class="peace" /></a>
+    </main>
+    <footer class="footer">
+        <div class="content">
+            <p class="copyright">Michelle Cheung &copy; 2022</p>
+            <p class="pipe">|</p>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/michelle-cheung-vancouver" title="link to my Linkedin profile">
+                    <i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Mishninja" title="link to my Github">
+                    <i class="fa-brands fa-github"></i></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4a13e67f54.js" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/scroll-lock.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

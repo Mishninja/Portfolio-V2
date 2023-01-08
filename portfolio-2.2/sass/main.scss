@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 @import url("https://use.typekit.net/mus6lse.css");
-// @import url("https://use.typekit.net/mus6lse.css");
 @import 'mixins', 'variables';
 
 
@@ -318,40 +317,42 @@ header.header-up {
 }
 
 /*===== Artifact Page =====*/
-.artifact-page{
+.artifact-page {
     line-height: 1.5;
     .main {
-        section {
-                padding-top: 0;
-            }
         padding-top: 10rem;
+        section {
+            padding: 5rem 1rem 0;
+            max-width: 35rem;
+            margin: 0 auto;
+            p {
+                padding-top: 2rem;
+            }
+        }
         h2 {
             font-size: 2rem;
             font-weight: 700;
-            text-align: center;
             padding-bottom: 2rem;
         }
+        img {
+            padding-top: 2rem;
+        }
+        ol {
+            padding-left: 2.5rem;
+           li {
+                list-style-type: decimal;
+           } 
+        }
         .intro {
-            text-align: center;
+            // padding-top: 6rem;
             h1 {
                 font-size: 2.8rem;
                 font-weight: 700;
             }
-            p {
-                padding-top: 2rem;
-            }
-            img {
-                max-width: 60rem;
-            }
+            
         }
-        .overview,
-        .takeaway {
-            padding: 2.5rem 3rem;
-            margin: 1rem;
+        .overview {
             .link {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
                 padding-bottom: 2rem;
                 a {
                     color: $accent-color;    
@@ -359,39 +360,37 @@ header.header-up {
             }
             .list {
                 padding-top: 2rem;
-                ul {
+                ol {
+                    padding-top: 2rem;
                     font-size: 1.4rem;
-                    list-style-type: circle;
-                    margin-left: 5rem;
+                    line-height: 2;
+                    a {
+                        color: $text-color-lt;
+                    }
+                    a:hover {
+                        color: $accent-color;
+                    }
                 }
             }
-            .img {
-                display: flex;
-                img {
-                    width: 50%;
+        }
+        .takeaways {
+            padding-bottom: 5rem;
+        }
+        .peace-link {
+            transform: scale(1);
+            .peace {
+                    width: 10%;
                     margin: 0 auto;
-                    padding: 3rem;
+                    display: flex;
+                    padding-bottom: 3rem;
+                    transition: all 0.3s ease-in-out;
                 }
-            }
         }
-        .img {
-            width: 80%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            max-width: 40rem;
-            padding: 2rem 1.5rem;
-            .caption {
-                padding-top: 1rem;
-                text-align: center;
-                font-size: 1.2rem;
-            }
+        .peace:hover {
+            transform: scale(1.1);
+             
         }
-        .mock-ups {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;  
-        }
+        
     }
 }
     
