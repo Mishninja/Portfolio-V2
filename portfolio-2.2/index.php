@@ -104,7 +104,7 @@
                             </div>
                             <div class="ftr">
                                 <div class="web-link">
-                                    <a href="chenko.html" title="chenko studios case study" target="_blank">
+                                    <a href="chenko.html" title="chenko studios case study">
                                         <i class=" icon fa-regular fa-file"></i>
                                     </a>
                                 </div>
