@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 @import url("https://use.typekit.net/mus6lse.css");
-// @import url("https://use.typekit.net/mus6lse.css");
 @import 'mixins', 'variables';
 
 
@@ -323,31 +322,37 @@ header.header-up {
     .main {
         padding-top: 10rem;
         section {
-                padding-top: 0;
-                max-width: 80rem;
-                margin: 0 auto;
-                p {
-                        padding-top: 2rem;
-                    }
+            padding-top: 5rem;
+            max-width: 80rem;
+            margin: 0 auto;
+            p {
+                padding-top: 2rem;
             }
+        }
         h2 {
             font-size: 2rem;
             font-weight: 700;
             padding-bottom: 2rem;
         }
+        img {
+            padding-top: 2rem;
+        }
+        ol {
+            padding-left: 2.5rem;
+           li {
+                list-style-type: decimal;
+           } 
+        }
         .intro {
-            padding-top: 6rem;
+            // padding-top: 6rem;
             h1 {
                 font-size: 2.8rem;
                 font-weight: 700;
             }
             
         }
-        .overview,
-        .takeaway {
-            padding: 2.5rem 3rem;
+        .overview {
             .link {
-                
                 padding-bottom: 2rem;
                 a {
                     color: $accent-color;    
@@ -355,10 +360,9 @@ header.header-up {
             }
             .list {
                 padding-top: 2rem;
-                ul {
+                ol {
                     padding-top: 2rem;
                     font-size: 1.4rem;
-                    list-style-type: circle;
                     line-height: 2;
                     a {
                         color: $text-color-lt;
@@ -368,32 +372,15 @@ header.header-up {
                     }
                 }
             }
-            .img {
-                display: flex;
-                img {
-                    width: 50%;
-                    margin: 0 auto;
-                    padding: 3rem;
-                }
-            }
         }
-        .img {
-            width: 80%;
+        .takeaways {
+            padding-bottom: 5rem;
+        }
+        .peace {
+            width: 10%;
             margin: 0 auto;
             display: flex;
-            flex-direction: column;
-            max-width: 40rem;
-            padding: 2rem 1.5rem;
-            .caption {
-                padding-top: 1rem;
-                text-align: center;
-                font-size: 1.2rem;
-            }
-        }
-        .mock-ups {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;  
+            padding-bottom: 3rem;
         }
     }
 }
