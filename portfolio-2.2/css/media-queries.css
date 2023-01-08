@@ -326,8 +326,8 @@ header.header-up {
   padding-top: 10rem;
 }
 .artifact-page .main section {
-  padding-top: 5rem;
-  max-width: 80rem;
+  padding: 5rem 1rem 0;
+  max-width: 35rem;
   margin: 0 auto;
 }
 .artifact-page .main section p {
@@ -374,11 +374,18 @@ header.header-up {
 .artifact-page .main .takeaways {
   padding-bottom: 5rem;
 }
-.artifact-page .main .peace {
+.artifact-page .main .peace-link {
+  transform: scale(1);
+}
+.artifact-page .main .peace-link .peace {
   width: 10%;
   margin: 0 auto;
   display: flex;
   padding-bottom: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+.artifact-page .main .peace:hover {
+  transform: scale(1.1);
 }
 
 /*===== About =====*/
@@ -630,6 +637,10 @@ header.header-up {
   .work .container .card .accordion-btn .icon {
     font-size: 3rem;
   }
+  .artifact-page .main section {
+    max-width: 70rem;
+    padding: 5rem 1.5rem 0;
+  }
 }
 @media (min-width: 800px) {
   .about .about-me {
@@ -638,14 +649,9 @@ header.header-up {
   .about .get-to-know {
     max-width: 775px;
   }
-  .artifact-page .intro h1 {
-    padding-top: 3rem;
-  }
-  .artifact-page .intro p {
-    padding-bottom: 3rem;
-  }
-  .artifact-page .main .img {
-    max-width: 60rem;
+  .artifact-page .main section {
+    max-width: 80rem;
+    padding: 5rem 3.5rem 0;
   }
 }
 @media (min-width: 992px) {

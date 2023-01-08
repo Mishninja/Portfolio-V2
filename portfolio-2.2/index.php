@@ -81,6 +81,42 @@
         <section id="work" class="work">
             <h2 class="section-heading">Work</h2>
             <div class="container">
+                <div class="card reverse">
+                    <div class="display-vid " data-aos="fade-left">
+                        <img class="image" src="images/chenko/chenko-mock.png" alt="Contact Form Mock Up" loading="lazy">
+                    </div>
+                    <div class="content-wrapper" data-aos="fade-right">
+                        <div class="accordion-btn">
+                            <h3>Chenko Studios Website Redesign</h3>
+                            <i class="fa-solid fa-chevron-down icon"></i>
+                        </div>
+                        <div class="content">
+                            <div class="description">
+                                <h4 class="heading">Description</h4>
+                                <p>Complete website redesign for chenko studios</p>
+                                <h4 class="heading">Technology</h4>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>Squarespace</li>
+                                    <li>UI/UX Principles</li>
+                                    <li>UX research</li>
+                                </ul>
+                            </div>
+                            <div class="ftr">
+                                <div class="web-link">
+                                    <a href="chenko.html" title="chenko studios case study" target="_blank">
+                                        <i class=" icon fa-regular fa-file"></i>
+                                    </a>
+                                </div>
+                                <div class="git-link">
+                                    <a href="https://www.chenkostudios.com/" title="chenko studios website" target="_blank">
+                                        <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="display-vid" data-aos="fade-right">
                         <img class="image" src="images/studybuddy/study-buddy-mock.png" alt="Study Buddy Mock Up" loading="lazy">
@@ -292,25 +328,13 @@
         <section id="about" class="about">
             <h2 class="section-heading">About Me</h2>
             <div class="panel">
-                <div class="img bg-repeat me">
+                <div class="img bg-repeat me" data-aos="fade-right">
                     <img src="images/about/pp.jpg" alt="Photo of Michelle">
                 </div>
-                <div class="content">
-                <p>I am currently a student enrolled in the BCIT New Media and Web Development program. I initially dipped
-                        my toes into the computer sciences disciplines while completing my bachelor in science at UBC. I quickly
-                        realized that I was able to combine the satisfaction of problem solving with my passion for creating
-                        things as a front end developer.</p>
-                        <p>I have strong knowledge of HTML, CSS, JavaScript and am currently familiarizing myself with PHP and React.js. Some other skills I've learned that help me as a developer are: UI/UX principles, graphic design principles, SEO best practices, and project management methodologies.</p>
-                        <p>I am passionate about learning and am eager to gain more experience!</p>
-                </div>
-            </div>
-            <div class="panel panel-rev">
-                <div class="img bg-repeat cat">
-                    <img src="images/about/tiger.jpg" alt="Photo of Tiger the cat">
-                </div>
-                <div class="content">
-                    <p>Hi, i’m Tiger! I love treats and food so much I learned to do tricks for them! I can hi-five and shake a paw. When i’m
-                        not on the prowl for food, I love taking naps and keeping my human company while she studies and works.</p>
+                <div class="content" data-aos="fade-left">
+                    <p>I am a web designer with a passion for creating impactful products for my clients. My research-driven design process allows me to create tailored solutions for businesses.</p>
+                    <p>I am looking for opportunities where I can use my creativity and problem-solving skills to contribute to meaningful projects. My technical skillset consists of conducting user research, wireframing, prototyping, and user testing.</p>
+                    <p>In my free time, I enjoy playing Ultimate Frisbee, baking cookies and pastries, and crocheting cat sweaters.</p>
                 </div>
             </div>
         </section>

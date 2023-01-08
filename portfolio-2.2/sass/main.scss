@@ -317,13 +317,13 @@ header.header-up {
 }
 
 /*===== Artifact Page =====*/
-.artifact-page{
+.artifact-page {
     line-height: 1.5;
     .main {
         padding-top: 10rem;
         section {
-            padding-top: 5rem;
-            max-width: 80rem;
+            padding: 5rem 1rem 0;
+            max-width: 35rem;
             margin: 0 auto;
             p {
                 padding-top: 2rem;
@@ -376,12 +376,21 @@ header.header-up {
         .takeaways {
             padding-bottom: 5rem;
         }
-        .peace {
-            width: 10%;
-            margin: 0 auto;
-            display: flex;
-            padding-bottom: 3rem;
+        .peace-link {
+            transform: scale(1);
+            .peace {
+                    width: 10%;
+                    margin: 0 auto;
+                    display: flex;
+                    padding-bottom: 3rem;
+                    transition: all 0.3s ease-in-out;
+                }
         }
+        .peace:hover {
+            transform: scale(1.1);
+             
+        }
+        
     }
 }
     

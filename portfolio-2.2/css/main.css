@@ -326,8 +326,8 @@ header.header-up {
   padding-top: 10rem;
 }
 .artifact-page .main section {
-  padding-top: 5rem;
-  max-width: 80rem;
+  padding: 5rem 1rem 0;
+  max-width: 35rem;
   margin: 0 auto;
 }
 .artifact-page .main section p {
@@ -374,11 +374,18 @@ header.header-up {
 .artifact-page .main .takeaways {
   padding-bottom: 5rem;
 }
-.artifact-page .main .peace {
+.artifact-page .main .peace-link {
+  transform: scale(1);
+}
+.artifact-page .main .peace-link .peace {
   width: 10%;
   margin: 0 auto;
   display: flex;
   padding-bottom: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+.artifact-page .main .peace:hover {
+  transform: scale(1.1);
 }
 
 /*===== About =====*/
