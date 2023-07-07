@@ -17,18 +17,20 @@
     font-weight: 600;
     font-size: 1.4rem;
     border: 3px solid $secondary-color;
-    background-color: $accent-color;
+    background-color: transparent;
     color: $text-color-dk;
     padding: 1rem 3.5rem;
-    border-top-left-radius: 20% 70%;
-    border-top-right-radius: 20% 70%;
-    border-bottom-right-radius: 20% 70%;
-    border-bottom-left-radius: 20% 70%;
+    border-radius: 100px;
+    // border-top-left-radius: 20% 70%;
+    // border-top-right-radius: 20% 70%;
+    // border-bottom-right-radius: 20% 70%;
+    // border-bottom-left-radius: 20% 70%;
     transition: all 0.3s ease-in-out;
 }
 
 @mixin button-hover-style {
-    color: $secondary-color;
+    color: $accent-color;
+    border: 3px solid $accent-color;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
 }

@@ -16,7 +16,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.4;
     font-weight: 400;
-    color: $text-color-lt;
+    color: $text-color-dk;
     overflow-x: hidden;
 }
 
@@ -53,7 +53,7 @@ section {
 
 .active,
 .accordion-btn:hover {
-    background-color: #ccc;
+    background-color: $accent-color;
 }
 
 /*===== Navigation =====*/
@@ -75,7 +75,7 @@ section {
         .logo-link {
             display: block;
             img {
-                height: 4rem;
+                height: 5rem;
             }
         }
         
@@ -86,7 +86,7 @@ section {
         position: absolute;
         top: 4.5rem;
         left: 0;
-        color: $text-color-lt;
+        // color: $text-color-dk;
         background-color: $primary-color;
         border-bottom: solid 3px $secondary-color;
         width: 100%;
@@ -219,7 +219,7 @@ header.header-up {
     padding-top: 5rem;
     margin-top: 0;
     background-color: $primary-color;
-    color: $text-color-lt;
+    color: $text-color-dk;
     .container {
         width: 100%;
         margin: 0 auto;
@@ -236,7 +236,7 @@ header.header-up {
     }
 
      .card {
-        margin: 0 auto;
+        margin: 0 auto 2rem;
         width: 100%;
          h3 {
              font-size: 2rem;
@@ -262,10 +262,11 @@ header.header-up {
              margin: 0 auto;
              padding: 1rem 2rem;
              font-family: $heading-font;
-             background-color: $secondary-color;
-            box-shadow: -2px 9px 7px -4px rgba(255, 255, 255, 0.19);
-            -webkit-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
-            -moz-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
+             background-color: $primary-color;
+             border-bottom: 1px $secondary-color;
+            // box-shadow: -2px 9px 7px -4px rgba(255, 255, 255, 0.19);
+            // -webkit-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
+            // -moz-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
             .icon {
                 font-size: 2.5rem; 
                 color: $text-color-dk;
@@ -279,9 +280,9 @@ header.header-up {
         }
         .content {
             display: none;
-            background-color: $secondary-color;
+            background-color: $primary-color;
             color: $text-color-dk;    
-            padding-bottom: 2.5rem;
+            padding: 2.5rem 0;
             .description {
                 margin: 0 auto;
                 width: 80%;
@@ -306,7 +307,7 @@ header.header-up {
                 .git-link {
                     .icon {
                         font-size: 3rem;
-                        color: $primary-color;
+                        color: $secondary-color;
                     }
                 }
             }
@@ -355,7 +356,7 @@ header.header-up {
             .link {
                 padding-bottom: 2rem;
                 a {
-                    color: $accent-color;    
+                    color: $secondary-color;    
                 }
             }
             .list {
@@ -365,7 +366,7 @@ header.header-up {
                     font-size: 1.4rem;
                     line-height: 2;
                     a {
-                        color: $text-color-lt;
+                        color: $text-color-dk;
                     }
                     a:hover {
                         color: $accent-color;
@@ -474,7 +475,7 @@ header.header-up {
 /*===== Connect =====*/
 .connect {
     background-color: $secondary-color;
-    color: $text-color-dk;
+    color: $text-color-lt;
     .connect-container {
         max-width: 70%;
         margin: 0 auto;
@@ -564,7 +565,7 @@ header.header-up {
                 margin: 0.5rem auto;
                 border-radius: 2rem;
                 @extend .form-style;
-                background-color: $secondary-color;
+                background-color: $primary-color;
             }
 
 
@@ -585,7 +586,7 @@ header.header-up {
             textarea {
                 width: 80%;
                 resize: none;
-                background-color: $secondary-color;
+                background-color: $primary-color;
                 border-radius: 1.5rem;
                 padding: 1rem 2rem;
                 font-size: 1.2rem;
