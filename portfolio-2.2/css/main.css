@@ -22,7 +22,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
   font-weight: 400;
-  color: #F2F7F5;
+  color: #004643;
   overflow-x: hidden;
 }
 
@@ -59,7 +59,7 @@ section {
 
 .active,
 .accordion-btn:hover {
-  background-color: #ccc;
+  background-color: #FFA8BA;
 }
 
 /*===== Navigation =====*/
@@ -76,7 +76,7 @@ section {
   z-index: 999;
   will-change: top;
   padding: 1rem 1.5rem;
-  background-color: #004643;
+  background-color: #F2F7F5;
   transition: top 0.3s ease-in-out;
   /*===== Burger Menu =====*/
 }
@@ -84,20 +84,19 @@ section {
   display: block;
 }
 .header .logo .logo-link img {
-  height: 4rem;
+  height: 5rem;
 }
 .header .gn {
   display: none;
   position: absolute;
   top: 4.5rem;
   left: 0;
-  color: #F2F7F5;
-  background-color: #004643;
-  border-bottom: solid 3px #F2F7F5;
+  background-color: #F2F7F5;
+  border-bottom: solid 3px #004643;
   width: 100%;
 }
 .header .gn a {
-  color: #F2F7F5;
+  color: #004643;
 }
 .header .gn li:last-child {
   border: none;
@@ -111,7 +110,7 @@ section {
 .header .gn-items li {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #F2F7F5;
+  color: #004643;
   position: relative;
   text-align: center;
   padding: 2.5rem 0;
@@ -129,7 +128,7 @@ section {
   align-items: center;
   width: 3rem;
   height: 3rem;
-  color: #F2F7F5;
+  color: #004643;
   font-weight: 300;
   top: 0;
   right: 2.5rem;
@@ -156,7 +155,7 @@ header.header-up {
 
 /*===== Main =====*/
 .main {
-  background-color: #004643;
+  background-color: #F2F7F5;
 }
 
 /*===== Homepage Banner =====*/
@@ -210,14 +209,11 @@ header.header-up {
 .bnr .right .cta a {
   font-weight: 600;
   font-size: 1.4rem;
-  border: 3px solid #F2F7F5;
-  background-color: #FFA8BA;
+  border: 3px solid #004643;
+  background-color: transparent;
   color: #004643;
   padding: 1rem 3.5rem;
-  border-top-left-radius: 20% 70%;
-  border-top-right-radius: 20% 70%;
-  border-bottom-right-radius: 20% 70%;
-  border-bottom-left-radius: 20% 70%;
+  border-radius: 100px;
   transition: all 0.3s ease-in-out;
   position: absolute;
 }
@@ -226,8 +222,8 @@ header.header-up {
 .work {
   padding-top: 5rem;
   margin-top: 0;
-  background-color: #004643;
-  color: #F2F7F5;
+  background-color: #F2F7F5;
+  color: #004643;
 }
 .work .container {
   width: 100%;
@@ -240,7 +236,7 @@ header.header-up {
   width: 80%;
 }
 .work .card {
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   width: 100%;
 }
 .work .card h3 {
@@ -255,7 +251,7 @@ header.header-up {
 .work .card .display-vid {
   height: auto;
   min-height: 40vh;
-  background-color: #004643;
+  background-color: #F2F7F5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,9 +268,7 @@ header.header-up {
   padding: 1rem 2rem;
   font-family: proxima-nova, sans-serif;
   background-color: #F2F7F5;
-  box-shadow: -2px 9px 7px -4px rgba(255, 255, 255, 0.19);
-  -webkit-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 9px 7px -4px rgba(0, 0, 0, 0.19);
+  border-bottom: 1px #004643;
 }
 .work .card .accordion-btn .icon {
   font-size: 2.5rem;
@@ -289,7 +283,7 @@ header.header-up {
   display: none;
   background-color: #F2F7F5;
   color: #004643;
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 0;
 }
 .work .card .content .description {
   margin: 0 auto;
@@ -305,7 +299,7 @@ header.header-up {
   font-size: 1.6rem;
 }
 .work .card .content .description a {
-  color: #004643;
+  color: #F2F7F5;
 }
 .work .card .content .ftr {
   display: flex;
@@ -355,7 +349,7 @@ header.header-up {
   padding-bottom: 2rem;
 }
 .artifact-page .main .overview .link a {
-  color: #FFA8BA;
+  color: #004643;
 }
 .artifact-page .main .overview .list {
   padding-top: 2rem;
@@ -366,7 +360,7 @@ header.header-up {
   line-height: 2;
 }
 .artifact-page .main .overview .list ol a {
-  color: #F2F7F5;
+  color: #004643;
 }
 .artifact-page .main .overview .list ol a:hover {
   color: #FFA8BA;
@@ -422,8 +416,8 @@ header.header-up {
   padding: 5rem 2rem;
   border-radius: 0.5rem;
   border: 0.6rem solid #FFA8BA;
-  background-color: #004643;
-  color: #F2F7F5;
+  background-color: #F2F7F5;
+  color: #004643;
   text-align: center;
   box-shadow: -20px 20px 10px -6px rgba(20, 20, 20, 0.2);
 }
@@ -450,15 +444,15 @@ header.header-up {
 }
 .about .game .container .word-bank .draggable-item {
   border-radius: 0.4rem;
-  border: 0.1rem solid #F2F7F5;
+  border: 0.1rem solid #004643;
   padding: 2rem 2rem;
   margin-bottom: 1.5rem;
 }
 
 /*===== Connect =====*/
 .connect {
-  background-color: #F2F7F5;
-  color: #004643;
+  background-color: #004643;
+  color: #F2F7F5;
 }
 .connect .connect-container {
   max-width: 70%;
@@ -502,7 +496,7 @@ header.header-up {
   z-index: 10;
 }
 .connect .form-container {
-  background-color: #004643;
+  background-color: #F2F7F5;
   padding-top: 20rem;
   padding-bottom: 6rem;
 }
@@ -515,7 +509,7 @@ header.header-up {
   width: 100%;
 }
 .connect .form-container .error-msg-wrap .error-msg {
-  color: #F2F7F5;
+  color: #004643;
   text-align: center;
   font-size: 2.5rem;
 }
@@ -529,14 +523,11 @@ header.header-up {
 .connect .form-container .error-msg-wrap .btn a {
   font-weight: 600;
   font-size: 1.4rem;
-  border: 3px solid #F2F7F5;
-  background-color: #FFA8BA;
+  border: 3px solid #004643;
+  background-color: transparent;
   color: #004643;
   padding: 1rem 3.5rem;
-  border-top-left-radius: 20% 70%;
-  border-top-right-radius: 20% 70%;
-  border-bottom-right-radius: 20% 70%;
-  border-bottom-left-radius: 20% 70%;
+  border-radius: 100px;
   transition: all 0.3s ease-in-out;
   margin: 0 auto;
 }
@@ -563,14 +554,11 @@ header.header-up {
   margin: 2rem auto;
   font-weight: 600;
   font-size: 1.4rem;
-  border: 3px solid #F2F7F5;
-  background-color: #FFA8BA;
+  border: 3px solid #004643;
+  background-color: transparent;
   color: #004643;
   padding: 1rem 3.5rem;
-  border-top-left-radius: 20% 70%;
-  border-top-right-radius: 20% 70%;
-  border-bottom-right-radius: 20% 70%;
-  border-bottom-left-radius: 20% 70%;
+  border-radius: 100px;
   transition: all 0.3s ease-in-out;
 }
 .connect .form-container .form input[type=submit]:disabled {
@@ -593,7 +581,7 @@ header.header-up {
 }
 
 .footer {
-  background-color: #004643;
+  background-color: #F2F7F5;
   color: #FFA8BA;
   padding: 2rem;
   margin: 0 auto;

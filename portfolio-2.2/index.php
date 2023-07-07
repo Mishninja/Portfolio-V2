@@ -82,9 +82,6 @@
             <h2 class="section-heading">Work</h2>
             <div class="container">
                 <div class="card reverse">
-                    <div class="display-vid " data-aos="fade-left">
-                        <img class="image" src="images/chenko/chenko-mock.png" alt="Contact Form Mock Up" loading="lazy">
-                    </div>
                     <div class="content-wrapper" data-aos="fade-right">
                         <div class="accordion-btn">
                             <h3>Chenko Studios Website Redesign</h3>
@@ -116,6 +113,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="display-vid " data-aos="fade-left">
+                        <img class="image" src="images/chenko/chenko-mock.png" alt="Contact Form Mock Up" loading="lazy">
+                    </div>
+
                 </div>
                 <div class="card">
                     <div class="display-vid" data-aos="fade-right">
