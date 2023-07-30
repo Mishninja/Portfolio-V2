@@ -178,67 +178,6 @@ header.header-up {
 }
 .bnr .left img {
   width: 100%;
-  padding-top: 4rem;
-  -webkit-animation-name: wiggle;
-  -ms-animation-name: wiggle;
-  -ms-animation-duration: 5000ms;
-  -webkit-animation-duration: 5000ms;
-  -webkit-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-ease-out;
-  -ms-animation-timing-function: ease-in-ease-out;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes wiggle {
-  0% {
-    -webkit-transform: rotate(7deg);
-  }
-  25% {
-    -webkit-transform: rotate(-7deg);
-  }
-  50% {
-    -webkit-transform: rotate(20deg);
-  }
-  75% {
-    -webkit-transform: rotate(-5deg);
-  }
-  100% {
-    -webkit-transform: rotate(7deg);
-  }
-}
-@-ms-keyframes wiggle {
-  0% {
-    -ms-transform: rotate(7deg);
-  }
-  25% {
-    -ms-transform: rotate(-7deg);
-  }
-  50% {
-    -ms-transform: rotate(1.5deg);
-  }
-  75% {
-    -ms-transform: rotate(-5deg);
-  }
-  70% {
-    -ms-transform: rotate(7deg);
-  }
-}
-@keyframes wiggle {
-  0% {
-    transform: rotate(7deg);
-  }
-  25% {
-    transform: rotate(-7deg);
-  }
-  50% {
-    transform: rotate(20deg);
-  }
-  75% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(7deg);
-  }
 }
 .bnr .right {
   margin-right: 1.5rem;
@@ -293,8 +232,8 @@ header.header-up {
 .work .card.supu img {
   width: 50%;
 }
-.work .card.emailgenius img {
-  width: 75%;
+.work .card.emailgenius {
+  border: 1px solid black;
 }
 .work .card {
   margin: 0 auto 2rem;
@@ -701,4 +640,4 @@ header.header-up {
   display: none;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.scss.map */

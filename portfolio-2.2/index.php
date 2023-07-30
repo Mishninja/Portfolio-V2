@@ -67,8 +67,8 @@
     <main class="main">
         <section class="bnr bg-repeat">
             <div class="right col">
+                <h3> Creative web solutions by</h3>
                 <h1>Michelle Cheung</h1>
-                <h3> Creativity meets efficient problem solving</h3>
                 <h2>Web designer</h2>
                 <div class="cta">
                     <a href="#about" title="About section">About Me</a>
@@ -81,7 +81,45 @@
         <section id="work" class="work">
             <h2 class="section-heading">Work</h2>
             <div class="container">
-                <div class="card">
+                <div class="card emailgenius">
+                    <div class="display-vid" data-aos="fade-right">
+                        <img class="image" src="images/emailgenius/email-genius-mock.png" alt="Email Genius Mock Up" loading="lazy">
+                    </div>
+                    <div class="content-wrapper" data-aos="fade-left">
+                        <div class="accordion-btn">
+                            <h3>Email Genius Chrome Extension</h3>
+                            <i class="fa-solid fa-chevron-down icon"></i>
+                        </div>
+                        <div class="content">
+                            <div class="description">
+                                <h4 class="heading">Description</h4>
+                                <p>EmailGenius is an AI powered Chrome extension that helps users reply to email, check grammar and translate text.</p>
+                                <h4 class="heading">Skills</h4>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>UI/UX</li>
+                                    <li>Graphic Design</li>
+                                </ul>
+                                <h4 class="heading">Takeaways</h4>
+                                <ul>
+                                    <li>Applying UI/UX design principles</li>
+                                    <li>How to design a Chrome Extension</li>
+                                </ul>
+                            </div>
+                            <div class="ftr">
+                                <div class="git-link">
+                                    <a href="emailgenius.html" title="link to Email Genius Case Study" target="_blank">
+                                        <i class="icon fa-regular fa-file"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card reverse">
+                    <div class="display-vid " data-aos="fade-left">
+                        <img class="image" src="images/chenko/chenko-mock.png" alt="Contact Form Mock Up" loading="lazy">
+                    </div>
                     <div class="content-wrapper" data-aos="fade-right">
                         <div class="accordion-btn">
                             <h3>Chenko Studios Website Redesign</h3>
@@ -91,7 +129,7 @@
                             <div class="description">
                                 <h4 class="heading">Description</h4>
                                 <p>Complete website redesign for chenko studios</p>
-                                <h4 class="heading">Technology</h4>
+                                <h4 class="heading">Skills</h4>
                                 <ul>
                                     <li>Figma</li>
                                     <li>UI/UX Principles</li>
@@ -113,9 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="display-vid " data-aos="fade-left">
-                        <img class="image" src="images/chenko/chenko-mock.png" alt="Contact Form Mock Up" loading="lazy">
-                    </div>
+
 
                 </div>
                 <div class="card">
@@ -132,7 +168,7 @@
                                 <h4 class="heading">Description</h4>
                                 <p>A flash card web app for studying. This web page was built using an object oriented approach
                                     and uses local storage, JSON and sessions.</p>
-                                <h4 class="heading">Languages</h4>
+                                <h4 class="heading">Skills</h4>
                                 <ul>
                                     <li>HTML</li>
                                     <li>CSS</li>
@@ -174,7 +210,7 @@
                                 <p>A reusable contact form for a portfolio or a local business. This contact form uses the
                                     PHPMailer class and Google reCaptcha to safely handle contact form inputs and emails. The
                                     form also has required fields to ensure users include all necessary information.</p>
-                                <h4 class="heading">Languages</h4>
+                                <h4 class="heading">Skills</h4>
                                 <ul>
                                     <li>HTML</li>
                                     <li>CSS</li>
@@ -219,7 +255,7 @@
                                     ordering.</p>
                                 <p>Logo Design: <a href="https://anitalam.ca/" title="Anita's portfolio" target="_blank">Anita
                                         Lam</a></p>
-                                <h4 class="heading">Technology</h4>
+                                <h4 class="heading">Skills</h4>
                                 <ul>
                                     <li>Figma</li>
                                     <li>UI/UX</li>
@@ -259,7 +295,7 @@
                                 <h4 class="heading">Description</h4>
                                 <p>A hi-fidelity mock up for a landing page designed and prototyped on Figma.</p>
                                 <p>Beauty Hub is a fictional small business focused on a clean beauty products. A minimal and almost sterile-looking design was chosen.</p>
-                                <h4 class="heading">Technology</h4>
+                                <h4 class="heading">Skills</h4>
                                 <ul>
                                     <li>Figma</li>
                                     <li>Photoshop</li>
@@ -274,44 +310,6 @@
                             <div class="ftr">
                                 <div class="web-link">
                                     <a href="https://www.figma.com/proto/CRlnVakcOS5rqxklXP6wZc/Beauty-Hub-Landing-Page-Mock-up?type=design&node-id=215-233&t=KyxoeKDGTxZHcqAD-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=215%3A233&show-proto-sidebar=1&mode=design" title="Beauty Hub Prototype" target="_blank">
-                                        <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="display-vid" data-aos="fade-right">
-                        <img class="image" src="images/frogfacts/frog-mock.png" alt="Frog facts landing page mock ups" loading="lazy">
-                    </div>
-                    <div class="content-wrapper" data-aos="fade-left">
-                        <div class="accordion-btn">
-                            <h3>Frog Facts Page</h3>
-                            <i class="fa-solid fa-chevron-down icon"></i>
-                        </div>
-                        <div class="content">
-                            <div class="description">
-                                <h4 class="heading">Description</h4>
-                                <p>The main purpose of this website is to educate users about frogs and how climate change is affecting them. </p>
-                                <p>The website is mobile responsive and uses a number of plugins to make the information easy to read. A cohesive color scheme reflects the topic and theme of the website.</p>
-                                <h4 class="heading">Technology</h4>
-                                <ul>
-                                    <li>jQuery/JS</li>
-                                    <li>Gridder</li>
-                                    <li>Isotope/Masonry</li>
-                                    <li>Accordion</li>
-                                </ul>
-                                <h4 class="heading">Takeaways</h4>
-                                <ul>
-                                    <li>How to prototype in Figma</li>
-                                    <li>Designing on a grid</li>
-                                    <li>Creating effective call to actions above the fold</li>
-                                </ul>
-                            </div>
-                            <div class="ftr">
-                                <div class="web-link">
-                                    <a href="https://github.com/Mishninja/Mobile-Responsive-Frog-Awareness-Website/tree/main/frog-fact-website" title="link to more details for Beauty Hub Landing Page Mock Up">
                                         <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
                                     </a>
                                 </div>

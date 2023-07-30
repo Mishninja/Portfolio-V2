@@ -178,8 +178,42 @@ header.header-up {
         display: flex;
         justify-content: center;
         img {
-            width: 100%;            
+            width: 100%; 
+            padding-top: 4rem;
+            -webkit-animation-name: wiggle;
+                -ms-animation-name: wiggle;
+                -ms-animation-duration: 5000ms;
+                -webkit-animation-duration: 5000ms;
+                -webkit-animation-iteration-count: infinite;
+                -ms-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: ease-in-ease-out;
+                -ms-animation-timing-function: ease-in-ease-out;
+                animation-fill-mode: both;
         }
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform: rotate(7deg);}
+  25% {-webkit-transform: rotate(-7deg);}
+  50% {-webkit-transform: rotate(20deg);}
+  75% {-webkit-transform: rotate(-5deg);}
+  100% {-webkit-transform: rotate(7deg);}
+}
+
+@-ms-keyframes wiggle {
+  0% {-ms-transform: rotate(7deg);}
+  25% {-ms-transform: rotate(-7deg);}
+  50% {-ms-transform: rotate(1.5deg);}
+  75% {-ms-transform: rotate(-5deg);}
+70% {-ms-transform: rotate(7deg);}
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(7deg);}
+  25% {transform: rotate(-7deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(7deg);}
+}
+
         }
 
     .right {
@@ -224,14 +258,16 @@ header.header-up {
         width: 100%;
         margin: 0 auto;
     }
+    
     .card.supu {        
         img {
             width: 50%;
         }
     }
-    .card.perkhero {
+
+    .card.emailgenius {
         img {
-            width: 80%;
+            width: 75%;
         }
     }
 
@@ -338,6 +374,43 @@ header.header-up {
         img {
             padding-top: 2rem;
         }
+        .intro-img {
+            padding-top: 5rem;
+            display: flex;
+            justify-content: center;
+            .eg-logo {
+                width: 65%;
+            }
+        }
+        .brand-img {
+            .brand-img-heading{
+                padding-top: 5rem;
+            }
+            
+        }
+        .prototype-embed {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            display: flex;
+            align-items: center;
+            iframe {
+                margin: 0 auto;
+            }
+        }    
+        
+        .wireframe-img {
+            padding-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .wireframes-1, .wireframes-2 {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+            }
+        }
+
+
         ol {
             padding-left: 2.5rem;
            li {

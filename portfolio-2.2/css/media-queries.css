@@ -178,6 +178,67 @@ header.header-up {
 }
 .bnr .left img {
   width: 100%;
+  padding-top: 4rem;
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 5000ms;
+  -webkit-animation-duration: 5000ms;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-ease-out;
+  -ms-animation-timing-function: ease-in-ease-out;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(7deg);
+  }
+  25% {
+    -webkit-transform: rotate(-7deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(7deg);
+  }
+}
+@-ms-keyframes wiggle {
+  0% {
+    -ms-transform: rotate(7deg);
+  }
+  25% {
+    -ms-transform: rotate(-7deg);
+  }
+  50% {
+    -ms-transform: rotate(1.5deg);
+  }
+  75% {
+    -ms-transform: rotate(-5deg);
+  }
+  70% {
+    -ms-transform: rotate(7deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(7deg);
+  }
+  25% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(7deg);
+  }
 }
 .bnr .right {
   margin-right: 1.5rem;
@@ -232,8 +293,8 @@ header.header-up {
 .work .card.supu img {
   width: 50%;
 }
-.work .card.perkhero img {
-  width: 80%;
+.work .card.emailgenius img {
+  width: 75%;
 }
 .work .card {
   margin: 0 auto 2rem;
@@ -334,6 +395,37 @@ header.header-up {
 }
 .artifact-page .main img {
   padding-top: 2rem;
+}
+.artifact-page .main .intro-img {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.artifact-page .main .intro-img .eg-logo {
+  width: 65%;
+}
+.artifact-page .main .brand-img .brand-img-heading {
+  padding-top: 5rem;
+}
+.artifact-page .main .prototype-embed {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+}
+.artifact-page .main .prototype-embed iframe {
+  margin: 0 auto;
+}
+.artifact-page .main .wireframe-img {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.artifact-page .main .wireframe-img .wireframes-1, .artifact-page .main .wireframe-img .wireframes-2 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 .artifact-page .main ol {
   padding-left: 2.5rem;
@@ -640,6 +732,10 @@ header.header-up {
   .artifact-page .main section {
     max-width: 80rem;
     padding: 5rem 3.5rem 0;
+  }
+  .artifact-page .main .wireframe-img .wireframes-1, .artifact-page .main .wireframe-img .wireframes-2 {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (min-width: 992px) {
