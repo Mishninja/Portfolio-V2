@@ -281,44 +281,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="display-vid" data-aos="fade-right">
-                        <img class="image" src="images/frogfacts/frog-mock.png" alt="Frog facts landing page mock ups" loading="lazy">
-                    </div>
-                    <div class="content-wrapper" data-aos="fade-left">
-                        <div class="accordion-btn">
-                            <h3>Frog Facts Page</h3>
-                            <i class="fa-solid fa-chevron-down icon"></i>
-                        </div>
-                        <div class="content">
-                            <div class="description">
-                                <h4 class="heading">Description</h4>
-                                <p>The main purpose of this website is to educate users about frogs and how climate change is affecting them. </p>
-                                <p>The website is mobile responsive and uses a number of plugins to make the information easy to read. A cohesive color scheme reflects the topic and theme of the website.</p>
-                                <h4 class="heading">Technology</h4>
-                                <ul>
-                                    <li>jQuery/JS</li>
-                                    <li>Gridder</li>
-                                    <li>Isotope/Masonry</li>
-                                    <li>Accordion</li>
-                                </ul>
-                                <h4 class="heading">Takeaways</h4>
-                                <ul>
-                                    <li>How to prototype in Figma</li>
-                                    <li>Designing on a grid</li>
-                                    <li>Creating effective call to actions above the fold</li>
-                                </ul>
-                            </div>
-                            <div class="ftr">
-                                <div class="web-link">
-                                    <a href="https://github.com/Mishninja/Mobile-Responsive-Frog-Awareness-Website/tree/main/frog-fact-website" title="link to more details for Beauty Hub Landing Page Mock Up">
-                                        <i class="icon fa-solid fa-arrow-up-right-from-square fa-xl"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <section id="about" class="about">
